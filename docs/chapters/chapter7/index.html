@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DATA606 - Fall 2020</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.49.2" />
+<title>Chapter 7 :: DATA606 - Fall 2020</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+	<link href="/theme-flex/variant-green.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/chapters/chapter7/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p>DATA606 - Fall 2020</p>
+
+  
+
+
+<style type='text/css'>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://data606fall2020.slack.com/messages"  rel="noopener">
+                  <i class='fa fa-slack'></i> Slack
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020/issues?utf8=%E2%9C%93&amp;q=is%3Aissue"  rel="noopener">
+                  <i class='fa fa-question-circle'></i> Q&A
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020"  rel="noopener">
+                  <i class='fa fa-github'></i> Github Repo
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://bbhosted.cuny.edu/webapps/login"  rel="noopener">
+                  <i class='fa fa-pencil'></i> Blackboard
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://sps.cuny.edu/academics/graduate/master-science-data-analytics-ms"  rel="noopener">
+                  <i class='fa fa-graduation-cap'></i> CUNY SPS
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/post/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/post/">Announcements</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/2020-03-03-colors/" class="dd-item">
+        <div>
+          <a href="/post/2020-03-03-colors/">
+            Colors
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-29-random_numbers_and_seeds/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-29-random_numbers_and_seeds/">
+            Random Numbers and Seeds in R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-20-getting-started-with-r/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-20-getting-started-with-r/">
+            Getting Started with R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-16-welcome-to-data606/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-16-welcome-to-data606/">
+            Welcome to DATA606!
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/course-overview/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/course-overview/">Course Overview</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/course-overview/schedule/" class="dd-item">
+        <div>
+          <a href="/course-overview/schedule/">
+            Schedule
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/meetups/" class="dd-item">
+        <div>
+          <a href="/course-overview/meetups/">
+            Meetups
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/textbooks/" class="dd-item">
+        <div>
+          <a href="/course-overview/textbooks/">
+            Textbooks
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/software/" class="dd-item">
+        <div>
+          <a href="/course-overview/software/">
+            Software
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/links/" class="dd-item">
+        <div>
+          <a href="/course-overview/links/">
+            Links
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/mathjax/" class="dd-item">
+        <div>
+          <a href="/course-overview/mathjax/">
+            Math Equations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/materials/" class="dd-item">
+        <div>
+          <a href="/course-overview/materials/">
+            Materials
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/assignments/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/assignments/">Assignments</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/assignments/presentation/" class="dd-item">
+        <div>
+          <a href="/assignments/presentation/">
+            Presentation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/homework/" class="dd-item">
+        <div>
+          <a href="/assignments/homework/">
+            Homework
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/labs/" class="dd-item">
+        <div>
+          <a href="/assignments/labs/">
+            Labs
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/project/" class="dd-item">
+        <div>
+          <a href="/assignments/project/">
+            Project
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/final/" class="dd-item">
+        <div>
+          <a href="/assignments/final/">
+            Final Exam
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/chapters/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/chapters/">Chapters</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/chapters/chapter1/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter1/">
+            Chapter 1
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter2/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter2/">
+            Chapter 2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter3/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter3/">
+            Chapter 3
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter4/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter4/">
+            Chapter 4
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter5/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter5/">
+            Chapter 5
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter6/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter6/">
+            Chapter 6
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter7/" class="dd-item active">
+        <div>
+          <a href="/chapters/chapter7/">
+            Chapter 7
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter8/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter8/">
+            Chapter 8
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter9/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter9/">
+            Chapter 9
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/bayesian/" class="dd-item">
+        <div>
+          <a href="/chapters/bayesian/">
+            Bayesian
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/post/" >
+   Announcements</option> 
+      <option value="/post/2020-03-03-colors/" >- Colors</option>
+      <option value="/post/2020-01-29-random_numbers_and_seeds/" >- Random Numbers and Seeds in R</option>
+      <option value="/post/2020-01-20-getting-started-with-r/" >- Getting Started with R</option>
+      <option value="/post/2020-01-16-welcome-to-data606/" >- Welcome to DATA606!</option>
+  
+    <option value="/course-overview/" >
+   Course Overview</option> 
+      <option value="/course-overview/schedule/" >- Schedule</option>
+      <option value="/course-overview/meetups/" >- Meetups</option>
+      <option value="/course-overview/textbooks/" >- Textbooks</option>
+      <option value="/course-overview/software/" >- Software</option>
+      <option value="/course-overview/links/" >- Links</option>
+      <option value="/course-overview/mathjax/" >- Math Equations</option>
+      <option value="/course-overview/materials/" >- Materials</option>
+  
+    <option value="/assignments/" >
+   Assignments</option>
+    <option value="/chapters/" >
+   Chapters</option> 
+      <option value="/chapters/chapter1/" >- Chapter 1</option>
+      <option value="/chapters/chapter2/" >- Chapter 2</option>
+      <option value="/chapters/chapter3/" >- Chapter 3</option>
+      <option value="/chapters/chapter4/" >- Chapter 4</option>
+      <option value="/chapters/chapter5/" >- Chapter 5</option>
+      <option value="/chapters/chapter6/" >- Chapter 6</option>
+      <option value="/chapters/chapter7/"  selected>- Chapter 7</option>
+      <option value="/chapters/chapter8/" >- Chapter 8</option>
+      <option value="/chapters/chapter9/" >- Chapter 9</option>
+      <option value="/chapters/bayesian/" >- Bayesian</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Chapter 7</h1>
+    
+    
+    
+    
+
+<!-- 
+See issue with underscores in MathJax equations here: https://gohugo.io/content-management/formats/#issues-with-markdown
+The solution, put backticks (`) around the LaTeX equation
+-->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<h2 id="inference-for-numerical-data">Inference for Numerical Data</h2>
+
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+
+<ul>
+<li>Use the $t$-distribution for inference on a single mean, difference of paired (dependent) means, and difference of independent means.</li>
+<li>Explain why the $t$-distribution helps make up for the additional variability introduced by using $s$ (sample standard deviation) in calculation of the standard error, in place of $\sigma$ (population standard deviation).</li>
+<li>Describe how the $t$-distribution is different from the normal distribution, and what ?heavy tail? means in this context.</li>
+<li>Note that the $t$-distribution has a single parameter, degrees of freedom, and as the degrees of freedom increases this distribution approaches the normal distribution.</li>
+<li>Use a $t$-statistic, with degrees of freedom $df = n - 1$ for inference for a population mean:
+
+<ul>
+<li>Standard error: $SE = \frac{s}{\sqrt{n}}$</li>
+<li>Confidence interval: <code>$\bar{x} \pm t_{df}^\star SE$</code></li>
+<li>Hypothesis test: <code>$T_{df} = \frac{\bar{x} - \mu}{SE}$</code>
+\end{itemize}</li>
+</ul></li>
+<li>Describe how to obtain a p-value for a $t$-test and a critical $t$-score (<code>$t^\star_{df}$</code>) for a confidence interval.</li>
+<li>Define observations as paired if each observation in one dataset has a special correspondence or connection with exactly one observation in the other data set.</li>
+<li>Carry out inference for paired data by first subtracting the paired observations from each other, and then treating the set of differences as a new numerical variable on which to do inference (such as a confidence interval or hypothesis test for the average difference).</li>
+<li>Calculate the standard error of the difference between means of two paired (dependent) samples as <code>$SE = \frac{s_{diff}}{\sqrt{n_{diff}}}$</code> and use this standard error in hypothesis testing and confidence intervals comparing means of paired (dependent) groups.</li>
+<li>Use a $t$-statistic, with degrees of freedom <code>$df = n_{diff} - 1$</code> for inference for a population mean:
+\begin{itemize}
+
+<ul>
+<li>Standard error: $SE = \frac{s}{\sqrt{n}}$</li>
+<li>Confidence interval: <code>$\bar{x}_{diff} \pm t_{df}^\star SE$</code></li>
+<li>Hypothesis test: <code>$T_{df} = \frac{\bar{x}_{diff} - \mu_{diff}}{SE}$</code>. Note that <code>$\mu_{diff}$</code> is often 0, since often <code>$H_0: \mu_{diff} = 0$</code>.</li>
+</ul></li>
+<li>Recognize that a good interpretation of a confidence interval for the difference between two parameters includes a comparative statement (mentioning which group has the larger parameter).</li>
+<li>Recognize that a confidence interval for the difference between two parameters that doesn?t include 0 is in agreement with a hypothesis test where the null hypothesis that sets the two parameters equal to each other is rejected.</li>
+<li>Calculate the standard error of the difference between means of two independent samples as <code>$SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$</code>, and use this standard error in hypothesis testing and confidence intervals comparing means of independent groups.</li>
+<li>Use a $t$-statistic, with degrees of freedom <code>$df = min(n_1 - 1, n_2 - 1)$</code> for inference for a population mean:
+
+<ul>
+<li>Standard error: <code>$\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$</code></li>
+<li>Confidence interval: <code>$(\bar{x}_1 - \bar{x}_2) \pm t_{df}^\star SE$</code></li>
+<li>Hypothesis test: <code>$T_{df} = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{SE}$</code>. Note that $\mu_{diff}$ is often 0, since often <code>$H_0: \mu_1 - \mu_2 = 0$</code>.</li>
+</ul></li>
+<li>Calculate the power of a test for a given effect size and significance level in two steps: (1) Find the cutoff for the sample statistic that will allow the null hypothesis to be rejected at the given significance level, (2) Calculate the probability of obtaining that sample statistic given the effect size.</li>
+<li>Explain how power changes for changes in effect size, sample size, significance level, and standard error.</li>
+<li>Define analysis of variance (ANOVA) as a statistical inference method that is used to determine if the variability in the sample means is so large that it seems unlikely to be from chance alone by simultaneously considering many groups at once.</li>
+<li>Recognize that the null hypothesis in ANOVA sets all means equal to each other, and the alternative hypothesis suggest that at least one mean is different.
+\begin{itemize}
+
+<ul>
+<li><code>$H_0: \mu_1 = \mu_2 = \cdots = \mu_k$</code></li>
+<li>$H_A:$ At least one mean is different</li>
+</ul></li>
+<li>List the conditions necessary for performing ANOVA
+
+<ol>
+<li>the observations should be independent within and across groups</li>
+<li>the data within each group are nearly normal</li>
+<li>the variability across the groups is about equal<br />
+and check if they are met using graphical diagnostics.</li>
+</ol></li>
+<li>Recognize that the test statistic for ANOVA, the F statistic, is calculated as the ratio of the mean square between groups (MSG, variability between groups) and mean square error (MSE, variability within errors), and has two degrees of freedom, one for the numerator (<code>$df_{G} = k - 1$</code>, where $k$ is the number of groups) and one for the denominator (<code>$df_{E} = n - k$</code>, where $n$ is the total sample size).
+
+<ul>
+<li>Note that you won&rsquo;t be expected to calculate MSG or MSE from the raw data, but you should have a conceptual understanding of how they&rsquo;re calculated and what they measure.</li>
+</ul></li>
+<li>Describe why calculation of the p-value for ANOVA is always &ldquo;one sided&rdquo;.</li>
+<li>Describe why conducting many $t$-tests for differences between each pair of means leads to an increased Type 1 Error rate, and we use a corrected significance level (Bonferroni corection, $\alpha^\star = \alpha / K$, where $K$ is the e number of comparisons being considered) to combat inflating this error rate.</li>
+<li>Describe why it is possible to reject the null hypothesis in ANOVA but not find significant differences between groups as a result of pairwise comparisons.</li>
+</ul>
+
+<h3 id="supplemental-readings">Supplemental Readings</h3>
+
+<ul>
+<li><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp7.pdf">OpenIntro Statistics slides</a></li>
+</ul>
+
+<h3 id="videos">Videos</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uVEj2uBJfq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RYVIGj1l4xs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K0QZ9_4w0HU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/emZ24asR2F4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vnjjhQDedvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W36DMVJ4Ibo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HGFiWMA5OC8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/THG0P3YNbdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/chapters/chapter6/" title="Chapter 6"> <i class="fa fa-chevron-left"></i><label>Chapter 6</label></a>
+    <a class="nav nav-next" href="/chapters/chapter8/" title="Chapter 8" style="margin-right: 0px;"><label>Chapter 8</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 29/04/2017
+    </div>
+    
+
+    <div class="github-link">
+      <a href="https://github.com/jbryer/DATA606Fall2020/tree/master/content/chapters/chapter7.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

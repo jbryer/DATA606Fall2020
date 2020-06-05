@@ -1,0 +1,21 @@
+---
+title: "Colors"
+author: "Jason Bryer"
+date: 2020-02-12
+draft: false
+categories: ["R"]
+tags: ["colors", "plots"]
+---
+
+Upon grading the labs I noticed there is interest in adding color to the plots. I understand and appreciate the desire to make your figures more aesthetically pleasing. I have used colors to make the figures fit the overall style of whatever publication they are going to be used in. However, my general advice is to only use color when it adds value. For example, coloring bars or points based upon a quantitative variable is often very helpful. I generally ask myself this when adding color: "Does the addition of color enhance the interpretation of my data or is it distracting?
+
+If you are to use color, choosing a color palette that uses color blind safe colors is important. Here is a  article I found that provides a good introduction and principles: https://venngage.com/blog/color-blind-friendly-palette/
+
+Additionally, there are palettes designed for different purposes (qualitative for quantitative variables). I have found [this] website a really useful resource for picking pallets. 
+I also use [Color Brewer](http://colorbrewer2.org) very useful for picking colors. Many of the pallets are built into `ggplot2` with the `XXX_color_brewer` function.
+
+Some important references for data visualization more broadly (i.e. not limited to use of colors):
+
+* Edward Tufte's [*Visual Display of Quantitative Information*](https://www.edwardtufte.com/tufte/books_vdqi)
+* William Cleveland's [*Visualizing Data*](https://www.amazon.com/Visualizing-Data-William-S-Cleveland/dp/0963488406) and [*The Elements of Graphing Data*](https://www.amazon.com/gp/product/0963488414/ref=dbs_a_def_rwt_bibl_vppi_i0)
+* Leland Wilkinson's [*The Grammar of Graphics*](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=sr_1_1?s=books&ie=UTF8&qid=1550692580&sr=1-1&keywords=grammar+of+graphics) and Hadley Wickham's [*ggplot2: Elegant Graphics for Data Analysis*](https://www.amazon.com/gp/product/0963488414/ref=dbs_a_def_rwt_bibl_vppi_i0)

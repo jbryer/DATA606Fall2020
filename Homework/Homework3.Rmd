@@ -1,0 +1,148 @@
+---
+title: "Chapter 3 - Probability"
+author: ""
+output:
+    pdf_document:
+        extra_dependencies: ["geometry", "multicol", "multirow"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Dice rolls.** (3.6, p. 92) If you roll a pair of fair dice, what is the probability of
+
+(a) getting a sum of 1?
+(b) getting a sum of 5?
+(c) getting a sum of 12?
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Poverty and language**. (3.8, p. 93) The American Community Survey is an ongoing survey that provides data every year to give communities the current information they need to plan investments and services. The 2010 American Community Survey estimates that 14.6% of Americans live below the poverty line, 20.7% speak a language other than English (foreign language) at home, and 4.2% fall into both categories.
+
+(a) Are living below the poverty line and speaking a foreign language at home disjoint?
+(b) Draw a Venn diagram summarizing the variables and their associated probabilities.
+(c) What percent of Americans live below the poverty line and only speak English at home?
+(d) What percent of Americans live below the poverty line or speak a foreign language at home?
+(e) What percent of Americans live above the poverty line and only speak English at home?
+(f) Is the event that someone lives below the poverty line independent of the event that the person speaks a foreign language at home?
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Assortative mating**. (3.18, p. 111) Assortative mating is a nonrandom mating pattern where individuals with similar genotypes and/or phenotypes mate with one another more frequently than what would be expected under a random mating pattern. Researchers studying this topic collected data on eye colors of 204 Scandinavian men and their female partners. The table below summarizes the results. For simplicity, we only include heterosexual relationships in this exercise.
+
+\begin{center}
+\begin{tabular}{ll  ccc c}
+                                        &           & \multicolumn{3}{c}{\textit{Partner (female)}} \\
+\cline{3-5}
+                                        &           & Blue  & Brown     & Green     & Total \\
+\cline{2-6}
+                                        & Blue      & 78    & 23        & 13        & 114 \\
+\multirow{2}{*}{\textit{Self (male)}}   & Brown     & 19    & 23        & 12        & 54 \\
+                                        & Green     & 11    & 9         & 16        & 36 \\
+\cline{2-6}
+                                        & Total     & 108   & 55        & 41        & 204
+\end{tabular}
+\end{center}
+
+
+(a) What is the probability that a randomly chosen male respondent or his partner has blue eyes?
+(b) What is the probability that a randomly chosen male respondent with blue eyes has a partner with blue eyes?
+(c) Whatistheprobabilitythatarandomlychosenmalerespondentwithbrowneyeshasapartner with blue eyes? What about the probability of a randomly chosen male respondent with green eyes having a partner with blue eyes?
+(d) Does it appear that the eye colors of male respondents and their partners are independent? Explain your reasoning.
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Books on a bookshelf**. (3.26, p. 114) The table below shows the distribution of books on a bookcase
+based on whether they are nonfiction or fiction and hardcover or paperback.
+
+\begin{center}
+\begin{tabular}{ll  cc c}
+                                &           & \multicolumn{2}{c}{\textit{Format}} \\
+\cline{3-4}
+                                &           & Hardcover     & Paperback     & Total \\
+\cline{2-5}
+\multirow{2}{*}{\textit{Type}}  & Fiction   & 13            & 59            & 72 \\
+                                & Nonfiction& 15            & 8             & 23 \\
+\cline{2-5}
+                                & Total     & 28            & 67            & 95 \\
+\cline{2-5}
+\end{tabular}
+\end{center}
+
+(a) Find the probability of drawing a hardcover book first then a paperback fiction book second when drawing without replacement.
+(b) Determine the probability of drawing a fiction book first and then a hardcover book second, when drawing without replacement.
+(c) Calculate the probability of the scenario in part (b), except this time complete the calculations under the scenario where the first book is placed back on the bookcase before randomly drawing the second book.
+(d) The final answers to parts (b) and (c) are very similar. Explain why this is the case.
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Baggage fees**. (3.34, p. 124) An airline charges the following baggage fees: $25 for the first bag and $35 for the second. Suppose 54% of passengers have no checked luggage, 34% have one piece of checked luggage and 12% have two pieces. We suppose a negligible portion of people check more than two bags.
+
+(a) Build a probability model, compute the average revenue per passenger, and compute the corresponding standard deviation.
+(b) About how much revenue should the airline expect for a flight of 120 passengers? With what standard deviation? Note any assumptions you make and if you think they are justified.
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Income and gender**. (3.38, p. 128) The relative frequency table below displays the distribution of annual total personal income (in 2009 inflation-adjusted dollars) for a representative sample of 96,420,486 Americans. These data come from the American Community Survey for 2005-2009. This sample is comprised of 59% males and 41% females.
+
+\begin{center}
+\begin{tabular}{lr}
+  \hline
+\textit{Income}         & \textit{Total} \\
+  \hline
+\$1 to \$9,999 or loss  & 2.2\% \\
+\$10,000 to \$14,999    & 4.7\% \\
+\$15,000 to \$24,999    & 15.8\% \\
+\$25,000 to \$34,999    & 18.3\% \\
+\$35,000 to \$49,999    & 21.2\% \\
+\$50,000 to \$64,999    & 13.9\% \\
+\$65,000 to \$74,999    & 5.8\% \\
+\$75,000 to \$99,999    & 8.4\% \\
+\$100,000 or more       & 9.7\% \\
+   \hline
+\end{tabular}
+\end{center}
+
+(a) Describe the distribution of total personal income.
+(b) What is the probability that a randomly chosen US
+resident makes less than $50,000 per year?
+(c) What is the probability that a randomly chosen US resident makes less than $50,000 per year and is female?
+Note any assumptions you make.
+(d) The same data source indicates that 71.8% of females
+make less than $50,000 per year. Use this value to determine whether or not the assumption you made in part (c) is valid.
+
+
+
+
+

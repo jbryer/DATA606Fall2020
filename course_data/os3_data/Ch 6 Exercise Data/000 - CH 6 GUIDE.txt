@@ -1,0 +1,33 @@
+OpenIntro Statistics, Second Edition
+Chapter 6 Exercise Data Sets
+
+In R, use either the read.table() or read.csv() functions to read in a data set, depending on whether it is a txt or csv file.
+
+In Excel, open the data set in Excel and it should be automatically loaded in properly.
+
+Note: example way of generating a survey data set from the summary in R:
+# Survey of 10 individuals, where 8 said "Yes" and 2 said "No".
+survey <- data.frame(response = rep(c("Yes", "No"), c(8, 2)
+
+# A function for generating per-response data for 2-dimensional
+# contingency tables is also provided in the ContingencyTableToDataFrame.R
+# file.
+
+Have questions? Send an email to admin@openintro.org and we'll help you out.
+
+6.5 - leg_mari
+6.6 - scotus_healthcare
+6.12 - gss2010
+6.20 - leg_mari
+6.21 - scotus_healthcare
+6.23 - socialexp
+6.24 - stanford
+6.27 - scotus_healthcare
+6.29 - offshore_drilling
+6.31 - offshore_drilling
+6.32 - full_body_scan
+6.33 - sleep_deprivation
+6.46 - full_body_scan
+6.47 - offshore_drilling
+6.55 - socialexp
+6.56 - yawn

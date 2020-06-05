@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Course Overview on DATA606 - Fall 2020</title>
+    <link>/course-overview/</link>
+    <description>Recent content in Course Overview on DATA606 - Fall 2020</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/course-overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Schedule</title>
+      <link>/course-overview/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/schedule/</guid>
+      <description> Note: Schedule is subject to change. Last updated June 05, 2020 02:03PM.
+Click here to import the course calendar into your calendar application
+  Start End Topic    Monday, January 27, 2020 Sunday, February 02, 2020 Chapter 1 - Intro to Data  Monday, February 03, 2020 Sunday, February 09, 2020 Chapter 2 - Summarizing Data  Monday, February 10, 2020 Sunday, February 16, 2020 Chapter 3 - Probability  Monday, February 17, 2020 Sunday, March 01, 2020 Chapter 4 - Distributions  Monday, March 02, 2020 Sunday, March 08, 2020 Chapter 5 - Foundation for Inference  Monday, March 09, 2020 Sunday, March 15, 2020 Chapter 6 - Inference for Categorical Data  Monday, March 16, 2020 Sunday, March 22, 2020 Chapter 7 - Inference for Numerical Data  Monday, March 23, 2020 Sunday, April 19, 2020 Chapter 8 - Linear Regression  Wednesday, April 08, 2020 Thursday, April 16, 2020 Spring Recess  Monday, April 20, 2020 Sunday, May 03, 2020 Chapter 9 - Multiple and Logistic Regression  Monday, May 04, 2020 Wednesday, May 13, 2020 Intro to Bayesian Analysis  Thursday, May 14, 2020 Sunday, May 17, 2020 Final Exam    </description>
+    </item>
+    
+    <item>
+      <title>Meetups</title>
+      <link>/course-overview/meetups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/meetups/</guid>
+      <description>  There will be weekly meetups. You are encouraged to attend as many as you can but recordings will generally be availabe the day after the meetup.
+Join Zoom Meeting: https://cornell.zoom.us/my/jbryer
+Meeting ID: 618 788 4916
+One tap mobile: +16468769923,,6187884916# US (New York)
+Phone Number: +1 646 876 9923 US (New York)
+Find your local number: https://cornell.zoom.us/u/adW1fDoKSs
+Presentation Signup Sheet
+  Date  StartTime  Topic  Resources      Wed, Jan 29, 2020  8:30 pm  Intro to Data  Intro Course Slides, Intro Data Slides, Video    Wed, Feb 05, 2020  8:30 pm  Summarizing Data     Wed, Feb 12, 2020  8:30 pm  Probability     Wed, Feb 19, 2020  8:30 pm  Distributions Part I     Wed, Feb 26, 2020  8:30 pm  Distributions Part II     Wed, Mar 04, 2020  8:30 pm  Foundation for Inference     Wed, Mar 11, 2020  8:30 pm  Inference for Categorical Data     Wed, Mar 18, 2020  8:30 pm  Inference for Numerical Data     Wed, Mar 25, 2020  8:30 pm  Linear Regression     Wed, Apr 01, 2020  8:30 pm  Linear Regression     Wed, Apr 15, 2020  8:00 pm  Shiny (optional)     Wed, Apr 22, 2020  8:30 pm  Multiple Regression     Wed, Apr 29, 2020  8:30 pm  Logistic Regression     Wed, May 06, 2020  8:30 pm  Intro to Bayesian Analysis     Wed, May 13, 2020  8:30 pm  Wrap-Up      </description>
+    </item>
+    
+    <item>
+      <title>Textbooks</title>
+      <link>/course-overview/textbooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/textbooks/</guid>
+      <description>Required Diez, D.M., Barr, C.D., &amp;amp; Çetinkaya-Rundel, M. (2019). OpenIntro Statistics (4th Ed).
+ This is an open source textbook and can be downloaded in PDF format here, from the OpenIntro website, or a printed copy can be ordered from Amazon.
+ Navarro, D. (2018, version 0.6). Learning Statistics with R
+ This is free textbook that supplements a lot of the material covered in Diez and Barr. We will use the chapter on Bayesian analysis.</description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/course-overview/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/software/</guid>
+      <description>R and RStudio We will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.
+ R - Windows or Mac RStudio - Download Windows or Mac version from here  If using Windows, you also need to download RTools and ActivePerl.
+LaTeX LaTeX is a typesetting language for preparing documents.</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>/course-overview/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/links/</guid>
+      <description>These are some useful resources on the web for learning R. Feel free to suggest other resources by clicking the &amp;ldquo;Improve this page&amp;rdquo; button in the top right.
+Learning R  R for Data Science. Book by Garrett Grolemund and Hadley Wickham Quick-R. Kabakoff&amp;rsquo;s website. Great reference along with his book, R in Action. O&amp;rsquo;Reilly Try R. Great tutorial on R where you can try R commands directly from the web browser.</description>
+    </item>
+    
+    <item>
+      <title>Math Equations</title>
+      <link>/course-overview/mathjax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/mathjax/</guid>
+      <description>Occasionally you will need to type equations in homework and labs. R Markdown supports LaTeX style equations using the MathJax javascript library. I do not expect you to learn LaTeX for this course. Instead, I recommend using the free application [Daum Equation Editor](). It availabe online, as a Google Chrome Extension, or as a standalone Mac Application.
+Creating Equations with Daum Equation Editor Occasionally you will need to type equations in homework and labs.</description>
+    </item>
+    
+    <item>
+      <title>Materials</title>
+      <link>/course-overview/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/materials/</guid>
+      <description> These are supplemental materials. Click to download.
+ ProbStatBook.pdf Textbooks  os4.pdf Supplemental  os2_extra_inference_guide.pdf os2_prob_tables.pdf os4_tablet.pdf    </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DATA606 - Fall 2020</title>
+    <link>/</link>
+    <description>Recent content on DATA606 - Fall 2020</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chapter 1</title>
+      <link>/chapters/chapter1/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter1/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Introduction to Data Learning Objectives  Identify the type of variables (e.g. numerical or categorical; discrete or continuous; ordered or not ordered). Identify the relationship between multiple variables (i.e. independent vs. dependent). Define variables that are not associated as independent.</description>
+    </item>
+    
+    <item>
+      <title>Presentation</title>
+      <link>/assignments/presentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/presentation/</guid>
+      <description>You are responsible for presenting one practice homework problem during the semester. Please sign up as-soon-as possible as there are limited slots per week. Try to keep each presentation to five minutes or less. Sign-up on this Google Spreadsheet: https://docs.google.com/spreadsheets/d/1ZS-my1__uA6VvJpu8cyS5nsUxrjRPF-vS3_t5xN9Bgw/edit?usp=sharing
+Choose a problem from the following list:
+ Chapter 1 - Introduction to Data  Practice: Any odd numbered question.  Chapter 2 - Summarizing Data  Practice: Any odd numbered question.</description>
+    </item>
+    
+    <item>
+      <title>Schedule</title>
+      <link>/course-overview/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/schedule/</guid>
+      <description> Note: Schedule is subject to change. Last updated June 05, 2020 02:03PM.
+Click here to import the course calendar into your calendar application
+  Start End Topic    Monday, January 27, 2020 Sunday, February 02, 2020 Chapter 1 - Intro to Data  Monday, February 03, 2020 Sunday, February 09, 2020 Chapter 2 - Summarizing Data  Monday, February 10, 2020 Sunday, February 16, 2020 Chapter 3 - Probability  Monday, February 17, 2020 Sunday, March 01, 2020 Chapter 4 - Distributions  Monday, March 02, 2020 Sunday, March 08, 2020 Chapter 5 - Foundation for Inference  Monday, March 09, 2020 Sunday, March 15, 2020 Chapter 6 - Inference for Categorical Data  Monday, March 16, 2020 Sunday, March 22, 2020 Chapter 7 - Inference for Numerical Data  Monday, March 23, 2020 Sunday, April 19, 2020 Chapter 8 - Linear Regression  Wednesday, April 08, 2020 Thursday, April 16, 2020 Spring Recess  Monday, April 20, 2020 Sunday, May 03, 2020 Chapter 9 - Multiple and Logistic Regression  Monday, May 04, 2020 Wednesday, May 13, 2020 Intro to Bayesian Analysis  Thursday, May 14, 2020 Sunday, May 17, 2020 Final Exam    </description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>/chapters/chapter2/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter2/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Summarizing Data Learning Outcomes  Use appropriate visualizations for different types of data (e.g. histogram, barplot, scatterplot, boxplot, etc.). Use different measures of center and spread and be able to describe the robustness of different statistics.</description>
+    </item>
+    
+    <item>
+      <title>Meetups</title>
+      <link>/course-overview/meetups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/meetups/</guid>
+      <description>  There will be weekly meetups. You are encouraged to attend as many as you can but recordings will generally be availabe the day after the meetup.
+Join Zoom Meeting: https://cornell.zoom.us/my/jbryer
+Meeting ID: 618 788 4916
+One tap mobile: +16468769923,,6187884916# US (New York)
+Phone Number: +1 646 876 9923 US (New York)
+Find your local number: https://cornell.zoom.us/u/adW1fDoKSs
+Presentation Signup Sheet
+  Date  StartTime  Topic  Resources      Wed, Jan 29, 2020  8:30 pm  Intro to Data  Intro Course Slides, Intro Data Slides, Video    Wed, Feb 05, 2020  8:30 pm  Summarizing Data     Wed, Feb 12, 2020  8:30 pm  Probability     Wed, Feb 19, 2020  8:30 pm  Distributions Part I     Wed, Feb 26, 2020  8:30 pm  Distributions Part II     Wed, Mar 04, 2020  8:30 pm  Foundation for Inference     Wed, Mar 11, 2020  8:30 pm  Inference for Categorical Data     Wed, Mar 18, 2020  8:30 pm  Inference for Numerical Data     Wed, Mar 25, 2020  8:30 pm  Linear Regression     Wed, Apr 01, 2020  8:30 pm  Linear Regression     Wed, Apr 15, 2020  8:00 pm  Shiny (optional)     Wed, Apr 22, 2020  8:30 pm  Multiple Regression     Wed, Apr 29, 2020  8:30 pm  Logistic Regression     Wed, May 06, 2020  8:30 pm  Intro to Bayesian Analysis     Wed, May 13, 2020  8:30 pm  Wrap-Up      </description>
+    </item>
+    
+    <item>
+      <title>Chapter 3</title>
+      <link>/chapters/chapter3/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter3/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Probability Learning Outcomes  Define trial, outcome, and sample space. Define and describe the law of large numbers. Distinguish disjoint (also called mutually exclusive) and independent events. Use Venn diagrams to represent events and their probabilities.</description>
+    </item>
+    
+    <item>
+      <title>Homework</title>
+      <link>/assignments/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/homework/</guid>
+      <description>The solutions to the practice problems are at the end of the book and do not need to be handed in. Graded assignments should use the provided R markdown templates provided below. Data for the homework assignments, and for within the chapters too, can be downloaded here. Or alternatively all the data is included in the openintro R packge (use the data(package = &#39;openintro&#39;) command to list all the datasets available in that package).</description>
+    </item>
+    
+    <item>
+      <title>Textbooks</title>
+      <link>/course-overview/textbooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/textbooks/</guid>
+      <description>Required Diez, D.M., Barr, C.D., &amp;amp; Çetinkaya-Rundel, M. (2019). OpenIntro Statistics (4th Ed).
+ This is an open source textbook and can be downloaded in PDF format here, from the OpenIntro website, or a printed copy can be ordered from Amazon.
+ Navarro, D. (2018, version 0.6). Learning Statistics with R
+ This is free textbook that supplements a lot of the material covered in Diez and Barr. We will use the chapter on Bayesian analysis.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 4</title>
+      <link>/chapters/chapter4/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter4/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Distributions of Random Variables Learning Outcomes  Define the standardized (Z) score of a data point as the number of standard deviations it is away from the mean: $Z = \frac{x - \mu}{\sigma}$. Use the Z score  if the distribution is normal: to determine the percentile score of a data point (using technology or normal probability tables) regardless of the shape of the distribution: to assess whether or not the particular observation is considered to be unusual (more than 2 standard deviations away from the mean)  Depending on the shape of the distribution determine whether the median would have a negative, positive, or 0 Z score.</description>
+    </item>
+    
+    <item>
+      <title>Labs</title>
+      <link>/assignments/labs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/labs/</guid>
+      <description>These mini projects will have you explore statistical topics using R. You can use the startLab function in the DATA606 package to get started, or copy the templates from the links below. Please submit a PDF (preferred) or HTML file along with your Rmarkdown file. Be sure to answer all questions in lab, not just the on your own section. Labs should be submitted on Blackboard.
+Introduction to R and RStudio (Template) Introduction to Data (Template) Probability (Template) Distributions of Random Variables (Template) Foundations for Statistical Inference Sampling Distributions (Template) Confidence Levels (Template)  Inference for Categorical Data (Template) Inference for Numerical Data (Template) Introduction to Linear Regression (Template) Multiple Linear Regerssion (Template)  </description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/course-overview/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/software/</guid>
+      <description>R and RStudio We will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.
+ R - Windows or Mac RStudio - Download Windows or Mac version from here  If using Windows, you also need to download RTools and ActivePerl.
+LaTeX LaTeX is a typesetting language for preparing documents.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5</title>
+      <link>/chapters/chapter5/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter5/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Foundations for Inference Learning Outcomes  Define sample statistic as a point estimate for a population parameter, for example, the sample proportion is used to estimate the population proportion, and note that point estimate and sample statistic are synonymous.</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>/course-overview/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/links/</guid>
+      <description>These are some useful resources on the web for learning R. Feel free to suggest other resources by clicking the &amp;ldquo;Improve this page&amp;rdquo; button in the top right.
+Learning R  R for Data Science. Book by Garrett Grolemund and Hadley Wickham Quick-R. Kabakoff&amp;rsquo;s website. Great reference along with his book, R in Action. O&amp;rsquo;Reilly Try R. Great tutorial on R where you can try R commands directly from the web browser.</description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>/assignments/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/project/</guid>
+      <description>Download project proposal template Download project template  The purpose of the data project is for you to conduct a reproducible analysis with a data set of your choosing. There are two components to the project, the proposal, which will be graded on a pass/fail basis, and the final report. The outline for each of these are provided in the templates. When submitting the assignments, include the R Markdown file (change the name to include your last name, for example Bryer-Proposal.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 6</title>
+      <link>/chapters/chapter6/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter6/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Inference for Categorical Data Learning Outcomes  Define population proportion $p$ (parameter) and sample proportion $\hat{p}$ (point estimate). Calculate the sampling variability of the proportion, the standard error, as [ SE = \sqrt{\frac{p(1-p)}{n}}, ] where $p$ is the population proportion.</description>
+    </item>
+    
+    <item>
+      <title>Final Exam</title>
+      <link>/assignments/final/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/final/</guid>
+      <description>The final exam will be posted on Blackboard during the time indicated on the course schedule.</description>
+    </item>
+    
+    <item>
+      <title>Math Equations</title>
+      <link>/course-overview/mathjax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/mathjax/</guid>
+      <description>Occasionally you will need to type equations in homework and labs. R Markdown supports LaTeX style equations using the MathJax javascript library. I do not expect you to learn LaTeX for this course. Instead, I recommend using the free application [Daum Equation Editor](). It availabe online, as a Google Chrome Extension, or as a standalone Mac Application.
+Creating Equations with Daum Equation Editor Occasionally you will need to type equations in homework and labs.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 7</title>
+      <link>/chapters/chapter7/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter7/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Inference for Numerical Data Learning Outcomes  Use the $t$-distribution for inference on a single mean, difference of paired (dependent) means, and difference of independent means. Explain why the $t$-distribution helps make up for the additional variability introduced by using $s$ (sample standard deviation) in calculation of the standard error, in place of $\sigma$ (population standard deviation).</description>
+    </item>
+    
+    <item>
+      <title>Chapter 8</title>
+      <link>/chapters/chapter8/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter8/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Introduction to Linear Regression Learning Outcomes  Define the explanatory variable as the independent variable (predictor), and the response variable as the dependent variable (predicted). Plot the explanatory variable ($x$) on the x-axis and the response variable ($y$) on the y-axis, and fit a linear regression model $y = \beta_0 + \beta_1 x$ where $\beta_0$ is the intercept, and $\beta_1$ is the slope.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 9</title>
+      <link>/chapters/chapter9/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/chapter9/</guid>
+      <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });   Multiple and Logistic Regression Learning Outcomes  Define the multiple linear regression model as $$\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_k x_k$$ where there are $k$ predictors (explanatory variables). Interpret the estimate for the intercept ($b_0$) as the expected value of $y$ when all predictors are equal to 0, on average.</description>
+    </item>
+    
+    <item>
+      <title>Bayesian</title>
+      <link>/chapters/bayesian/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/chapters/bayesian/</guid>
+      <description>Bayesian Analysis Supplemental Readings  Chapter 17 of Learning Statistics with R (Navarro, version 0.6) Fitting a Model by Maximum Likelihood (Collier, 2013). Kruschke&amp;rsquo;s website for Doing Bayesian Data Analysis Kruschke&amp;rsquo;s blog Andrew Gelman&amp;rsquo;s blog - Posts about bayesian statistics  Videos Rasmus B&amp;aring;&amp;aring;th&amp;rsquo;s Introduction to Bayesian Data Analysis Video Series    John Kruschke&amp;rsquo;s Video Series Bayesian Methods Interpret Data Better
+ Bayesian Estimation Supersedes the t Test</description>
+    </item>
+    
+    <item>
+      <title>Materials</title>
+      <link>/course-overview/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/course-overview/materials/</guid>
+      <description> These are supplemental materials. Click to download.
+ ProbStatBook.pdf Textbooks  os4.pdf Supplemental  os2_extra_inference_guide.pdf os2_prob_tables.pdf os4_tablet.pdf    </description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>/post/2020-03-03-colors/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-03-03-colors/</guid>
+      <description>Upon grading the labs I noticed there is interest in adding color to the plots. I understand and appreciate the desire to make your figures more aesthetically pleasing. I have used colors to make the figures fit the overall style of whatever publication they are going to be used in. However, my general advice is to only use color when it adds value. For example, coloring bars or points based upon a quantitative variable is often very helpful.</description>
+    </item>
+    
+    <item>
+      <title>Random Numbers and Seeds in R</title>
+      <link>/post/2020-01-29-random_numbers_and_seeds/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-01-29-random_numbers_and_seeds/</guid>
+      <description>To explore how R generates randome numbers, we will use the rnorm function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the mean and sd parameters). With n = 1 we will get two random numbers.
+rnorm(n = 1) ## [1] 0.7346193 rnorm(n = 1) ## [1] -1.246086 Each time you run the command you will get a different number.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with R</title>
+      <link>/post/2020-01-20-getting-started-with-r/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-01-20-getting-started-with-r/</guid>
+      <description>To get started with the labs, you will need to install R and other supporting applications. Links to download all the software is on the Software page at http://data606.net/software which is available on the Course Overview menu. Once you are in RStudio, you will need to install a number of R packages using the following two commands:
+install.packages(c(&amp;#39;openintro&amp;#39;,&amp;#39;OIdata&amp;#39;,&amp;#39;devtools&amp;#39;,&amp;#39;tidyverse&amp;#39;, &amp;#39;ggplot2&amp;#39;, &amp;#39;psych&amp;#39;,&amp;#39;reshape2&amp;#39;,&amp;#39;knitr&amp;#39;,&amp;#39;markdown&amp;#39;,&amp;#39;shiny&amp;#39;,&amp;#39;R.rsp&amp;#39;, &amp;#39;fivethirtyeight&amp;#39;)) devtools::install_github(&amp;quot;jbryer/DATA606&amp;quot;) Note that this course used to be listed as IS 606, hence the different package name.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to DATA606!</title>
+      <link>/post/2020-01-16-welcome-to-data606/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-01-16-welcome-to-data606/</guid>
+      <description>Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. In addition to teaching this course, I am Principal Investigator of a Department of Education grant to develop a Diagnostic Assessment and Achievement of College Skills (see www.DAACS.net for more information) and a Research Data Associate at Cornell University. Couple of important notes as you get started:
+ The course syllabus located here: https://fall2020.</description>
+    </item>
+    
+    <item>
+      <title>header</title>
+      <link>/_header/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>/_header/</guid>
+      <description>DATA606 - Fall 2020</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/_footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/_footer/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

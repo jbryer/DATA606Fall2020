@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Working Directories on DATA606 - Fall 2020</title>
+    <link>/tags/working-directories/</link>
+    <description>Recent content in Working Directories on DATA606 - Fall 2020</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/working-directories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started with R</title>
+      <link>/post/2020-01-20-getting-started-with-r/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-01-20-getting-started-with-r/</guid>
+      <description>To get started with the labs, you will need to install R and other supporting applications. Links to download all the software is on the Software page at http://data606.net/software which is available on the Course Overview menu. Once you are in RStudio, you will need to install a number of R packages using the following two commands:
+install.packages(c(&amp;#39;openintro&amp;#39;,&amp;#39;OIdata&amp;#39;,&amp;#39;devtools&amp;#39;,&amp;#39;tidyverse&amp;#39;, &amp;#39;ggplot2&amp;#39;, &amp;#39;psych&amp;#39;,&amp;#39;reshape2&amp;#39;,&amp;#39;knitr&amp;#39;,&amp;#39;markdown&amp;#39;,&amp;#39;shiny&amp;#39;,&amp;#39;R.rsp&amp;#39;, &amp;#39;fivethirtyeight&amp;#39;)) devtools::install_github(&amp;quot;jbryer/DATA606&amp;quot;) Note that this course used to be listed as IS 606, hence the different package name.</description>
+    </item>
+    
+  </channel>
+</rss>

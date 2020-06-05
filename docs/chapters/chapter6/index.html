@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DATA606 - Fall 2020</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.49.2" />
+<title>Chapter 6 :: DATA606 - Fall 2020</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+	<link href="/theme-flex/variant-green.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/chapters/chapter6/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p>DATA606 - Fall 2020</p>
+
+  
+
+
+<style type='text/css'>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://data606fall2020.slack.com/messages"  rel="noopener">
+                  <i class='fa fa-slack'></i> Slack
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020/issues?utf8=%E2%9C%93&amp;q=is%3Aissue"  rel="noopener">
+                  <i class='fa fa-question-circle'></i> Q&A
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020"  rel="noopener">
+                  <i class='fa fa-github'></i> Github Repo
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://bbhosted.cuny.edu/webapps/login"  rel="noopener">
+                  <i class='fa fa-pencil'></i> Blackboard
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://sps.cuny.edu/academics/graduate/master-science-data-analytics-ms"  rel="noopener">
+                  <i class='fa fa-graduation-cap'></i> CUNY SPS
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/post/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/post/">Announcements</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/2020-03-03-colors/" class="dd-item">
+        <div>
+          <a href="/post/2020-03-03-colors/">
+            Colors
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-29-random_numbers_and_seeds/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-29-random_numbers_and_seeds/">
+            Random Numbers and Seeds in R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-20-getting-started-with-r/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-20-getting-started-with-r/">
+            Getting Started with R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-16-welcome-to-data606/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-16-welcome-to-data606/">
+            Welcome to DATA606!
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/course-overview/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/course-overview/">Course Overview</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/course-overview/schedule/" class="dd-item">
+        <div>
+          <a href="/course-overview/schedule/">
+            Schedule
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/meetups/" class="dd-item">
+        <div>
+          <a href="/course-overview/meetups/">
+            Meetups
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/textbooks/" class="dd-item">
+        <div>
+          <a href="/course-overview/textbooks/">
+            Textbooks
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/software/" class="dd-item">
+        <div>
+          <a href="/course-overview/software/">
+            Software
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/links/" class="dd-item">
+        <div>
+          <a href="/course-overview/links/">
+            Links
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/mathjax/" class="dd-item">
+        <div>
+          <a href="/course-overview/mathjax/">
+            Math Equations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/materials/" class="dd-item">
+        <div>
+          <a href="/course-overview/materials/">
+            Materials
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/assignments/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/assignments/">Assignments</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/assignments/presentation/" class="dd-item">
+        <div>
+          <a href="/assignments/presentation/">
+            Presentation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/homework/" class="dd-item">
+        <div>
+          <a href="/assignments/homework/">
+            Homework
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/labs/" class="dd-item">
+        <div>
+          <a href="/assignments/labs/">
+            Labs
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/project/" class="dd-item">
+        <div>
+          <a href="/assignments/project/">
+            Project
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/final/" class="dd-item">
+        <div>
+          <a href="/assignments/final/">
+            Final Exam
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/chapters/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/chapters/">Chapters</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/chapters/chapter1/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter1/">
+            Chapter 1
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter2/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter2/">
+            Chapter 2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter3/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter3/">
+            Chapter 3
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter4/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter4/">
+            Chapter 4
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter5/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter5/">
+            Chapter 5
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter6/" class="dd-item active">
+        <div>
+          <a href="/chapters/chapter6/">
+            Chapter 6
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter7/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter7/">
+            Chapter 7
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter8/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter8/">
+            Chapter 8
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter9/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter9/">
+            Chapter 9
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/bayesian/" class="dd-item">
+        <div>
+          <a href="/chapters/bayesian/">
+            Bayesian
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/post/" >
+   Announcements</option> 
+      <option value="/post/2020-03-03-colors/" >- Colors</option>
+      <option value="/post/2020-01-29-random_numbers_and_seeds/" >- Random Numbers and Seeds in R</option>
+      <option value="/post/2020-01-20-getting-started-with-r/" >- Getting Started with R</option>
+      <option value="/post/2020-01-16-welcome-to-data606/" >- Welcome to DATA606!</option>
+  
+    <option value="/course-overview/" >
+   Course Overview</option> 
+      <option value="/course-overview/schedule/" >- Schedule</option>
+      <option value="/course-overview/meetups/" >- Meetups</option>
+      <option value="/course-overview/textbooks/" >- Textbooks</option>
+      <option value="/course-overview/software/" >- Software</option>
+      <option value="/course-overview/links/" >- Links</option>
+      <option value="/course-overview/mathjax/" >- Math Equations</option>
+      <option value="/course-overview/materials/" >- Materials</option>
+  
+    <option value="/assignments/" >
+   Assignments</option>
+    <option value="/chapters/" >
+   Chapters</option> 
+      <option value="/chapters/chapter1/" >- Chapter 1</option>
+      <option value="/chapters/chapter2/" >- Chapter 2</option>
+      <option value="/chapters/chapter3/" >- Chapter 3</option>
+      <option value="/chapters/chapter4/" >- Chapter 4</option>
+      <option value="/chapters/chapter5/" >- Chapter 5</option>
+      <option value="/chapters/chapter6/"  selected>- Chapter 6</option>
+      <option value="/chapters/chapter7/" >- Chapter 7</option>
+      <option value="/chapters/chapter8/" >- Chapter 8</option>
+      <option value="/chapters/chapter9/" >- Chapter 9</option>
+      <option value="/chapters/bayesian/" >- Bayesian</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Chapter 6</h1>
+    
+    
+    
+    
+
+<!-- 
+See issue with underscores in MathJax equations here: https://gohugo.io/content-management/formats/#issues-with-markdown
+The solution, put backticks (`) around the LaTeX equation
+-->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<h2 id="inference-for-categorical-data">Inference for Categorical Data</h2>
+
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+
+<ul>
+<li>Define population proportion $p$ (parameter) and sample proportion $\hat{p}$ (point estimate).</li>
+<li>Calculate the sampling variability of the proportion, the standard error, as
+[ SE = \sqrt{\frac{p(1-p)}{n}}, ]
+where $p$ is the population proportion.
+
+<ul>
+<li>Note that when the population proportion $p$ is not known (almost always), this can be estimated using the sample proportion, $SE = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$.</li>
+</ul></li>
+<li>Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates, and that given certain conditions, this distribution will be nearly normal.
+
+<ul>
+<li>In the case of the proportion the CLT tells us that if <br />
+
+<ol>
+<li>the observations in the sample are independent, <br /></li>
+<li>the sample size is sufficiently large (checked using the success/failure condition: $np \ge 10$ and $n(1-p) \ge 10$), <br />
+then the distribution of the sample proportion will be nearly normal, centered at the true population proportion and with a standard error of $\sqrt{\frac{p(1-p)}{n}}$.
+[ \hat{p} \sim N \left( mean = p, SE = \sqrt{\frac{p(1-p)}{n}} \right) ]</li>
+</ol></li>
+</ul></li>
+<li>Note that if the CLT doesn?t apply and the sample proportion is low (close to 0) the sampling distribution will likely be right skewed, if the sample proportion is high (close to 1) the sampling distribution will likely be left skewed.</li>
+<li>Remember that confidence intervals are calculated as
+[ \text{point estimate} \pm \text{margin of error} ]
+and test statistics are calculated as
+[ \text{test statistic =} \frac{\text{point estimate - null value}}{\text{standard error}} ]</li>
+<li>Note that the standard error calculation for the confidence interval and the hypothesis test are different when dealing with proportions, since in the hypothesis test we need to assume that the null hypothesis is true &ndash; remember: p-value = P(observed or more extreme test statistic $|$ $H_0$ true).
+
+<ul>
+<li>For confidence intervals use $\hat{p}$ (observed sample proportion) when calculating the standard error and when checking the success/failure condition:
+<code>$SE_{\hat{p}} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$</code></li>
+<li>For hypothesis tests use $p_0$ (null value) when calculating the standard error and checking the success/failure condition:
+<code>$SE_{\hat{p}} = \sqrt{\frac{p_0 (1-p_0)}{n}}$</code></li>
+<li>Such a discrepancy doesn&rsquo;t exist when conducting inference for means, since the mean doesn&rsquo;t factor into the calculation of the standard error, while the proportion does.</li>
+</ul></li>
+<li>Calculate the required minimum sample size for a given margin of error at a given confidence level, and explain why we use $\hat{p} = 0.5$ if there are no previous studies suggesting a more accurate estimate.
+
+<ul>
+<li>Conceptually: When there is no additional information, 50\% chance of success is a good guess for events with only two outcomes (success or failure).</li>
+<li>Mathematically: Using $\hat{p} = 0.5$ yields the most conservative (highest) estimate for the required sample size.</li>
+</ul></li>
+<li>Note that the calculation of the standard error of the distribution of the difference in two independent sample proportions is different for a confidence interval and a hypothesis test.
+
+<ul>
+<li>confidence interval (and hypothesis test when <code>$H_0: p_1 -p_2 =$</code> some value other than 0):
+<code>$SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{\frac{ \hat{p}_1 (1 - \hat{p}_1)}{n_1} + \frac{ \hat{p}_2 (1 - \hat{p}_2)}{n_2} }$</code></li>
+<li>hypothesis test when <code>$H_0: p_1 -p_2 = 0$</code>:
+<code>$SE_{(\hat{p}_1 - \hat{p}_2)} = \sqrt{\frac{ \hat{p}_{pool} (1 - \hat{p}_{pool})}{n_1} + \frac{ \hat{p}_{pool} (1 - \hat{p}_{pool})}{n_2} }$</code>,
+where $\hat{p}_{pool}$ is the overall rate of success:
+<code>$\hat{p}_{pool} = \frac{\text{number of successes in group 1 + number of successes in group 2}}{n_1 + n_2}$</code></li>
+</ul></li>
+<li>Note that the reason for the difference in calculations of standard error is the same as in the case of the single proportion: when the null hypothesis claims that the two population proportions are equal, we need to take that into consideration when calculating the standard error for the hypothesis test, and use a common proportion for both samples.</li>
+<li>Use a chi-square test of goodness of fit to evaluate if the distribution of levels of a single categorical variable follows a hypothesized distribution.
+
+<ul>
+<li>$H_0:$ The distribution of the variable follows the hypothesized distribution, and any observed differences are due to chance.</li>
+<li>$H_A:$ The distribution of the variable does not follow the hypothesized distribution.</li>
+</ul></li>
+<li>Calculate the expected counts for a given level (cell) in a one-way table as the sample size times the hypothesized proportion for that level.</li>
+<li>Calculate the chi-square test statistic as
+<code>$\chi = \sum_{i = 1}^{k}  \frac{(\text{observed count} - \text{expected count})^2}{\text{expected count}}$</code>,
+where $k$ is the number of cells.</li>
+<li>Note that the chi-square distribution is right skewed with one parameter: degrees of freedom. In the case of a goodness of fit test, $df = # \text{of categories} - 1$.</li>
+<li>List the conditions necessary for performing a chi-square test (goodness of fit or independence)
+
+<ol>
+<li>the observations should be independent</li>
+<li>expected counts for each cell should be at least 5</li>
+<li>degrees of freedom should be at least 2 (if not, use methods for evaluating proportions)</li>
+</ol></li>
+<li>Describe how to use the chi-square table to obtain a p-value.</li>
+<li>When evaluating the independence of two categorical variables where at least one has more than two levels, use a chi-square test of independence.
+
+<ul>
+<li>$H_0:$ The two variables are independent.</li>
+<li>$H_A:$ The two variables are dependent.</li>
+</ul></li>
+<li>Calculate expected counts in two-way tables as
+[ E = \frac{\text{row total} \times \text{column total}}{\text{grand total}} ]</li>
+<li>Calculate the degrees of freedom for chi-square test of independence as $df = (R - 1) \times (C - 1)$, where $R$ is the number of rows in a two-way table, and $C$ is the number of columns.</li>
+<li>Note that there is no such thing as a chi-square confidence interval for proportions, since in the case of a categorical variables with many levels, there isn&rsquo;t one parameter to estimate.</li>
+<li>Use simulation methods when sample size conditions aren&rsquo;t met for inference for categorical variables.
+
+<ul>
+<li>Note that the $t$-distribution is only appropriate to use for means, when sample size isn&rsquo;t sufficiently large, and the parameter of interest is a proportion or a difference between two proportions, we need to use simulation.</li>
+</ul></li>
+<li>In hypothesis testing
+
+<ul>
+<li>for one categorical variable, generate simulated samples based on the null hypothesis, and then calculate the number of samples that are at least as extreme as the observed data.</li>
+<li>for two categorical variables, use a randomization test.</li>
+</ul></li>
+<li>Use bootstrap methods for confidence intervals for categorical variables with at most two levels.</li>
+</ul>
+
+<h3 id="supplemental-readings">Supplemental Readings</h3>
+
+<ul>
+<li><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp6.pdf">OpenIntro Statistics slides</a></li>
+</ul>
+
+<h3 id="videos">Videos</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_iFAZgpWsx0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Uk36WGxujkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yjrsfNdja0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/chapters/chapter5/" title="Chapter 5"> <i class="fa fa-chevron-left"></i><label>Chapter 5</label></a>
+    <a class="nav nav-next" href="/chapters/chapter7/" title="Chapter 7" style="margin-right: 0px;"><label>Chapter 7</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 29/04/2017
+    </div>
+    
+
+    <div class="github-link">
+      <a href="https://github.com/jbryer/DATA606Fall2020/tree/master/content/chapters/chapter6.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

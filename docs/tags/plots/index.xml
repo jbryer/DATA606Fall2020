@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plots on DATA606 - Fall 2020</title>
+    <link>/tags/plots/</link>
+    <description>Recent content in Plots on DATA606 - Fall 2020</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/plots/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Colors</title>
+      <link>/post/2020-03-03-colors/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-03-03-colors/</guid>
+      <description>Upon grading the labs I noticed there is interest in adding color to the plots. I understand and appreciate the desire to make your figures more aesthetically pleasing. I have used colors to make the figures fit the overall style of whatever publication they are going to be used in. However, my general advice is to only use color when it adds value. For example, coloring bars or points based upon a quantitative variable is often very helpful.</description>
+    </item>
+    
+  </channel>
+</rss>

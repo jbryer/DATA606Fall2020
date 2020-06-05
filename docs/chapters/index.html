@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DATA606 - Fall 2020</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.49.2" />
+<title>Chapters :: DATA606 - Fall 2020</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+	<link href="/theme-flex/variant-green.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/chapters/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p>DATA606 - Fall 2020</p>
+
+  
+
+
+<style type='text/css'>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://data606fall2020.slack.com/messages"  rel="noopener">
+                  <i class='fa fa-slack'></i> Slack
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020/issues?utf8=%E2%9C%93&amp;q=is%3Aissue"  rel="noopener">
+                  <i class='fa fa-question-circle'></i> Q&A
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020"  rel="noopener">
+                  <i class='fa fa-github'></i> Github Repo
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://bbhosted.cuny.edu/webapps/login"  rel="noopener">
+                  <i class='fa fa-pencil'></i> Blackboard
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://sps.cuny.edu/academics/graduate/master-science-data-analytics-ms"  rel="noopener">
+                  <i class='fa fa-graduation-cap'></i> CUNY SPS
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/post/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/post/">Announcements</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/2020-03-03-colors/" class="dd-item">
+        <div>
+          <a href="/post/2020-03-03-colors/">
+            Colors
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-29-random_numbers_and_seeds/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-29-random_numbers_and_seeds/">
+            Random Numbers and Seeds in R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-20-getting-started-with-r/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-20-getting-started-with-r/">
+            Getting Started with R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-16-welcome-to-data606/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-16-welcome-to-data606/">
+            Welcome to DATA606!
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/course-overview/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/course-overview/">Course Overview</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/course-overview/schedule/" class="dd-item">
+        <div>
+          <a href="/course-overview/schedule/">
+            Schedule
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/meetups/" class="dd-item">
+        <div>
+          <a href="/course-overview/meetups/">
+            Meetups
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/textbooks/" class="dd-item">
+        <div>
+          <a href="/course-overview/textbooks/">
+            Textbooks
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/software/" class="dd-item">
+        <div>
+          <a href="/course-overview/software/">
+            Software
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/links/" class="dd-item">
+        <div>
+          <a href="/course-overview/links/">
+            Links
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/mathjax/" class="dd-item">
+        <div>
+          <a href="/course-overview/mathjax/">
+            Math Equations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/materials/" class="dd-item">
+        <div>
+          <a href="/course-overview/materials/">
+            Materials
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/assignments/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/assignments/">Assignments</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/assignments/presentation/" class="dd-item">
+        <div>
+          <a href="/assignments/presentation/">
+            Presentation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/homework/" class="dd-item">
+        <div>
+          <a href="/assignments/homework/">
+            Homework
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/labs/" class="dd-item">
+        <div>
+          <a href="/assignments/labs/">
+            Labs
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/project/" class="dd-item">
+        <div>
+          <a href="/assignments/project/">
+            Project
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/final/" class="dd-item">
+        <div>
+          <a href="/assignments/final/">
+            Final Exam
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/chapters/" class="dd-item parent active haschildren
+        ">
+      <div>
+      <a href="/chapters/">Chapters</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/chapters/chapter1/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter1/">
+            Chapter 1
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter2/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter2/">
+            Chapter 2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter3/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter3/">
+            Chapter 3
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter4/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter4/">
+            Chapter 4
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter5/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter5/">
+            Chapter 5
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter6/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter6/">
+            Chapter 6
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter7/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter7/">
+            Chapter 7
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter8/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter8/">
+            Chapter 8
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter9/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter9/">
+            Chapter 9
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/bayesian/" class="dd-item">
+        <div>
+          <a href="/chapters/bayesian/">
+            Bayesian
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/post/" >
+   Announcements</option> 
+      <option value="/post/2020-03-03-colors/" >- Colors</option>
+      <option value="/post/2020-01-29-random_numbers_and_seeds/" >- Random Numbers and Seeds in R</option>
+      <option value="/post/2020-01-20-getting-started-with-r/" >- Getting Started with R</option>
+      <option value="/post/2020-01-16-welcome-to-data606/" >- Welcome to DATA606!</option>
+  
+    <option value="/course-overview/" >
+   Course Overview</option> 
+      <option value="/course-overview/schedule/" >- Schedule</option>
+      <option value="/course-overview/meetups/" >- Meetups</option>
+      <option value="/course-overview/textbooks/" >- Textbooks</option>
+      <option value="/course-overview/software/" >- Software</option>
+      <option value="/course-overview/links/" >- Links</option>
+      <option value="/course-overview/mathjax/" >- Math Equations</option>
+      <option value="/course-overview/materials/" >- Materials</option>
+  
+    <option value="/assignments/" >
+   Assignments</option>
+    <option value="/chapters/"  selected>
+   Chapters</option> 
+      <option value="/chapters/chapter1/" >- Chapter 1</option>
+      <option value="/chapters/chapter2/" >- Chapter 2</option>
+      <option value="/chapters/chapter3/" >- Chapter 3</option>
+      <option value="/chapters/chapter4/" >- Chapter 4</option>
+      <option value="/chapters/chapter5/" >- Chapter 5</option>
+      <option value="/chapters/chapter6/" >- Chapter 6</option>
+      <option value="/chapters/chapter7/" >- Chapter 7</option>
+      <option value="/chapters/chapter8/" >- Chapter 8</option>
+      <option value="/chapters/chapter9/" >- Chapter 9</option>
+      <option value="/chapters/bayesian/" >- Bayesian</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Chapters</h1>
+    
+    
+    
+
+
+
+<ul class="children children-h2">
+
+<span><h2>
+		<a href="/chapters/chapter1/" >Chapter 1</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Introduction to Data Learning Objectives  Identify the type of variables (e.g. numerical or categorical; discrete or continuous; ordered or not ordered). Identify the relationship between multiple variables (i.e. independent vs. dependent). Define variables that are not associated as independent.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter2/" >Chapter 2</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Summarizing Data Learning Outcomes  Use appropriate visualizations for different types of data (e.g. histogram, barplot, scatterplot, boxplot, etc.). Use different measures of center and spread and be able to describe the robustness of different statistics.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter3/" >Chapter 3</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Probability Learning Outcomes  Define trial, outcome, and sample space. Define and describe the law of large numbers. Distinguish disjoint (also called mutually exclusive) and independent events. Use Venn diagrams to represent events and their probabilities.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter4/" >Chapter 4</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Distributions of Random Variables Learning Outcomes  Define the standardized (Z) score of a data point as the number of standard deviations it is away from the mean: $Z = \frac{x - \mu}{\sigma}$. Use the Z score  if the distribution is normal: to determine the percentile score of a data point (using technology or normal probability tables) regardless of the shape of the distribution: to assess whether or not the particular observation is considered to be unusual (more than 2 standard deviations away from the mean)  Depending on the shape of the distribution determine whether the median would have a negative, positive, or 0 Z score.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter5/" >Chapter 5</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Foundations for Inference Learning Outcomes  Define sample statistic as a point estimate for a population parameter, for example, the sample proportion is used to estimate the population proportion, and note that point estimate and sample statistic are synonymous.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter6/" >Chapter 6</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Inference for Categorical Data Learning Outcomes  Define population proportion $p$ (parameter) and sample proportion $\hat{p}$ (point estimate). Calculate the sampling variability of the proportion, the standard error, as [ SE = \sqrt{\frac{p(1-p)}{n}}, ] where $p$ is the population proportion.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter7/" >Chapter 7</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Inference for Numerical Data Learning Outcomes  Use the $t$-distribution for inference on a single mean, difference of paired (dependent) means, and difference of independent means. Explain why the $t$-distribution helps make up for the additional variability introduced by using $s$ (sample standard deviation) in calculation of the standard error, in place of $\sigma$ (population standard deviation).</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter8/" >Chapter 8</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Introduction to Linear Regression Learning Outcomes  Define the explanatory variable as the independent variable (predictor), and the response variable as the dependent variable (predicted). Plot the explanatory variable ($x$) on the x-axis and the response variable ($y$) on the y-axis, and fit a linear regression model $y = \beta_0 + \beta_1 x$ where $\beta_0$ is the intercept, and $\beta_1$ is the slope.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/chapter9/" >Chapter 9</a></h2>
+<p>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\[','\]']], processEscapes: true, processEnvironments: true, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["AMSmath.js", "AMSsymbols.js"] } } });   Multiple and Logistic Regression Learning Outcomes  Define the multiple linear regression model as $$\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_k x_k$$ where there are $k$ predictors (explanatory variables). Interpret the estimate for the intercept ($b_0$) as the expected value of $y$ when all predictors are equal to 0, on average.</p>
+</span>
+
+<span><h2>
+		<a href="/chapters/bayesian/" >Bayesian</a></h2>
+<p>Bayesian Analysis Supplemental Readings  Chapter 17 of Learning Statistics with R (Navarro, version 0.6) Fitting a Model by Maximum Likelihood (Collier, 2013). Kruschke&rsquo;s website for Doing Bayesian Data Analysis Kruschke&rsquo;s blog Andrew Gelman&rsquo;s blog - Posts about bayesian statistics  Videos Rasmus B&aring;&aring;th&rsquo;s Introduction to Bayesian Data Analysis Video Series    John Kruschke&rsquo;s Video Series Bayesian Methods Interpret Data Better
+ Bayesian Estimation Supersedes the t Test</p>
+</span>
+</ul>
+
+
+
+
+
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/assignments/final/" title="Final Exam"> <i class="fa fa-chevron-left"></i><label>Final Exam</label></a>
+    <a class="nav nav-next" href="/chapters/chapter1/" title="Chapter 1" style="margin-right: 0px;"><label>Chapter 1</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 29/04/2017
+    </div>
+    
+
+    <div class="github-link">
+      <a href="https://github.com/jbryer/DATA606Fall2020/tree/master/content/chapters/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

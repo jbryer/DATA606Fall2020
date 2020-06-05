@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DATA606 - Fall 2020</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.49.2" />
+<title>DATA606 - Fall 2020 :: DATA606 - Fall 2020</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+	<link href="/theme-flex/variant-green.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p>DATA606 - Fall 2020</p>
+
+  
+
+
+<style type='text/css'>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://data606fall2020.slack.com/messages"  rel="noopener">
+                  <i class='fa fa-slack'></i> Slack
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020/issues?utf8=%E2%9C%93&amp;q=is%3Aissue"  rel="noopener">
+                  <i class='fa fa-question-circle'></i> Q&A
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020"  rel="noopener">
+                  <i class='fa fa-github'></i> Github Repo
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://bbhosted.cuny.edu/webapps/login"  rel="noopener">
+                  <i class='fa fa-pencil'></i> Blackboard
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://sps.cuny.edu/academics/graduate/master-science-data-analytics-ms"  rel="noopener">
+                  <i class='fa fa-graduation-cap'></i> CUNY SPS
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/post/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/post/">Announcements</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/2020-03-03-colors/" class="dd-item">
+        <div>
+          <a href="/post/2020-03-03-colors/">
+            Colors
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-29-random_numbers_and_seeds/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-29-random_numbers_and_seeds/">
+            Random Numbers and Seeds in R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-20-getting-started-with-r/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-20-getting-started-with-r/">
+            Getting Started with R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-16-welcome-to-data606/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-16-welcome-to-data606/">
+            Welcome to DATA606!
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/course-overview/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/course-overview/">Course Overview</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/course-overview/schedule/" class="dd-item">
+        <div>
+          <a href="/course-overview/schedule/">
+            Schedule
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/meetups/" class="dd-item">
+        <div>
+          <a href="/course-overview/meetups/">
+            Meetups
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/textbooks/" class="dd-item">
+        <div>
+          <a href="/course-overview/textbooks/">
+            Textbooks
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/software/" class="dd-item">
+        <div>
+          <a href="/course-overview/software/">
+            Software
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/links/" class="dd-item">
+        <div>
+          <a href="/course-overview/links/">
+            Links
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/mathjax/" class="dd-item">
+        <div>
+          <a href="/course-overview/mathjax/">
+            Math Equations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/materials/" class="dd-item">
+        <div>
+          <a href="/course-overview/materials/">
+            Materials
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/assignments/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/assignments/">Assignments</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/assignments/presentation/" class="dd-item">
+        <div>
+          <a href="/assignments/presentation/">
+            Presentation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/homework/" class="dd-item">
+        <div>
+          <a href="/assignments/homework/">
+            Homework
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/labs/" class="dd-item">
+        <div>
+          <a href="/assignments/labs/">
+            Labs
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/project/" class="dd-item">
+        <div>
+          <a href="/assignments/project/">
+            Project
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/final/" class="dd-item">
+        <div>
+          <a href="/assignments/final/">
+            Final Exam
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/chapters/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/chapters/">Chapters</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/chapters/chapter1/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter1/">
+            Chapter 1
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter2/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter2/">
+            Chapter 2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter3/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter3/">
+            Chapter 3
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter4/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter4/">
+            Chapter 4
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter5/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter5/">
+            Chapter 5
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter6/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter6/">
+            Chapter 6
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter7/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter7/">
+            Chapter 7
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter8/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter8/">
+            Chapter 8
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter9/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter9/">
+            Chapter 9
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/bayesian/" class="dd-item">
+        <div>
+          <a href="/chapters/bayesian/">
+            Bayesian
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/post/" >
+   Announcements</option> 
+      <option value="/post/2020-03-03-colors/" >- Colors</option>
+      <option value="/post/2020-01-29-random_numbers_and_seeds/" >- Random Numbers and Seeds in R</option>
+      <option value="/post/2020-01-20-getting-started-with-r/" >- Getting Started with R</option>
+      <option value="/post/2020-01-16-welcome-to-data606/" >- Welcome to DATA606!</option>
+  
+    <option value="/course-overview/" >
+   Course Overview</option> 
+      <option value="/course-overview/schedule/" >- Schedule</option>
+      <option value="/course-overview/meetups/" >- Meetups</option>
+      <option value="/course-overview/textbooks/" >- Textbooks</option>
+      <option value="/course-overview/software/" >- Software</option>
+      <option value="/course-overview/links/" >- Links</option>
+      <option value="/course-overview/mathjax/" >- Math Equations</option>
+      <option value="/course-overview/materials/" >- Materials</option>
+  
+    <option value="/assignments/" >
+   Assignments</option>
+    <option value="/chapters/" >
+   Chapters</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    
+    
+    
+    
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
+</span>
+ 
+
+
+<!-- Calendly link widget begin -->
+
+<p><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<!-- Calendly link widget end --></p>
+
+<h1 id="data606-fall-2020">DATA606 - Fall 2020</h1>
+
+<p><strong>Instructor:</strong> Jason Bryer, Ph.D.<br />
+<strong>Class Meetup:</strong> Wednesday 8:30pm to 9:30pm<br />
+<strong>Office Hours:</strong> Mondays 8:30pm to 9:30pm; Fridays 11:00am to 12:00pm <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/data606/office-hours'});return false;">Schedule time to meet</a><br />
+<strong>Email:</strong> <a href="mailto:jason.bryer@sps.cuny.edu">jason.bryer@sps.cuny.edu</a></p>
+
+<h3 id="course-description">Course Description</h3>
+
+<p>This course covers basic techniques in probability and statistics that are important in the field of data analytics. Discrete probability models, sampling from infinite and finite populations, statistical distributions, basic Bayesian statistics, and non-parametric statistical techniques for categorical data are covered in this course. Each of these statistical concepts will be applied in a variety of real-world scenarios through the use of case studies and customized data sets.</p>
+
+<h3 id="course-learning-outcomes">Course Learning Outcomes:</h3>
+
+<p>By then end of the course, students should be able to:</p>
+
+<ul>
+<li>Understand the foundations of probability theory and perform basic probability calculations.</li>
+<li>Build basic stochastic models for commonly encountered business problems.</li>
+<li>Model situations involving uncertainty using appropriate probability distributions and conditional techniques.</li>
+<li>Explore and summarize data using descriptive statistics.</li>
+<li>Test hypotheses using classical and modern computational techniques.</li>
+<li>Construct estimators and calculate intervals using classical and modern computational techniques.</li>
+<li>Perform basic Bayesian statistical techniques for estimation and testing hypotheses.</li>
+</ul>
+
+<h3 id="program-learning-outcomes-addressed-by-the-course">Program Learning Outcomes addressed by the course:</h3>
+
+<ul>
+<li>Business Understanding.  Learn when probabilistic techniques apply to certain categories of business problems, discuss the sorts of solutions that are possible, and understand the limitations of these techniques.</li>
+<li>Foundational Math Skills. Explore and analyze data, build probabilistic and statistical models, construct estimators, and test hypotheses.</li>
+<li>Predictive Modeling.  Learn foundational techniques that underlie predictive modeling algorithms, such as Naïve Bayes.</li>
+<li>Presentation.  Complete and submit collaborative assignments using techniques from the course.</li>
+</ul>
+
+<h3 id="how-is-this-course-relevant-for-data-analytics-professionals">How is this course relevant for data analytics professionals?</h3>
+
+<p>Probabilistic techniques are the foundation of many data science applications from data exploration and visualization to outlier analysis, stochastic modelling, and data mining algorithms. This course will ensure that students have a strong understanding of these foundations.</p>
+
+<h3 id="grading">Grading</h3>
+
+<ul>
+<li><a href="/assignments/homework">Homework</a> (18%)</li>
+<li><a href="/assignments/labs">Labs</a> (40%)</li>
+<li><a href="/assignments/project">Data Project</a> (18%)</li>
+<li><a href="assignments/final/">Final exam</a> (18%)</li>
+<li><a href="/assignments/presentation">Meetup Presentation</a> (5%)</li>
+<li>Getting Aquainted (1%)</li>
+</ul>
+
+<h4 id="grade-distribution">Grade Distribution</h4>
+
+<table>
+<thead>
+<tr>
+<th>Quality of Performance</th>
+<th align="center">Letter Grade</th>
+<th align="center">Range %</th>
+<th align="center">GPA</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Excellent - work is of exceptional quality</td>
+<td align="center">A</td>
+<td align="center">93 - 100</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td>Excellent</td>
+<td align="center">A-</td>
+<td align="center">90 - 92.9</td>
+<td align="center">3.7</td>
+</tr>
+
+<tr>
+<td>Good - work is above average</td>
+<td align="center">B+</td>
+<td align="center">87 - 89.9</td>
+<td align="center">3.3</td>
+</tr>
+
+<tr>
+<td>Satisfactory</td>
+<td align="center">B</td>
+<td align="center">83 - 86.9</td>
+<td align="center">3</td>
+</tr>
+
+<tr>
+<td>Below Average</td>
+<td align="center">B-</td>
+<td align="center">80 - 82.9</td>
+<td align="center">2.7</td>
+</tr>
+
+<tr>
+<td>Poor</td>
+<td align="center">C+</td>
+<td align="center">77 - 79.9</td>
+<td align="center">2.3</td>
+</tr>
+
+<tr>
+<td>Poor</td>
+<td align="center">C</td>
+<td align="center">70 - 76.9</td>
+<td align="center">2</td>
+</tr>
+
+<tr>
+<td>Failure</td>
+<td align="center">F</td>
+<td align="center">&lt; 70</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="how-this-course-works">How This Course Works:</h3>
+
+<p>This course is conducted entirely online. Each week, you will have various resources made available, including weekly readings from the textbooks and occasionally additional readings provided by the instructor. Most weeks will have homework assignments to be submitted. There will also be a presentation required and a forum post introduction required. You are expected to complete all assignments by their due dates.</p>
+
+<p>Meetup presentations will comprise the solution and presentation to the class of one of the suggested problems for study from the weekly materials (not the graded homework problems). Each student must present one problem throughout the semester. Problems are chosen by entering your name and problem in the Google Spreadsheet. Note there is a maximum of three presentations per meetup and presentations should be no more than five minutes. Additionally, prepare your presentation so that the slides or document (I suggest using R Markdown) will be shared on the course website. Problems are assigned first come, first served, so any problem not already chosen by another student is available.</p>
+
+<p>Further details on each of these assignments will be available in Blackboard and/or <a href="https://github.com/jbryer/DATA606Fall2020">this Github repository</a>.</p>
+
+<h3 id="textbooks">Textbooks</h3>
+
+<h4 id="required">Required</h4>
+
+<p>Diez, D.M., Barr, C.D., &amp; Çetinkaya-Rundel, M. (2019). <em>OpenIntro Statistics (4th Ed).</em></p>
+
+<blockquote>
+<p>This is an open source textbook and can be downloaded in PDF format <a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Textbook/os4.pdf?raw=true">here</a>, from the <a href="http://www.openintro.org/stat/textbook.php">OpenIntro</a> website, or a printed copy can be ordered from <a href="https://www.amazon.com/OpenIntro-Statistics-Fourth-David-Diez/dp/1943450072/ref=sr_1_2?keywords=openintro&amp;qid=1563548071&amp;s=gateway&amp;sr=8-2">Amazon</a>.</p>
+</blockquote>
+
+<p>Navarro, D. (2018, version 0.6). <em>Learning Statistics with R</em></p>
+
+<blockquote>
+<p>This is free textbook that supplements a lot of the material covered in Diez and Barr. We will use the chapter on Bayesian analysis. You can download a <a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Textbook/lsr-0.6.pdf?raw=true">PDF version</a>, <a href="https://learningstatisticswithr.com/book/">Bookdown version</a>, or visit the author&rsquo;s website at <a href="https://learningstatisticswithr.com/">learningstatisticswithr.com</a>.</p>
+</blockquote>
+
+<h4 id="recommended">Recommended</h4>
+
+<p>Wickham, H., &amp; Grolemund, G. (2016) <em>R for Data Science</em>. O&rsquo;Reilly.</p>
+
+<blockquote>
+<p>Most of this books is available freely online at <a href="http://r4ds.had.co.nz/">r4ds.had.co.nz/</a> but can be purchased from <a href="https://www.amazon.com/R-Data-Science-Hadley-Wickham/dp/1491910399/ref=as_li_ss_tl?ie=UTF8&amp;qid=1469550189&amp;sr=8-1&amp;keywords=R+for+data+science&amp;linkCode=sl1&amp;tag=devtools-20&amp;linkId=6fe0069f9605cf847ed96c191f4e84dd">Amazon</a>.</p>
+</blockquote>
+
+<p>Kabacoff, R.I. (2011). <em>R in Action</em>. Manning Publications.</p>
+
+<blockquote>
+<p>You can find a lot of the material in <em>R in Action</em> on Kabacoff&rsquo;s website, <a href="http://statmethods.net/">statmethods.net</a>. You can receive 38% off using the ria38 promo code when ordering from <a href="http://www.manning.com/kabacoff/">here</a>.</p>
+</blockquote>
+
+<p>Wickham, H. <em>Advanced R.</em> Baca Raton, FL: Taylor &amp; Francis Group.</p>
+
+<blockquote>
+<p>Most of this book is available freely online at <a href="http://adv-r.had.co.nz">adv-r.had.co.nz</a> but can be purchased from <a href="http://www.amazon.com/Advanced-Chapman-Hall-Hadley-Wickham/dp/1466586966/ref=sr_1_1?ie=UTF8&amp;qid=1436796895&amp;sr=8-1&amp;keywords=advanced+R&amp;pebp=1436796898598&amp;perid=0921JRRF9KW2Z67NAF5F">Amazon</a>.</p>
+</blockquote>
+
+<p>Kruschke, J.K. (2014). <em>Doing Bayesian Data Analysis, Second Edition: A Tutorial with R, JAGS, and Stan (2nd Ed)</em>. London: Academic Press.</p>
+
+<blockquote>
+<p>This book can be purchased from <a href="http://www.amazon.com/Doing-Bayesian-Data-Analysis-Second/dp/0124058884/ref=sr_1_1?ie=UTF8&amp;qid=1436794516&amp;sr=8-1&amp;keywords=doing+bayesian+data+analysis&amp;pebp=1436794519444&amp;perid=1CYGPQC4K9QKW7FPDGNP">Amazon</a>, but also check out the <a href="http://doingbayesiandataanalysis.blogspot.com/">author&rsquo;s webiste (doingbayesiandataanalysis.blogspot.com/)</a> for additional resources.</p>
+</blockquote>
+
+<h4 id="other-documents">Other Documents</h4>
+
+<ul>
+<li><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Textbook/os2_prob_tables.pdf?raw=true">Probability Tables</a></li>
+<li><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Textbook/os2_extra_inference_guide.pdf?raw=true">Inference Guide</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/">RStudio Cheat Sheets</a></li>
+<li><a href="http://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf">Probability Cheat Sheet</a></li>
+</ul>
+
+<h3 id="contact">Contact</h3>
+
+<p>Office Hours (cell phone or using Zoom): By appointment. You&rsquo;re encouraged to schedule an appointment, but you can try to call anytime.</p>
+
+<p>You are encouraged to ask us questions on the <a href="https://github.com/jbryer/DATA606Fall2020/issues">&ldquo;Github Issues&rdquo;</a> feature on the course repository where other students will be able to benefit from your inquiries. If you wish to ask a question in private, you can email the instructor directly.</p>
+
+<p>For the most part, you can expect me to respond to questions by email within 24 to 48 hours. If you do not hear back from me within 48 hours of sending an email, please resend your message.</p>
+
+<p>I will be checking in on the course regularly, just about every day and likely several times each day. Please do not hesitate to ask if you have questions or concerns.</p>
+
+<h3 id="accessibility-and-accommodations">Accessibility and Accommodations</h3>
+
+<p>The CUNY School of Professional Studies is firmly committed to making higher education accessible to students with disabilities by removing architectural barriers and providing programs and support services necessary for them to benefit from the instruction and resources of the University. Early planning is essential for many of the resources and accommodations provided. Please see: <a href="http://sps.cuny.edu/student_services/disabilityservices.html">http://sps.cuny.edu/student_services/disabilityservices.html</a></p>
+
+<h3 id="online-etiquette-and-anti-harassment-policy">Online Etiquette and Anti-Harassment Policy</h3>
+
+<p>The University strictly prohibits the use of University online resources or facilities, including Blackboard, for the purpose of harassment of any individual or for the posting of any material that is scandalous, libelous, offensive or otherwise against the University’s policies.  Please see: <a href="http://media.sps.cuny.edu/filestore/8/4/9_d018dae29d76f89/849_3c7d075b32c268e.pdf">http://media.sps.cuny.edu/filestore/8/4/9_d018dae29d76f89/849_3c7d075b32c268e.pdf</a></p>
+
+<h3 id="academic-integrity">Academic Integrity</h3>
+
+<p>Academic dishonesty is unacceptable and will not be tolerated. Cheating, forgery, plagiarism and collusion in dishonest acts undermine the educational mission of the City University of New York and the students&rsquo; personal and intellectual growth. Please see: <a href="http://media.sps.cuny.edu/filestore/8/3/9_dea303d5822ab91/839_1753cee9c9d90e9.pdf">http://media.sps.cuny.edu/filestore/8/3/9_dea303d5822ab91/839_1753cee9c9d90e9.pdf</a></p>
+
+<h3 id="student-support-services">Student Support Services</h3>
+
+<p>If you need any additional help, please visit Student Support Services:
+<a href="http://sps.cuny.edu/student_resources/">http://sps.cuny.edu/student_resources/</a></p>
+
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-next" href="/post/" title="Announcements" style="margin-right: 0px;"><label>Announcements</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 04/01/2018
+    </div>
+    
+
+    <div class="github-link">
+      <a href="https://github.com/jbryer/DATA606Fall2020/tree/master/content/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

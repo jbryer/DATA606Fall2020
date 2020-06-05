@@ -1,0 +1,50 @@
+---
+title: "Meetups"
+description: "Meetups"
+weight: 2
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r schedule-setup, echo=FALSE, warning=FALSE, message=FALSE}
+library(readxl)
+library(lubridate)
+# library(flextable)
+library(kableExtra)
+
+options(knitr.kable.NA = '')
+
+lastModified <- format(file.info('../../Schedule.xlsx')[1,]$mtime, '%B %d, %Y %I:%M%p')
+
+meetups <- read_excel('../../Schedule.xlsx', sheet = 'Meetups')
+meetups$day <- as.Date(meetups$Date)
+meetups$label <- paste0('Meetup ', meetups$StartTime, '\n', meetups$Topic)
+# meetups$label <- meetups$Topic
+meetups$color <- '#4A235A'
+meetups$fill <- NA
+```
+
+
+There will be weekly meetups. You are encouraged to attend as many as you can but recordings will generally be availabe the day after the meetup.
+
+Join Zoom Meeting: https://cornell.zoom.us/my/jbryer  
+Meeting ID: 618 788 4916  
+One tap mobile: +16468769923,,6187884916# US (New York)  
+Phone Number: +1 646 876 9923 US (New York)  
+Find your local number: https://cornell.zoom.us/u/adW1fDoKSs
+
+
+
+[Presentation Signup Sheet](https://docs.google.com/spreadsheets/d/1ZS-my1__uA6VvJpu8cyS5nsUxrjRPF-vS3_t5xN9Bgw/edit?usp=sharing)
+
+```{r schedule-table, echo=FALSE, results='asis'}
+# meetups$Date <- format(meetups$Date, '%a, %b %d')
+meetups$Date <- format(meetups$Date, format = '%a, %b %d, %Y')
+knitr::kable(meetups[,c('Date','StartTime','Topic','Resources')], ) %>%
+	kable_styling(full_width = F)
+# meetups[,c('Date','StartTime','Topic','Resources')] %>% 
+# 	regulartable() %>% autofit()
+
+```
+

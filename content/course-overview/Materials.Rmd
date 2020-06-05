@@ -1,0 +1,38 @@
+---
+title: "Materials"
+description: "Materials"
+weight: 10
+editor_options:
+  chunk_output_type: console
+---
+
+These are supplemental materials. Click to download.
+
+```{r schedule-setup, echo=FALSE, warning=FALSE, message=FALSE, results='asis'}
+
+file_links <- function(dir, outdir, html_path, prefix = '') {
+	files <- list.files(dir, include.dirs = FALSE)
+	if(!dir.exists(outdir)) {
+		dir.create(outdir, recursive = TRUE)
+	}
+	for(i in files) {
+		if(dir.exists(paste0(dir, '/', i))) {
+			cat(paste0(prefix, '* ', i, '\n'))
+			file_links(dir = paste0(dir, '/', i),
+					   outdir = paste0(outdir, '/', i),
+					   html_path = paste0(html_path, '/', i),
+					   prefix = paste0(prefix, '    '))
+		} else {
+			file.copy(paste0(dir, '/', i),
+					  paste0(outdir, '/', i))
+			cat(paste0(prefix, '* [', i, '](', html_path, '/', i, ')\n'))
+		}
+	}
+}
+
+unlink('../../docs/materials', recursive = TRUE, force = FALSE)
+file_links(dir = '../../Resources', outdir = '../../docs/materials', html_path = '/materials')
+
+```
+
+

@@ -1,0 +1,31 @@
+OpenIntro Statistics, Second Edition
+Chapter 1 Exercise Data Sets
+
+In R, use either the read.table() or read.csv() functions to read in a data set, depending on whether it is a txt or csv file.
+
+In Excel, open the data set in Excel and it should be automatically loaded in properly.
+
+Have questions? Send an email to admin@openintro.org and we'll help you out.
+
+1.1 - migraine
+1.2 - sinusitis
+1.7 - iris
+1.8 - smoking
+1.13 - gss2010
+1.15 - gpa_study_hours
+1.16 - countyComplete
+1.19 - cia_factbook
+1.38 - mammals
+1.49 - cia_factbook
+1.51 - pm25_2011_durham
+1.54 - marathon
+1.61 - [simulated data]
+1.63 - countyComplete
+1.64 - countyComplete
+1.65 - antibiotics_in_children
+1.66 - immigration
+1.67 - dream
+1.68 - ppp_201503
+1.69 - avandia
+1.70 - heart_transplant
+

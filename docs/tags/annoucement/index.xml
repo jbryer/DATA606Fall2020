@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Annoucement on DATA606 - Fall 2020</title>
+    <link>/tags/annoucement/</link>
+    <description>Recent content in Annoucement on DATA606 - Fall 2020</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/annoucement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome to DATA606!</title>
+      <link>/post/2020-01-16-welcome-to-data606/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-01-16-welcome-to-data606/</guid>
+      <description>Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. In addition to teaching this course, I am Principal Investigator of a Department of Education grant to develop a Diagnostic Assessment and Achievement of College Skills (see www.DAACS.net for more information) and a Research Data Associate at Cornell University. Couple of important notes as you get started:
+ The course syllabus located here: https://fall2020.</description>
+    </item>
+    
+  </channel>
+</rss>

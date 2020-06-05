@@ -1,0 +1,43 @@
+OpenIntro Statistics, Second Edition
+Chapter 7 Exercise Data Sets
+
+In R, use either the read.table() or read.csv() functions to read in a data set, depending on whether it is a txt or csv file.
+
+In Excel, open the data set in Excel and it should be automatically loaded in properly.
+
+Have questions? Send an email to admin@openintro.org and we'll help you out.
+
+7.1 - resDemo1
+7.2 - resDemo2
+7.3 - association-1-3, association-4-6
+7.4 - association-7-12
+7.6 - husbands_wives
+7.7 - corr_match
+7.8 - corr_match
+7.11 - speed_gender_height
+7.12 - trees
+7.13 - coast_starlight
+7.14 - babiesCrawl
+7.15 - bdims
+7.16 - bdims
+7.23 - tourism
+7.24 - starbucks
+7.25 - coast_starlight
+7.26 - bdims
+7.27 - starbucks
+7.28 - helmet
+7.29 - murders
+7.30 - cats
+7.31 - outliers
+7.32 - outliers
+7.33 - urban_owner
+7.34 - babiesCrawl
+7.35 - bdims
+7.36 - bac
+7.37 - husbands_wives
+7.38 - husbands_wives
+7.39 - urban_owner
+7.40 - prof_evals
+7.41 - murders
+7.43 - murders
+7.44 - cats

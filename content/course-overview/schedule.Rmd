@@ -1,0 +1,133 @@
+---
+title: "Schedule"
+description: "Schedule"
+weight: 1
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r schedule-setup, echo=FALSE, warning=FALSE, message=FALSE}
+# devtools::install_github("gadenbuie/ggweekly")
+library(ggweekly)
+library(rlang) # Needed for the ggweekly.R script to work
+library(configr)
+# source('../../R/ggweekly.R') # Fixes issue with loading PT Sans fonts with PDF output
+source('../../R/createICS.R')
+library(ggplot2)
+library(readxl)
+library(lubridate)
+
+options(knitr.kable.NA = '')
+
+semester <- 'Spring 2020'
+
+palette <- c('#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462',
+			 '#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5','#ffed6f')
+
+lastModified <- format(file.info('../../Schedule.xlsx')[1,]$mtime, '%B %d, %Y %I:%M%p')
+
+meetups <- read_excel('../../Schedule.xlsx', sheet = 'Meetups')
+meetups$day <- as.Date(meetups$Date)
+meetups$label <- paste0('Meetup ', meetups$StartTime, '\n', meetups$Topic)
+# meetups$label <- meetups$Topic
+meetups$color <- '#4A235A'
+meetups$fill <- NA
+
+officeHours <- read_excel('../../Schedule.xlsx', sheet = 'Office_Hours')
+officeHours$day <- as.Date(officeHours$Date)
+officeHours$label <- paste0('Office Hours\n', officeHours$StartTime, '')
+officeHours$color <- '#145A32'
+officeHours$fill <- NA
+
+schedule <- rbind(meetups[,c('day', 'label', 'color', 'fill')],
+				  officeHours[,c('day', 'label', 'color', 'fill')])
+
+topics <- read_excel('../../Schedule.xlsx', sheet = 'Schedule')
+topics$Start <- as.Date(topics$Start)
+topics$End <- as.Date(topics$End)
+for(i in 1:nrow(topics)) {
+	schedule <- rbind(schedule, data.frame(
+		day = topics[i,]$Start,
+		label = paste0(topics[i,]$Topic, '\n\n\n'),
+		color = '#000000',
+		fill = palette[i]
+	))
+	dates <- seq(topics[i,]$Start, topics[i,]$End, by = 'day')[-1]
+	for(j in seq_along(dates)) {
+		schedule <- rbind(schedule, data.frame(
+			day = dates[j],
+			label = NA,
+			color = NA,
+			fill = palette[i]
+		))
+	}
+}
+
+start_day <- lubridate::floor_date(min(meetups$day), "month")
+end_day <- lubridate::ceiling_date(max(meetups$day), "month") - 1
+```
+
+
+*Note: Schedule is subject to change. Last updated `r lastModified`.*
+
+```{r createICS, echo=FALSE, results='hide'}
+config <- read.config('../../config.toml')
+outDir <- config$publishDir
+meetups$starttime <- parse_date_time(paste0(as.character(meetups$Date), ' ', meetups$StartTime),
+							    orders = "%Y-%m-%d %H:%M %p", tz = "America/New_York")
+meetups$endtime <- parse_date_time(paste0(as.character(meetups$Date), ' ', meetups$EndTime),
+								   orders = "%Y-%m-%d %H:%M %p", tz = "America/New_York")
+meetups$location <- 'Zoom'
+meetups$summary <- meetups$Topic
+meetups$description <- ''
+
+ics.file <- paste0('../../', outDir, '/DATA606.ics')
+createICS(meetups) %>% write(file = ics.file)
+```
+
+[Click here to import the course calendar into your calendar application](/DATA606.ics)
+
+```{r printTopics, echo=FALSE, warning=FALSE, message=FALSE, results='asis'}
+topics$Start <- format(topics$Start, format = '%A, %B %d, %Y')
+topics$End <- format(topics$End, format = '%A, %B %d, %Y')
+knitr::kable(topics)
+```
+
+
+```{r schedule-figure, echo=FALSE, warning=FALSE, message=FALSE}
+# ggweek_planner(
+# 	start_day = start_day, 
+# 	end_day = end_day, 
+# 	show_month_boundaries = FALSE, 
+# 	show_month_start_day = FALSE,
+# 	week_start = "epiweek",
+# 	week_start_label = "week",
+# 	base_font_family = '',
+# 	font_label_text = 'Helvetica',
+# 	holidays = NULL,
+# 	highlight_days = schedule) +
+# 	ggplot2::ggtitle("EPSY 630 - Spring 2020") +  
+# 	ggplot2::facet_wrap(~ month, scales = 'free', ncol=1)
+
+schedule$label <- gsub('<br/>', '\n', schedule$label)
+
+months <- seq(start_day, end_day, by = "1 month")
+for(i in seq_along(months)) {
+	gcal <- ggweek_planner(
+		start_day = months[i],
+		end_day = months[i] + days_in_month(month(months[i])) - 1,	
+		show_month_boundaries = FALSE, 
+		show_month_start_day = FALSE,
+		week_start = "epiweek",
+		week_start_label = "week",
+		font_label_family = 'Helvetica',
+		holidays = NULL,
+		highlight_days = schedule
+		) +
+		ggplot2::theme(plot.margin = ggplot2::margin(0.5, 0.5, 0.5, 0.5, "in")) +
+		ggplot2::ggtitle(paste0('EPSY 630 - ', semester, ' - ', month(months[i], label = TRUE, abbr = FALSE)))
+	print(gcal)
+}
+
+```

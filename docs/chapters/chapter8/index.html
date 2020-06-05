@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DATA606 - Fall 2020</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.49.2" />
+<title>Chapter 8 :: DATA606 - Fall 2020</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+	<link href="/theme-flex/variant-green.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/chapters/chapter8/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p>DATA606 - Fall 2020</p>
+
+  
+
+
+<style type='text/css'>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://data606fall2020.slack.com/messages"  rel="noopener">
+                  <i class='fa fa-slack'></i> Slack
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020/issues?utf8=%E2%9C%93&amp;q=is%3Aissue"  rel="noopener">
+                  <i class='fa fa-question-circle'></i> Q&A
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/jbryer/DATA606Fall2020"  rel="noopener">
+                  <i class='fa fa-github'></i> Github Repo
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://bbhosted.cuny.edu/webapps/login"  rel="noopener">
+                  <i class='fa fa-pencil'></i> Blackboard
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://sps.cuny.edu/academics/graduate/master-science-data-analytics-ms"  rel="noopener">
+                  <i class='fa fa-graduation-cap'></i> CUNY SPS
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/post/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/post/">Announcements</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/2020-03-03-colors/" class="dd-item">
+        <div>
+          <a href="/post/2020-03-03-colors/">
+            Colors
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-29-random_numbers_and_seeds/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-29-random_numbers_and_seeds/">
+            Random Numbers and Seeds in R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-20-getting-started-with-r/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-20-getting-started-with-r/">
+            Getting Started with R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/2020-01-16-welcome-to-data606/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-16-welcome-to-data606/">
+            Welcome to DATA606!
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/course-overview/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/course-overview/">Course Overview</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/course-overview/schedule/" class="dd-item">
+        <div>
+          <a href="/course-overview/schedule/">
+            Schedule
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/meetups/" class="dd-item">
+        <div>
+          <a href="/course-overview/meetups/">
+            Meetups
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/textbooks/" class="dd-item">
+        <div>
+          <a href="/course-overview/textbooks/">
+            Textbooks
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/software/" class="dd-item">
+        <div>
+          <a href="/course-overview/software/">
+            Software
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/links/" class="dd-item">
+        <div>
+          <a href="/course-overview/links/">
+            Links
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/mathjax/" class="dd-item">
+        <div>
+          <a href="/course-overview/mathjax/">
+            Math Equations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/course-overview/materials/" class="dd-item">
+        <div>
+          <a href="/course-overview/materials/">
+            Materials
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/assignments/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/assignments/">Assignments</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/assignments/presentation/" class="dd-item">
+        <div>
+          <a href="/assignments/presentation/">
+            Presentation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/homework/" class="dd-item">
+        <div>
+          <a href="/assignments/homework/">
+            Homework
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/labs/" class="dd-item">
+        <div>
+          <a href="/assignments/labs/">
+            Labs
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/project/" class="dd-item">
+        <div>
+          <a href="/assignments/project/">
+            Project
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/assignments/final/" class="dd-item">
+        <div>
+          <a href="/assignments/final/">
+            Final Exam
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/chapters/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/chapters/">Chapters</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/chapters/chapter1/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter1/">
+            Chapter 1
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter2/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter2/">
+            Chapter 2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter3/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter3/">
+            Chapter 3
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter4/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter4/">
+            Chapter 4
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter5/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter5/">
+            Chapter 5
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter6/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter6/">
+            Chapter 6
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter7/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter7/">
+            Chapter 7
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter8/" class="dd-item active">
+        <div>
+          <a href="/chapters/chapter8/">
+            Chapter 8
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/chapter9/" class="dd-item">
+        <div>
+          <a href="/chapters/chapter9/">
+            Chapter 9
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/chapters/bayesian/" class="dd-item">
+        <div>
+          <a href="/chapters/bayesian/">
+            Bayesian
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/post/" >
+   Announcements</option> 
+      <option value="/post/2020-03-03-colors/" >- Colors</option>
+      <option value="/post/2020-01-29-random_numbers_and_seeds/" >- Random Numbers and Seeds in R</option>
+      <option value="/post/2020-01-20-getting-started-with-r/" >- Getting Started with R</option>
+      <option value="/post/2020-01-16-welcome-to-data606/" >- Welcome to DATA606!</option>
+  
+    <option value="/course-overview/" >
+   Course Overview</option> 
+      <option value="/course-overview/schedule/" >- Schedule</option>
+      <option value="/course-overview/meetups/" >- Meetups</option>
+      <option value="/course-overview/textbooks/" >- Textbooks</option>
+      <option value="/course-overview/software/" >- Software</option>
+      <option value="/course-overview/links/" >- Links</option>
+      <option value="/course-overview/mathjax/" >- Math Equations</option>
+      <option value="/course-overview/materials/" >- Materials</option>
+  
+    <option value="/assignments/" >
+   Assignments</option>
+    <option value="/chapters/" >
+   Chapters</option> 
+      <option value="/chapters/chapter1/" >- Chapter 1</option>
+      <option value="/chapters/chapter2/" >- Chapter 2</option>
+      <option value="/chapters/chapter3/" >- Chapter 3</option>
+      <option value="/chapters/chapter4/" >- Chapter 4</option>
+      <option value="/chapters/chapter5/" >- Chapter 5</option>
+      <option value="/chapters/chapter6/" >- Chapter 6</option>
+      <option value="/chapters/chapter7/" >- Chapter 7</option>
+      <option value="/chapters/chapter8/"  selected>- Chapter 8</option>
+      <option value="/chapters/chapter9/" >- Chapter 9</option>
+      <option value="/chapters/bayesian/" >- Bayesian</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Chapter 8</h1>
+    
+    
+    
+    
+
+<!-- 
+See issue with underscores in MathJax equations here: https://gohugo.io/content-management/formats/#issues-with-markdown
+The solution, put backticks (`) around the LaTeX equation
+-->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<h2 id="introduction-to-linear-regression">Introduction to Linear Regression</h2>
+
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+
+<ul>
+<li>Define the explanatory variable as the independent variable (predictor), and the response variable as the dependent variable (predicted).</li>
+<li>Plot the explanatory variable ($x$) on the x-axis and the response variable ($y$) on the y-axis, and fit a linear regression model
+<code>$y = \beta_0 + \beta_1 x$</code>
+where $\beta_0$ is the intercept, and $\beta_1$ is the slope.
+
+<ul>
+<li>Note that the point estimates (estimated from observed data) for $\beta_0$ and $\beta_1$ are $b_0$ and $b_1$, respectively.</li>
+</ul></li>
+<li>When describing the association between two numerical variables, evaluate
+
+<ul>
+<li>direction: positive ($x \uparrow, y \uparrow$), negative ($x \downarrow, y \uparrow$)</li>
+<li>form: linear or not</li>
+<li>strength: determined by the scatter around the underlying relationship</li>
+</ul></li>
+<li>Define correlation as the \emph{linear} association between two numerical variables.
+
+<ul>
+<li>Note that a relationship that is nonlinear is simply called an association.</li>
+</ul></li>
+<li>Note that correlation coefficient ($r$, also called Pearson&rsquo;s $r$) the following properties:
+
+<ul>
+<li>the magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables</li>
+<li>the sign of the correlation coefficient indicates the direction of association</li>
+<li>the correlation coefficient is always between -1 and 1, inclusive, with -1 indicating perfect negative linear association, +1 indicating perfect positive linear association, and 0 indicating no \emph{linear} relationship</li>
+<li>the correlation coefficient is unitless</li>
+<li>since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions)</li>
+<li>the correlation of X with Y is the same as of Y with X</li>
+<li>the correlation coefficient is sensitive to outliers</li>
+</ul></li>
+<li>Recall that correlation does not imply causation.</li>
+<li>Define residual ($e$) as the difference between the observed ($y$) and predicted ($\hat{y}$) values of the response variable.
+<code>$e_i = y_i - \hat{y}_i$</code></li>
+<li>Define the least squares line as the line that minimizes the sum of the squared residuals, and list conditions necessary for fitting such line:
+
+<ol>
+<li>linearity</li>
+<li>nearly normal residuals</li>
+<li>constant variability</li>
+</ol></li>
+<li>Define an indicator variable as a binary explanatory variable (with two levels).</li>
+<li>Calculate the estimate for the slope ($b_1$) as
+<code>$b_1 = R\frac{s_y}{s_x}$</code>,
+where $r$ is the correlation coefficient, $s_y$ is the standard deviation of the response variable, and $s_x$ is the standard deviation of the explanatory variable.</li>
+<li>Interpret the slope as
+
+<ul>
+<li>&ldquo;For each unit increase in $x$, we would expect $y$ to increase/decrease on average by $|b_1|$ units&rdquo; when $x$ is numerical.</li>
+<li>&ldquo;The average increase/decrease in the response variable when between the baseline level and the other level of the explanatory variable is $|b_1|$.&rdquo; when $x$ is categorical.</li>
+<li>Note that whether the response variable increases or decreases is determined by the sign of $b_1$.</li>
+</ul></li>
+<li>Note that the least squares line always passes through the average of the response and explanatory variables ($\bar{x},\bar{y}$).</li>
+<li>Use the above property to calculate the estimate for the slope ($b_0$) as
+<code>$b_0 = \bar{y} - b_1 \bar{x}$</code>,
+where $b_1$ is the slope, $\bar{y}$ is the average of the response variable, and $\bar{x}$ is the average of explanatory variable.</li>
+<li>Interpret the intercept as
+
+<ul>
+<li>&ldquo;When $x = 0$, we would expect $y$ to equal, on average, $b_0$.&rdquo; when $x$ is numerical.</li>
+<li>&ldquo;The expected average value of the response variable for the reference level of the explanatory variable is $b_0$.&rdquo; when $x$ is categorical.</li>
+</ul></li>
+<li>Predict the value of the response variable for a given value of the explanatory variable, $x^\star$, by plugging in $x^\star$ in the in the linear model:
+<code>$\hat{y} = b_0 + b_1 x^\star$</code>
+
+<ul>
+<li>Only predict for values of $x^\star$ that are in the range of the observed data.</li>
+<li>Do not extrapolate beyond the range of the data, unless you are confident that the linear pattern continues.</li>
+</ul></li>
+<li>Define $R^2$ as the percentage of the variability in the response variable explained by the the explanatory variable.
+
+<ul>
+<li>For a good model, we would like this number to be as close to 100\% as possible.</li>
+<li>This value is calculated as the square of the correlation coefficient, and is between 0 and 1, inclusive.</li>
+</ul></li>
+<li>Define a leverage point as a point that lies away from the center of the data in the horizontal direction.</li>
+<li>Define an influential point as a point that influences (changes) the slope of the regression line.
+
+<ul>
+<li>This is usually a leverage point that is away from the trajectory of the rest of the data.</li>
+</ul></li>
+<li>Do not remove outliers from an analysis without good reason.</li>
+<li>Be cautious about using a categorical explanatory variable when one of the levels has very few observations, as these may act as influential points.</li>
+<li>Determine whether an explanatory variable is a significant predictor for the response variable using the $t$-test and the associated p-value in the regression output.</li>
+<li>Set the null hypothesis testing for the significance of the predictor as <code>$H_0: \beta_1 = 0$</code>, and recognize that the standard software output yields the p-value for the two-sided alternative hypothesis.
+
+<ul>
+<li>Note that $\beta_1 = 0$ means the regression line is horizontal, hence suggesting that there is no relationship between the explanatory and the response variables.</li>
+</ul></li>
+<li>Calculate the T score for the hypothesis test as
+<code>$T_{df}=\frac { b_{ 1 }-{ null\quad value } }{ SE_{ b_{ 1 } } }$</code>
+with $df = n - 2$.
+
+<ul>
+<li>Note that the T score has $n - 2$ degrees of freedom since we lose one degree of freedom for each parameter we estimate, and in this case we estimate the intercept and the slope.</li>
+</ul></li>
+<li>Note that a hypothesis test for the intercept is often irrelevant since it&rsquo;s usually out of the range of the data, and hence it is usually an extrapolation.</li>
+<li>Calculate a confidence interval for the slope as
+<code>$b_1 \pm t^\star_{df} SE_{b_1}$</code>
+where $df = n - 2$ and <code>$t^\star_{df}$</code> is the critical score associated with the given confidence level at the desired degrees of freedom.
+
+<ul>
+<li>Note that the standard error of the slope estimate <code>$SE_{b_1}$</code> can be found on the regression output.</li>
+</ul></li>
+</ul>
+
+<h3 id="supplemental-readings">Supplemental Readings</h3>
+
+<ul>
+<li><p><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp8.pdf">OpenIntro Statistics slides</a></p></li>
+
+<li><p><a href="https://www.openintro.org/download.php?file=stat_extra_interaction_effects&amp;referrer=/stat/textbook.php">Interaction Terms</a></p></li>
+
+<li><p><a href="https://www.openintro.org/download.php?file=stat_extra_nonlinear_relationships&amp;referrer=/stat/textbook.php">Regerssion for non-linear terms</a></p></li>
+
+<li><p><a href="https://htmlpreview.github.io/?https://github.com/jbryer/DATA606Fall2019/blob/master/Pages/Linear_Regression_SAT.html">Linear regression with SAT scores</a> - This document outlines the implementation of linear regression step-by-step emphasizing visualizations.</p></li>
+</ul>
+
+<h3 id="videos">Videos</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mPvtZhdPBhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z8DmwG2G4Qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jZEKAlo1E54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/depiT-hTaGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/chapters/chapter7/" title="Chapter 7"> <i class="fa fa-chevron-left"></i><label>Chapter 7</label></a>
+    <a class="nav nav-next" href="/chapters/chapter9/" title="Chapter 9" style="margin-right: 0px;"><label>Chapter 9</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 29/04/2017
+    </div>
+    
+
+    <div class="github-link">
+      <a href="https://github.com/jbryer/DATA606Fall2020/tree/master/content/chapters/chapter8.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

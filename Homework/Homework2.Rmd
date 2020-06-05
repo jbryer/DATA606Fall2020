@@ -1,0 +1,167 @@
+---
+title: "Chapter 2 - Summarizing Data"
+author: ""
+output:
+    pdf_document:
+        extra_dependencies: ["geometry", "multicol", "multirow"]
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Stats scores**. (2.33, p. 78) Below are the final exam scores of twenty introductory statistics students. 
+
+57, 66, 69, 71, 72, 73, 74, 77, 78, 78, 79, 79, 81, 81, 82, 83, 83, 88, 89, 94
+
+Create a box plot of the distribution of these scores. The five number summary provided below may be useful.
+
+\begin{center}
+\renewcommand\arraystretch{1.5}
+\begin{tabular}{ccccc}
+Min & Q1    & Q2 (Median)   & Q3    & Max \\
+\hline
+57  & 72.5  & 78.5          & 82.5  & 94 \\
+\end{tabular}
+\end{center}
+
+```{r, echo = FALSE}
+scores <- c(57, 66, 69, 71, 72, 73, 74, 77, 78, 78, 79, 79, 81, 81, 82, 83, 83, 88, 89, 94)
+
+```
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Mix-and-match**. (2.10, p. 57) Describe the distribution in the histograms below and match them to the box plots.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=3}
+library(openintro)
+set.seed(7365)
+sym = rnorm(1000, mean = 60, sd = 3)
+uni = runif(1000, min = 0, max = 100)
+rs = rgamma(1000, shape = 3, rate = 2)
+par(mar=c(4, 3.6, 0, 0), las = 1, mgp = c(2.7, 0.7, 0), 
+    mfrow = c(1,6), 
+    cex.lab = 1.5, cex.axis = 1.5)
+histPlot(sym, xlab = "(a)", ylab = "", col = COL[1], axes = FALSE)
+axis(1, seq(50,70,10))
+histPlot(uni, xlab = "(b)", ylab = "", col = COL[1], axes = FALSE)
+axis(1, seq(0,100,50))
+histPlot(rs, xlab = "(c)", ylab = "", col = COL[1], axes = FALSE)
+axis(1, seq(0,6,2))
+boxPlot(rs, xlab = "(1)", ylab = "", col = COL[1,3])
+boxPlot(sym, xlab = "(2)", ylab = "", col = COL[1,3])
+boxPlot(uni, xlab = "(3)", ylab = "", col = COL[1,3])
+```
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Distributions and appropriate statistics, Part II**. (2.16, p. 59) For each of the following, state whether you expect the distribution to be symmetric, right skewed, or left skewed. Also specify whether the mean or median would best represent a typical observation in the data, and whether the variability of observations would be best represented using the standard deviation or IQR. Explain your reasoning.
+
+(a) Housing prices in a country where 25% of the houses cost below $350,000, 50% of the houses cost below $450,000, 75% of the houses cost below $1,000,000 and there are a meaningful number of houses that cost more than $6,000,000.
+(b) Housing prices in a country where 25% of the houses cost below $300,000, 50% of the houses cost below $600,000, 75% of the houses cost below $900,000 and very few houses that cost more than $1,200,000.
+(c) Number of alcoholic drinks consumed by college students in a given week. Assume that most of these students don't drink since they are under 21 years old, and only a few drink excessively.
+(d) Annual salaries of the employees at a Fortune 500 company where only a few high level
+executives earn much higher salaries than the all other employees.
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+**Heart transplants.** (2.26, p. 76) The Stanford University Heart Transplant Study was conducted to determine whether an  experimental heart transplant program increased lifespan. Each patient entering the program was designated an official heart transplant candidate, meaning that he was gravely ill and would most likely benefit from a new heart. Some patients got a transplant and some did not. The variable *transplant* indicates which group the patients were in; patients in the treatment group got a transplant and those in the control group did not. Of the 34 patients in the control group, 30 died. Of the 69 people in the treatment group, 45 died. Another variable called *survived* was used to indicate whether or not the patient was alive at the end of the study.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width="50%", fig.height=3}
+library(openintro)
+data(heartTr)
+# mosaic plot -------------------------------------------------------
+par(mar = c(0, 0, 0, 0), las = 1, mgp = c(2.7, 0.9, 0))
+mosaicplot(transplant ~ survived, data = heartTr, 
+           main = "", xlab = "", ylab = "", color = COL[1],
+           cex.axis = 1.5)
+
+# box plot ----------------------------------------------------------
+par(mar = c(2, 4.8, 0, 0), las = 1, mgp = c(3.5, 0.7, 0), 
+    cex.lab = 1.5, cex.axis = 1.5)
+boxPlot(heartTr$survtime, fact = heartTr$transplant, 
+        ylab = "Survival Time (days)", col = COL[1,2])
+```
+
+(a) Based on the mosaic plot, is survival independent of whether or not the 
+patient got a transplant? Explain your reasoning.
+(b) What do the box plots below suggest about the efficacy (effectiveness) of the heart transplant treatment.
+(c) What proportion of patients in the treatment group and what proportion of 
+patients in the control group died?
+(d) One approach for investigating whether or not the treatment is effective 
+is to use a randomization technique.
+
+i. What are the claims being tested?
+ii. The paragraph below describes the set up for such approach, if we were 
+to do it without using statistical software. Fill in the blanks with a number 
+or phrase, whichever is appropriate.
+
+> We write *alive* on __________ cards representing patients who were 
+alive at the end of the study, and *dead* on _________ cards 
+representing patients who were not. Then, we shuffle these cards and split them 
+into two groups: one group of size _________ representing treatment, and 
+another group of size __________ representing control. We calculate the 
+difference between the proportion of *dead* cards in the treatment and 
+control groups (treatment - control) and record this value. We repeat this 100 
+times to build a distribution centered at _________. Lastly, we calculate 
+the fraction of simulations where the simulated differences in proportions are 
+_________. If this fraction is low, we conclude that it is unlikely to 
+have observed such an outcome by chance and that the null hypothesis should 
+be rejected in favor of the alternative.
+
+iii. What do the simulation results shown below suggest about the effectiveness 
+of the transplant program?
+
+```{r fig.height=3, fig.show="hold", message=FALSE, warning=FALSE, include=FALSE, out.width="50%", results='hide'}
+# randomization -----------------------------------------------------
+diffs <- DATA606::inference(heartTr$survived, heartTr$transplant, 
+                  success = "dead", order = c("treatment","control"), 
+                  est = "proportion", type = "ht", method = "simulation", 
+                  nsim = 100, null = 0, alternative = "twosided", simdist = TRUE,
+                  seed = 95632)
+```
+
+\begin{center}
+```{r, results='hide', echo=FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width="75%", fig.height=3}
+# plot randomization distribution -----------------------------------
+par(mar = c(3.6, 2.2, 1, 1), las = 1, mgp = c(2.5, 0.7, 0), 
+    cex.axis = 1.5, cex.lab = 1.5)
+values  <- table(diffs)
+plot(diffs, type = "n", xlim = c(-0.25, 0.25), 
+     xlab = "simulated differences in proportions", 
+     ylab = "", axes = FALSE, ylim = c(0, max(values)))
+axis(1, at = seq(-0.25, 0.25, 0.05), 
+     labels = c(-0.25, NA,-0.15, NA,-0.05, NA, 0.05, NA, 0.15, NA, 0.25))
+for(i in 1:length(diffs)){
+  x   <- diffs[i]
+  rec <- sum(diffs == x)
+  points(rep(x, rec), 1:rec, pch = 20, cex = 0.8, col = COL[1])
+}
+```
+\end{center}
+
+
+
+
+

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/chapters/chapter1/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/assignments/presentation/</loc>
+  </url>
+  
+  <url>
+    <loc>/course-overview/schedule/</loc>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter2/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/course-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/course-overview/meetups/</loc>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter3/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/assignments/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignments/homework/</loc>
+  </url>
+  
+  <url>
+    <loc>/course-overview/textbooks/</loc>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter4/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/assignments/labs/</loc>
+  </url>
+  
+  <url>
+    <loc>/course-overview/software/</loc>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter5/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/chapters/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/course-overview/links/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignments/project/</loc>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter6/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/assignments/final/</loc>
+  </url>
+  
+  <url>
+    <loc>/course-overview/mathjax/</loc>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter7/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter8/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/chapters/chapter9/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/chapters/bayesian/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/course-overview/materials/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2020-03-03-colors/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-01-29-random_numbers_and_seeds/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-01-20-getting-started-with-r/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-01-16-welcome-to-data606/</loc>
+    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/_header/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/_footer/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/annoucement/</loc>
+    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/colors/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/plots/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/random-numbers/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/working-directories/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,22 @@
+OpenIntro Statistics, Second Edition
+Chapter 4 Exercise Data Sets
+
+In R, use either the read.table() or read.csv() functions to read in a data set, depending on whether it is a txt or csv file.
+
+In Excel, open the data set in Excel and it should be automatically loaded in properly.
+
+Have questions? Send an email to admin@openintro.org and we'll help you out.
+
+4.3 - credits
+4.4 - bdims
+4.11 - gss2010
+4.12 - gss2010
+4.14 - thanksgiving_spend
+4.15 - exclusive_relationship
+4.16 - age_at_mar
+4.22 - thanksgiving_spend
+4.24 - gifted
+4.26 - gifted
+4.33 - penny_ages
+4.39 - penny_ages
+4.41 - ipod

@@ -1,0 +1,51 @@
+baseURL = "/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+title = "DATA606 - Fall 2020"
+theme = "hugo-theme-docdock"
+themesdir = "themes/"
+
+publishDir = "docs/"
+
+ignoreFiles = ["\\.pdf$", "\\.r$", "\\.R$", "\\.Rd$", "\\.txt$", "\\.csv$", "\\.rda$", "\\.Rda$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[params]
+editURL = "https://github.com/jbryer/DATA606Fall2020/tree/master/content/"
+noHomeIcon = false # default is false
+noSearch = false # default is false
+showVisitedLinks = true # default is false
+themeStyle = "flex" # "flex" or "original"
+themeVariant = "green" # choose theme variant "green", "gold" , "gray", "blue" (default)
+ordersectionsby = "weight" # ordersectionsby = "title"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+
+[[menu.shortcuts]]
+pre = "<h3>Links</h3>"
+name = "<i class='fa fa-slack'></i> Slack"
+url = "https://data606fall2020.slack.com/messages"
+weight = 8
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-question-circle'></i> Q&A"
+url = "https://github.com/jbryer/DATA606Fall2020/issues?utf8=%E2%9C%93&q=is%3Aissue"
+weight = 9
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-github'></i> Github Repo"
+url = "https://github.com/jbryer/DATA606Fall2020"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-pencil'></i> Blackboard"
+url = "https://bbhosted.cuny.edu/webapps/login"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-graduation-cap'></i> CUNY SPS"
+url = "https://sps.cuny.edu/academics/graduate/master-science-data-analytics-ms"
+weight = 12
+

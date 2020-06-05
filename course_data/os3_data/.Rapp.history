@@ -1,0 +1,1202 @@
+library(openintro)
+library(help=openintro)
+=====> Navigate to folder <=====##
+# setwd("c://folder/of/interest")#
+#
+#=====> Load package and write files <=====##
+library(openintro)#
+#
+data(MLB)#
+write.table(MLB, "MLB.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ballBearing)#
+write.table(ballBearing, "ballBearing.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(cars)#
+write.table(cars, "cars.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(census)#
+write.table(census, "census.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(classData)#
+write.table(classData, "classData.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(credits)#
+write.table(credits, "credits.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(govRace10)#
+write.table(govRace10, "govRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(gradesTV)#
+write.table(gradesTV, "gradesTV.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(heartTr)#
+write.table(heartTr, "heartTr.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(houseRace10)#
+write.table(houseRace10, "houseRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ipod)#
+write.table(ipod, "ipod.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mammals)#
+write.table(mammals, "mammals.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marathon)#
+write.table(marathon, "marathon.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marioKart)#
+write.table(marioKart, "marioKart.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mlbBat10)#
+write.table(mlbBat10, "mlbBat10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(possum)#
+write.table(possum, "possum.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(prRace08)#
+write.table(prRace08, "prRace08.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(president)#
+write.table(president, "president.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(run10)#
+write.table(run10, "run10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(satGPA)#
+write.table(satGPA, "satGPA.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(senate10)#
+write.table(senate10, "senate10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(smoking)#
+write.table(smoking, "smoking.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(textbooks)#
+write.table(textbooks, "textbooks.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(tips)#
+write.table(tips, "tips.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(unempl)#
+write.table(unempl, "unempl.txt", quote=FALSE, sep="\t", row.names=FALSE)
+library(help=openintro)
+=====> Navigate to folder <=====##
+# setwd("c://folder/of/interest")#
+#
+#=====> Load package and write files <=====##
+library(openintro)#
+#
+data(MLB)#
+write.table(MLB, "MLB.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ballBearing)#
+write.table(ballBearing, "ballBearing.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(cars)#
+write.table(cars, "cars.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(census)#
+write.table(census, "census.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(classData)#
+write.table(classData, "classData.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(credits)#
+write.table(credits, "credits.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(govRace10)#
+write.table(govRace10, "govRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(gradesTV)#
+write.table(gradesTV, "gradesTV.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(heartTr)#
+write.table(heartTr, "heartTr.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(houseRace10)#
+write.table(houseRace10, "houseRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ipod)#
+write.table(ipod, "ipod.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mammals)#
+write.table(mammals, "mammals.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marathon)#
+write.table(marathon, "marathon.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marioKart)#
+write.table(marioKart, "marioKart.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mlbBat10)#
+write.table(mlbBat10, "mlbBat10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(possum)#
+write.table(possum, "possum.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(prRace08)#
+write.table(prRace08, "prRace08.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(president)#
+write.table(president, "president.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(run10)#
+write.table(run10, "run10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(satGPA)#
+write.table(satGPA, "satGPA.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(senateRace10)#
+write.table(senateRace10, "senateRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(smoking)#
+write.table(smoking, "smoking.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(textbooks)#
+write.table(textbooks, "textbooks.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(tips)#
+write.table(tips, "tips.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(unempl)#
+write.table(unempl, "unempl.txt", quote=FALSE, sep="\t", row.names=FALSE)
+library(OIdata)
+library(help=OIdata)
+____ Navigate to folder _____##
+# setwd("c://folder/of/interest")#
+#____ openintro _____##
+library(openintro)#
+#
+data(MLB)#
+write.table(MLB, "MLB.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ballBearing)#
+write.table(ballBearing, "ballBearing.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(cars)#
+write.table(cars, "cars.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(census)#
+write.table(census, "census.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(classData)#
+write.table(classData, "classData.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(credits)#
+write.table(credits, "credits.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(govRace10)#
+write.table(govRace10, "govRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(gradesTV)#
+write.table(gradesTV, "gradesTV.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(heartTr)#
+write.table(heartTr, "heartTr.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(houseRace10)#
+write.table(houseRace10, "houseRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ipod)#
+write.table(ipod, "ipod.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mammals)#
+write.table(mammals, "mammals.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marathon)#
+write.table(marathon, "marathon.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marioKart)#
+write.table(marioKart, "marioKart.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mlbBat10)#
+write.table(mlbBat10, "mlbBat10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(possum)#
+write.table(possum, "possum.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(prRace08)#
+write.table(prRace08, "prRace08.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(president)#
+write.table(president, "president.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(run10)#
+write.table(run10, "run10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(satGPA)#
+write.table(satGPA, "satGPA.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(senateRace10)#
+write.table(senateRace10, "senateRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(smoking)#
+write.table(smoking, "smoking.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(textbooks)#
+write.table(textbooks, "textbooks.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(tips)#
+write.table(tips, "tips.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(unempl)#
+write.table(unempl, "unempl.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#____ OIdata _____##
+library(OIdata)#
+#
+data(birds)#
+write.table(birds, "birds.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(esi)#
+write.table(esi, "esi.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(london_boroughs)#
+write.table(london_boroughs, "london_boroughs.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(military)#
+write.table(military, "military.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(murders)#
+write.table(murders, "murders.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(piracy)#
+write.table(piracy, "piracy.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(sp500)#
+write.table(sp500, "sp500.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(state)#
+write.table(state, "state.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(teacher)#
+write.table(teacher, "teacher.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ukDemo)#
+write.table(ukDemo, "ukDemo.txt", quote=FALSE, sep="\t", row.names=FALSE)
+library(openintro)
+library(help=openintro)
+____ Navigate to folder _____##
+# setwd("c://folder/of/interest")#
+#____ openintro _____##
+library(openintro)#
+#
+data(MLB)#
+write.table(MLB, "MLB.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ballBearing)#
+write.table(ballBearing, "ballBearing.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(cars)#
+write.table(cars, "cars.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(census)#
+write.table(census, "census.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(classData)#
+write.table(classData, "classData.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(county)#
+write.table(county, "county.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(countyComplete)#
+write.table(countyComplete, "countyComplete.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(credits)#
+write.table(credits, "credits.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(email)#
+write.table(email, "email.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(email50)#
+write.table(email50, "email50.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(govRace10)#
+write.table(govRace10, "govRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(gradesTV)#
+write.table(gradesTV, "gradesTV.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(heartTr)#
+write.table(heartTr, "heartTr.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(houseRace10)#
+write.table(houseRace10, "houseRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ipod)#
+write.table(ipod, "ipod.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mammals)#
+write.table(mammals, "mammals.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marathon)#
+write.table(marathon, "marathon.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marioKart)#
+write.table(marioKart, "marioKart.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mlbBat10)#
+write.table(mlbBat10, "mlbBat10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(possum)#
+write.table(possum, "possum.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(prRace08)#
+write.table(prRace08, "prRace08.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(president)#
+write.table(president, "president.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(run10)#
+write.table(run10, "run10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(satGPA)#
+write.table(satGPA, "satGPA.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(senateRace10)#
+write.table(senateRace10, "senateRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(smoking)#
+write.table(smoking, "smoking.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(textbooks)#
+write.table(textbooks, "textbooks.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(tips)#
+write.table(tips, "tips.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(unempl)#
+write.table(unempl, "unempl.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#____ OIdata _____##
+library(OIdata)#
+#
+data(birds)#
+write.table(birds, "birds.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(esi)#
+write.table(esi, "esi.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ipo)#
+write.table(ipo[["facebook"]], "ipo_facebook.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+write.table(ipo[["google"]], "ipo_google.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+write.table(ipo[["linkedin"]], "ipo_linkedin.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(london_boroughs)#
+write.table(london_boroughs, "london_boroughs.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(military)#
+write.table(military, "military.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(murders)#
+write.table(murders, "murders.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(piracy)#
+write.table(piracy, "piracy.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(sp500)#
+write.table(sp500, "sp500.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(state)#
+write.table(state, "state.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(teacher)#
+write.table(teacher, "teacher.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ukDemo)#
+write.table(ukDemo, "ukDemo.txt", quote=FALSE, sep="\t", row.names=FALSE)
+library(openintro)
+library(help=openintro)
+data(helium)
+____ Navigate to folder _____##
+# setwd("c://folder/of/interest")#
+#____ openintro _____##
+library(openintro)#
+#
+data(MLB)#
+write.table(MLB, "MLB.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ageAtMar)#
+write.table(ageAtMar, "ageAtMar.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ballBearing)#
+write.table(ballBearing, "ballBearing.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(bdims)#
+write.table(bdims, "bdims.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(births)#
+write.table(births, "births.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(cars)#
+write.table(cars, "cars.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(census)#
+write.table(census, "census.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(classData)#
+write.table(classData, "classData.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(county)#
+write.table(county, "county.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(countyComplete)#
+write.table(countyComplete, "countyComplete.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(credits)#
+write.table(credits, "credits.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+# elmhurst data not yet included in package so the code is not included here to write it to the package#
+# the elmhurst data may be retrieved from the textbook source files ("07" > "figures" > "elmhurstPlots" > "d.rda")#
+#
+data(email)#
+write.table(email, "email.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(email50)#
+write.table(email50, "email50.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(friday)#
+write.table(friday, "friday.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(gifted)#
+write.table(gifted, "gifted.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(govRace10)#
+write.table(govRace10, "govRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(gradesTV)#
+write.table(gradesTV, "gradesTV.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(heartTr)#
+write.table(heartTr, "heartTr.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(helium)#
+write.table(helium, "helium.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(houseRace10)#
+write.table(houseRace10, "houseRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(hsb2)#
+write.table(hsb2, "hsb2.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(infMortRate)#
+write.table(infMortRate, "infMortRate.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ipod)#
+write.table(ipod, "ipod.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mammals)#
+write.table(mammals, "mammals.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marathon)#
+write.table(marathon, "marathon.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(marioKart)#
+write.table(marioKart, "marioKart.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(mlbBat10)#
+write.table(mlbBat10, "mlbBat10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ncbirths)#
+write.table(ncbirths, "ncbirths.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(oscars)#
+write.table(oscars, "oscars.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(poker)#
+write.table(poker, "poker.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(possum)#
+write.table(possum, "possum.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(prRace08)#
+write.table(prRace08, "prRace08.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(president)#
+write.table(president, "president.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(run10)#
+write.table(run10, "run10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(satGPA)#
+write.table(satGPA, "satGPA.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(senateRace10)#
+write.table(senateRace10, "senateRace10.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(smoking)#
+write.table(smoking, "smoking.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(textbooks)#
+write.table(textbooks, "textbooks.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(tgSpending)#
+write.table(tgSpending, "tgSpending.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(tips)#
+write.table(tips, "tips.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(unempl)#
+write.table(unempl, "unempl.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#____ OIdata _____##
+library(OIdata)#
+#
+data(birds)#
+write.table(birds, "birds.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(esi)#
+write.table(esi, "esi.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ipo)#
+write.table(ipo[["facebook"]], "ipo_facebook.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+write.table(ipo[["google"]], "ipo_google.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+write.table(ipo[["linkedin"]], "ipo_linkedin.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(london_boroughs)#
+write.table(london_boroughs, "london_boroughs.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(military)#
+write.table(military, "military.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(murders)#
+write.table(murders, "murders.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(piracy)#
+write.table(piracy, "piracy.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(sp500)#
+write.table(sp500, "sp500.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(state)#
+write.table(state, "state.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(teacher)#
+write.table(teacher, "teacher.txt", quote=FALSE, sep="\t", row.names=FALSE)#
+#
+data(ukDemo)#
+write.table(ukDemo, "ukDemo.txt", quote=FALSE, sep="\t", row.names=FALSE)
+# Copyright 2014, OpenIntro#
+# This code is released under a Creative Commons Attribution 3.0 license#
+#
+# The ContingencyTableToDataFrame() function can be used to convert#
+# contingency tables to data frames.#
+ContingencyTableToDataFrame <-#
+function (x,#
+          rn = row.names(x),#
+          cn = colnames(x),#
+          dfn = c("row.var", "col.var")) {#
+  rs <- rowSums(x)#
+  cs <- colSums(x)#
+  v1 <- rep(rn, rs)#
+  v2 <- c()#
+  for (i in 1:nrow(x)) {#
+    v2 <- append(v2, rep(cn, x[i, ]))#
+  }#
+  d <- data.frame(v1, v2)#
+  colnames(d) <- dfn#
+  return(d)#
+}#
+#
+a <- matrix(c(11, 14, 39, 26), 2)
+a
+# Copyright 2014, OpenIntro#
+# This code is released under a Creative Commons Attribution 3.0 license#
+#
+# The ContingencyTableToDataFrame() function can be used to convert#
+# contingency tables to data frames.#
+ContingencyTableToDataFrame <-#
+function (x,#
+          rn = row.names(x),#
+          cn = colnames(x),#
+          dfn = c("row.var", "col.var")) {#
+  rs <- rowSums(x)#
+  cs <- colSums(x)#
+  v1 <- rep(rn, rs)#
+  v2 <- c()#
+  for (i in 1:nrow(x)) {#
+    v2 <- append(v2, rep(cn, x[i, ]))#
+  }#
+  d <- data.frame(v1, v2)#
+  colnames(d) <- dfn#
+  return(d)#
+}#
+#
+a <- matrix(c(231, 49, 214, 298), 2)#
+b <- #
+ContingencyTableToDataFrame(a,#
+                            c("college", "not"),#
+                            c("degree", "not"),#
+                            c("teen", "parents"))#
+# Sanity-check#
+table(b)
+cat("file saved to", getwd())
+# Write to tab-delimited text file#
+cat("file saved to", getwd())#
+write.table(b, "family_college.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(b, "family_college.csv",#
+            quote = FALSE, sep = ",",#
+            row.names = FALSE)
+require(openintro)#
+data(COL)#
+data(yrbss)
+write.table(yrbss, "yrbss.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(yrbss, "yrbss.csv",#
+            sep = ",",#
+            row.names = FALSE)
+write.table(yrbss_samp, "yrbss_samp.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(yrbss_samp, "yrbss_samp.csv",#
+            sep = ",",#
+            row.names = FALSE)
+data(yrbss_samp)
+data(yrbss.samp)
+write.table(yrbss.samp, "yrbss_samp.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(yrbss.samp, "yrbss_samp.csv",#
+            sep = ",",#
+            row.names = FALSE)
+library(openintro)#
+data(COL)#
+set.seed(2)#
+x <- exp(c(rnorm(100, log(7.5), 0.15),#
+           rnorm(10, log(10), 0.196)))#
+x <- x - mean(x) + 7.42#
+t.test(x, mu = 7)#
+mean(x)#
+sd(x)#
+length(x)
+x <- round(x, 2)
+x <- round(x, 1)
+library(openintro)#
+data(COL)#
+set.seed(2)#
+x <- exp(c(rnorm(100, log(7.5), 0.15),#
+           rnorm(10, log(10), 0.196)))#
+x <- x - mean(x) + 7.42#
+t.test(x, mu = 7)#
+mean(x)#
+sd(x)#
+length(x)
+x <- round(x, 1)
+mean(x)#
+sd(x)
+library(openintro)#
+data(COL)#
+set.seed(2)#
+x <- exp(c(rnorm(100, log(7.5), 0.15),#
+           rnorm(10, log(10), 0.196)))#
+x <- x - mean(x) + 7.42#
+t.test(x, mu = 7)#
+mean(x)#
+sd(x)#
+length(x)
+x <- round(x, 2)
+write.table(x, file = "sleep.csv")
+write.table(x, file = "sleep.csv", row.names = FALSE, quote = FALSE)
+sleep
+?sleep
+student.sleep <- x
+x
+save(student.sleep, file = "student.sleep.rda")
+prompt(student.sleep)
+save(data.frame(student.sleep), file = "student.sleep.rda")
+a <- data.frame(student.sleep); save(a, file = "student.sleep.rda")
+prompt(a)
+a
+names(a) <- "hours"
+save(data.frame(student.sleep), file = "student.sleep.rda")
+save(a, file = "student.sleep.rda")
+set.seed(2)#
+x <- exp(c(rnorm(100, log(7.5), 0.15),#
+           rnorm(10, log(10), 0.196)))#
+x <- x - mean(x) + 7.42#
+#
+identical(x, a$hours)
+x
+set.seed(2)#
+x <- exp(c(rnorm(100, log(7.5), 0.15),#
+           rnorm(10, log(10), 0.196)))#
+x <- round(x - mean(x) + 7.42, 2)
+x
+set.seed(2)#
+x <- exp(c(rnorm(100, log(7.5), 0.15),#
+           rnorm(10, log(10), 0.196)))#
+x <- x - mean(x) + 7.42#
+#
+identical(x, a$hours)
+set.seed(2)#
+x <- exp(c(rnorm(100, log(7.5), 0.15),#
+           rnorm(10, log(10), 0.196)))#
+x <- round(x - mean(x) + 7.42, 2)
+identical(x, a$hours)
+table(ebola.survey <- data.frame(quarantine = rep(c("favor", "against"), round(1042 * c(.82, .18)))
+)
+table(ebola.survey <- data.frame(quarantine = rep(c("favor", "against"), round(1042 * c(.82, .18)))))
+188 / 1042
+ebola.survey
+ebola.survey$quarantine <- sample(ebola.survey$quarantine)
+ebola.survey
+save(ebola.survey, file = "ebola.survey.rda")
+write.table(ebola.survey, "ebola_survey.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(ebola.survey, "ebola_survey.csv",#
+            sep = ",", row.names = FALSE)
+prompt(ebola.survey)
+table(ebola.survey)
+table(nuclear.survey <- data.frame(arms_reduction = rep(c("favor", "against"), round(1028 * c(.56, .44)))))
+write.table(nuclear.survey, "nuclear_survey.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(nuclear.survey, "nuclear_survey.csv",#
+            sep = ",", row.names = FALSE)
+save(nuclear.survey, file = "nuclear.survey.rda")
+prompt(nuclear.survey)
+# Copyright 2014, OpenIntro#
+# This code is released under a Creative Commons Attribution 3.0 license#
+#
+# The ContingencyTableToDataFrame() function can be used to convert#
+# contingency tables to data frames.#
+ContingencyTableToDataFrame <-#
+function (x,#
+          rn = row.names(x),#
+          cn = colnames(x),#
+          dfn = c("row.var", "col.var")) {#
+  rs <- rowSums(x)#
+  cs <- colSums(x)#
+  v1 <- rep(rn, rs)#
+  v2 <- c()#
+  for (i in 1:nrow(x)) {#
+    v2 <- append(v2, rep(cn, x[i, ]))#
+  }#
+  d <- data.frame(v1, v2)#
+  colnames(d) <- dfn#
+  return(d)#
+}#
+#
+a <- matrix(c(771, 732, 47, 34, 49, 63, 3, 3), 2)
+771 * c(.4725, .4925, .035)
+round(771 * c(.4725, .4925, .035))
+round(732 * c(.34, .63, .03))
+a <- matrix(c(365, 380, 26, 249, 461, 22), 2, byrow = TRUE)
+a
+b <- #
+ContingencyTableToDataFrame(a,#
+                            c("receive help", "pay penalty"),#
+                            c("approve", "disapprove", "other"),#
+                            c("wording", "response"))
+table(b)
+cat("file saved to", getwd())
+write.table(b, "healthcare_survey.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(b, "healthcare_survey.csv",#
+            sep = ",", row.names = FALSE)#
+healthcare.survey <- b#
+save(healthcare.survey, file = "healthcare_survey.rda")#
+prompt(healthcare.survey)
+# Copyright 2014, OpenIntro#
+# This code is released under a Creative Commons Attribution 3.0 license#
+#
+# The ContingencyTableToDataFrame() function can be used to convert#
+# contingency tables to data frames.#
+ContingencyTableToDataFrame <-#
+function (x,#
+          rn = row.names(x),#
+          cn = colnames(x),#
+          dfn = c("row.var", "col.var")) {#
+  rs <- rowSums(x)#
+  cs <- colSums(x)#
+  v1 <- rep(rn, rs)#
+  v2 <- c()#
+  for (i in 1:nrow(x)) {#
+    v2 <- append(v2, rep(cn, x[i, ]))#
+  }#
+  d <- data.frame(v1, v2)#
+  colnames(d) <- dfn#
+  return(d)#
+}#
+#
+a <- matrix(c(365, 380, 26, 249, 461, 22), 2, byrow = TRUE)#
+b <- #
+ContingencyTableToDataFrame(a,#
+                            c("first: receive help", "first: pay penalty"),#
+                            c("approve", "disapprove", "other"),#
+                            c("wording", "response"))#
+# Sanity-check#
+table(b)#
+#
+# Write to tab-delimited text file#
+cat("file saved to", getwd())#
+write.table(b, "healthcare_survey.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(b, "healthcare_survey.csv",#
+            sep = ",", row.names = FALSE)#
+healthcare.survey <- b#
+save(healthcare.survey, file = "healthcare_survey.rda")#
+prompt(healthcare.survey)
+library(openintro)
+data(healthcareLawSurvey)
+a <- matrix(c(500, 44425, 505, 44405), 2, byrow = TRUE)
+# Copyright 2014, OpenIntro#
+# This code is released under a Creative Commons Attribution 3.0 license#
+#
+# The ContingencyTableToDataFrame() function can be used to convert#
+# contingency tables to data frames.#
+ContingencyTableToDataFrame <-#
+function (x,#
+          rn = row.names(x),#
+          cn = colnames(x),#
+          dfn = c("row.var", "col.var")) {#
+  rs <- rowSums(x)#
+  cs <- colSums(x)#
+  v1 <- rep(rn, rs)#
+  v2 <- c()#
+  for (i in 1:nrow(x)) {#
+    v2 <- append(v2, rep(cn, x[i, ]))#
+  }#
+  d <- data.frame(v1, v2)#
+  colnames(d) <- dfn#
+  return(d)#
+}#
+#
+a <- matrix(c(500, 44425, 505, 44405), 2, byrow = TRUE)#
+b <- #
+ContingencyTableToDataFrame(a,#
+                            c("mammogram", "control"),#
+                            c("yes", "no"),#
+                            c("treatment", "breast_cancer_death"))#
+# Sanity-check#
+table(b)
+# Write to tab-delimited text file#
+cat("file saved to", getwd())#
+write.table(b, "mammogram.txt",#
+            quote = FALSE, sep = "\t",#
+            row.names = FALSE)#
+write.table(b, "mammogram.csv",#
+            sep = ",", row.names = FALSE)#
+mammogram <- b#
+save(mammogram, file = "mammogram.rda")#
+prompt(mammogram)
+nrow(mammogram)
+chisq.test(table(mammogram))
+(table(mammogram))
+library(help = openintro)
+library(openintro)
+folder <- "./Ch 5 Exercise Data"#
+#
+if ("chickwts.txt" %in% list.files(folder)) {#
+  chickwts <- read.table(paste0(folder, "/chickwts.txt"))#
+} else {#
+  chickwts <- read.csv(paste0(folder, "/chickwts.csv"))#
+}#
+save(chickwts, file = "rda/chickwts.rda")
+folder <- "./Ch 5 Exercise Data"#
+#
+if ("cle_sac.txt" %in% list.files(folder)) {#
+  cle_sac <- read.table(paste0(folder, "/cle_sac.txt"))#
+} else {#
+  cle_sac <- read.csv(paste0(folder, "/cle_sac.csv"))#
+}#
+save(cle_sac, file = "rda/cle_sac.rda")
+folder <- "./Ch 5 Exercise Data"#
+#
+if ("cle_sac.txt" %in% list.files(folder)) {#
+  cle_sac <- read.table(paste0(folder, "/cle_sac.txt"))#
+} else {#
+  cle_sac <- read.csv(paste0(folder, "/cle_sac.csv"))#
+}
+paste0(folder, "/cle_sac.txt")
+cle_sac <- read.table(paste0(folder, "/cle_sac.txt"))
+cle_sac <- read.table(paste0(folder, "/cle_sac.txt"))
+cle_sac <- read.table(paste0(folder, "/cle_sac.txt"))
+cle_sac <- read.csv(paste0(folder, "/cle_sac.csv"))
+save(cle_sac, file = "rda/cle_sac.rda")#
+prompt(cle_sac, file = "Rd/cle_sac.Rd")
+cle.sac <- cle_sac
+save(cle.sac, file = "rda/cle.sac.rda")#
+prompt(cle.sac, file = "Rd/cle.sac.Rd")
+folder <- "./Ch 5 Exercise Data"#
+#
+if ("prison.txt" %in% list.files(folder)) {#
+  prison <- read.table(paste0(folder, "/prison.txt"))#
+} else {#
+  prison <- read.csv(paste0(folder, "/prison.csv"))#
+}#
+save(prison, file = "rda/prison.rda")#
+prompt(prison, file = "Rd/prison.Rd")
+load("/Users/ddiez/Dropbox/OpenIntro/Data/os3_data/rda/ppp_201503.rda")
+folder <- "./Ch 5 Exercise Data"#
+#
+if ("major_survey.txt" %in% list.files(folder)) {#
+  major_survey <- read.table(paste0(folder, "/major_survey.txt"))#
+} else {#
+  major_survey <- read.csv(paste0(folder, "/major_survey.csv"))#
+}#
+save(major_survey, file = "rda/major_survey.rda")#
+prompt(major_survey, file = "Rd/major_survey.Rd")
+major.survey <- major_survey
+save(major.survey, file = "rda/major.survey.rda")#
+prompt(major.survey, file = "Rd/major.survey.Rd")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("full_body_scan.txt" %in% list.files(folder)) {#
+  full_body_scan <- read.table(paste0(folder, "/full_body_scan.txt"))#
+} else {#
+  full_body_scan <- read.csv(paste0(folder, "/full_body_scan.csv"))#
+}#
+save(full_body_scan, file = "rda/full_body_scan.rda")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("offshort_drilling.txt" %in% list.files(folder)) {#
+  offshort_drilling <- read.table(paste0(folder, "/offshort_drilling.txt"))#
+} else {#
+  offshort_drilling <- read.csv(paste0(folder, "/offshort_drilling.csv"))#
+}#
+save(offshort_drilling, file = "rda/offshort_drilling.rda")#
+prompt(offshort_drilling, file = "Rd/offshort_drilling.Rd")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("offshort_drilling.txt" %in% list.files(folder)) {#
+  offshort_drilling <- read.table(paste0(folder, "/offshort_drilling.txt"))#
+} else {#
+  offshort_drilling <- read.csv(paste0(folder, "/offshort_drilling.csv"))#
+}#
+save(offshort_drilling, file = "rda/offshort_drilling.rda")#
+prompt(offshort_drilling, file = "Rd/offshort_drilling.Rd")
+offshort_drilling <- read.table(paste0(folder, "/offshort_drilling.txt"))
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("offshore_drilling.txt" %in% list.files(folder)) {#
+  offshore_drilling <- read.table(paste0(folder, "/offshore_drilling.txt"))#
+} else {#
+  offshore_drilling <- read.csv(paste0(folder, "/offshore_drilling.csv"))#
+}#
+save(offshore_drilling, file = "rda/offshore_drilling.rda")#
+prompt(offshore_drilling, file = "Rd/offshore_drilling.Rd")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("offshore.drilling.txt" %in% list.files(folder)) {#
+  offshore.drilling <- read.table(paste0(folder, "/offshore.drilling.txt"))#
+} else {#
+  offshore.drilling <- read.csv(paste0(folder, "/offshore.drilling.csv"))#
+}#
+save(offshore.drilling, file = "rda/offshore.drilling.rda")#
+prompt(offshore.drilling, file = "Rd/offshore.drilling.Rd")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("offshore_drilling.txt" %in% list.files(folder)) {#
+  offshore.drilling <- read.table(paste0(folder, "/offshore_drilling.txt"))#
+} else {#
+  offshore.drilling <- read.csv(paste0(folder, "/offshore.drilling.csv"))#
+}#
+save(offshore.drilling, file = "rda/offshore.drilling.rda")#
+prompt(offshore.drilling, file = "Rd/offshore.drilling.Rd")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("socialexp.txt" %in% list.files(folder)) {#
+  socialexp <- read.table(paste0(folder, "/socialexp.txt"))#
+} else {#
+  socialexp <- read.csv(paste0(folder, "/socialexp.csv"))#
+}#
+save(socialexp, file = "rda/socialexp.rda")#
+prompt(socialexp, file = "Rd/socialexp.Rd")
+folder <- "./Ch 6 Exercise Data"#
+#
+if ("coast_starlight.txt" %in% list.files(folder)) {#
+  coast_starlight <- read.table(paste0(folder, "/coast_starlight.txt"))#
+} else {#
+  coast_starlight <- read.csv(paste0(folder, "/coast_starlight.csv"))#
+}#
+save(coast_starlight, file = "rda/coast_starlight.rda")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("coast_starlight.txt" %in% list.files(folder)) {#
+  coast_starlight <- read.table(paste0(folder, "/coast_starlight.txt"))#
+} else {#
+  coast_starlight <- read.csv(paste0(folder, "/coast_starlight.csv"))#
+}#
+save(coast_starlight, file = "rda/coast_starlight.rda")#
+prompt(coast_starlight, file = "Rd/coast_starlight.Rd")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("corr_match.txt" %in% list.files(folder)) {#
+  corr_match <- read.table(paste0(folder, "/corr_match.txt"))#
+} else {#
+  corr_match <- read.csv(paste0(folder, "/corr_match.csv"))#
+}#
+save(corr_match, file = "rda/corr_match.rda")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("helmet.txt" %in% list.files(folder)) {#
+  helmet <- read.table(paste0(folder, "/helmet.txt"))#
+} else {#
+  helmet <- read.csv(paste0(folder, "/helmet.csv"))#
+}#
+save(helmet, file = "rda/helmet.rda")#
+prompt(helmet, file = "Rd/helmet.Rd")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("husbands_wives.txt" %in% list.files(folder)) {#
+  husbands_wives <- read.table(paste0(folder, "/husbands_wives.txt"))#
+} else {#
+  husbands_wives <- read.csv(paste0(folder, "/husbands_wives.csv"))#
+}#
+save(husbands_wives, file = "rda/husbands_wives.rda")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("husbands_wives.txt" %in% list.files(folder)) {#
+  husbands_wives <- read.table(paste0(folder, "/husbands_wives.txt"))#
+} else {#
+  husbands_wives <- read.csv(paste0(folder, "/husbands_wives.csv"))#
+}#
+save(husbands_wives, file = "rda/husbands_wives.rda")
+husbands_wives <- read.table(paste0(folder, "/husbands_wives.txt"), na.strings = "")
+husbands_wives <- read.table(paste0(folder, "/husbands_wives.txt"), na.strings = "")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("husbands_wives.txt" %in% list.files(folder)) {#
+  husbands_wives <- read.table(paste0(folder, "/husbands_wives.txt"), na.strings = "")#
+} else {#
+  husbands_wives <- read.csv(paste0(folder, "/husbands_wives.csv"))#
+}#
+save(husbands_wives, file = "rda/husbands_wives.rda")
+husbands.wives <- husbands_wives
+save(husbands.wives, file = "rda/husbands.wives.rda")#
+prompt(husbands.wives, file = "Rd/husbands.wives.Rd")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("murders.txt" %in% list.files(folder)) {#
+  murders <- read.table(paste0(folder, "/murders.txt"))#
+} else {#
+  murders <- read.csv(paste0(folder, "/murders.csv"))#
+}#
+save(murders, file = "rda/murders.rda")#
+prompt(murders, file = "Rd/murders.Rd")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("prof_evals.txt" %in% list.files(folder)) {#
+  prof_evals <- read.table(paste0(folder, "/prof_evals.txt"))#
+} else {#
+  prof_evals <- read.csv(paste0(folder, "/prof_evals.csv"))#
+}#
+save(prof_evals, file = "rda/prof_evals.rda")
+prof.evals <- prof_evals
+save(prof.evals, file = "rda/prof.evals.rda")#
+prompt(prof.evals, file = "Rd/prof.evals.Rd")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("urban_owner.txt" %in% list.files(folder)) {#
+  urban_owner <- read.table(paste0(folder, "/urban_owner.txt"))#
+} else {#
+  urban_owner <- read.csv(paste0(folder, "/urban_owner.csv"))#
+}#
+save(urban_owner, file = "rda/urban_owner.rda")#
+prompt(urban_owner, file = "Rd/urban_owner.Rd")
+folder <- "./Ch 7 Exercise Data"#
+#
+if ("urban_rural_pop.txt" %in% list.files(folder)) {#
+  urban_rural_pop <- read.table(paste0(folder, "/urban_rural_pop.txt"))#
+} else {#
+  urban_rural_pop <- read.csv(paste0(folder, "/urban_rural_pop.csv"))#
+}#
+save(urban_rural_pop, file = "rda/urban_rural_pop.rda")
+folder <- "./Ch 8 Exercise Data"#
+#
+if ("gpa_iq.txt" %in% list.files(folder)) {#
+  gpa_iq <- read.table(paste0(folder, "/gpa_iq.txt"))#
+} else {#
+  gpa_iq <- read.csv(paste0(folder, "/gpa_iq.csv"))#
+}#
+save(gpa_iq, file = "rda/gpa_iq.rda")
+gpa.iq <- gpa_iq
+save(gpa.iq, file = "rda/gpa.iq.rda")#
+prompt(gpa.iq, file = "Rd/gpa.iq.Rd")
+folder <- "./Ch 8 Exercise Data"#
+#
+if ("quine.txt" %in% list.files(folder)) {#
+  quine <- read.table(paste0(folder, "/quine.txt"))#
+} else {#
+  quine <- read.csv(paste0(folder, "/quine.csv"))#
+}#
+save(quine, file = "rda/quine.rda")#
+prompt(quine, file = "Rd/quine.Rd")
+load("/Users/ddiez/Dropbox/OpenIntro/r packs + online extras/package/openintro/data/husbands.wives.rda")
+load("/Users/ddiez/Dropbox/OpenIntro/r packs + online extras/package/openintro/data/husbands_wives.rda")
+identical(husbands.wives, husbands_wives)
+head(husbands.wives)
+head(husbands_wives)
+husbands.wives <- husbands_wives
+getwd()
+save(husbands.wives, file = "husbands.wives.rda")
+load("/Users/ddiez/Dropbox/OpenIntro/r packs + online extras/package/openintro/data/cia_factbook.rda")
