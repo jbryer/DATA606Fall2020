@@ -46,6 +46,6 @@ weight = 11
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-graduation-cap'></i> CUNY SPS"
-url = "https://sps.cuny.edu/academics/graduate/master-science-data-analytics-ms"
+url = "https://sps.cuny.edu/academics/graduate/master-science-data-science-ms"
 weight = 12
 
