@@ -11,7 +11,7 @@
 	"title": "Announcements",
 	"tags": [],
 	"description": "",
-	"content": "  Welcome to DATA606! Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. I am an Assistant Professor in the Data Science and Information Systems department at CUNY SPS. Couple of important notes as you get started: The course syllabus located here: https://fall2020.data606.net I will post all course materials there. Blackboard will be used primarily for submitting assignments. Join the Slack channel by clicking here.\n  Colors Upon grading the labs I noticed there is interest in adding color to the plots. I understand and appreciate the desire to make your figures more aesthetically pleasing. I have used colors to make the figures fit the overall style of whatever publication they are going to be used in. However, my general advice is to only use color when it adds value. For example, coloring bars or points based upon a quantitative variable is often very helpful.\n  Random Numbers and Seeds in R To explore how R generates randome numbers, we will use the rnorm function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the mean and sd parameters). With n = 1 we will get two random numbers. rnorm(n = 1) ## [1] -0.4967214 rnorm(n = 1) ## [1] 0.3529901 Each time you run the command you will get a different number.\n  Getting Started with R To get started with the labs, you will need to install R and other supporting applications. Links to download all the software is on the Software page at http://data606.net/software which is available on the Course Overview menu. Once you are in RStudio, you will need to install a number of R packages using the following two commands: install.packages(c(\u0026#39;openintro\u0026#39;,\u0026#39;OIdata\u0026#39;,\u0026#39;devtools\u0026#39;,\u0026#39;tidyverse\u0026#39;, \u0026#39;ggplot2\u0026#39;, \u0026#39;psych\u0026#39;,\u0026#39;reshape2\u0026#39;,\u0026#39;knitr\u0026#39;,\u0026#39;markdown\u0026#39;,\u0026#39;shiny\u0026#39;,\u0026#39;R.rsp\u0026#39;, \u0026#39;fivethirtyeight\u0026#39;)) devtools::install_github(\u0026quot;jbryer/DATA606\u0026quot;) Note that this course used to be listed as IS 606, hence the different package name.\n  "
+	"content": "  Welcome to DATA606! Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. I am an Assistant Professor in the Data Science and Information Systems department at CUNY SPS. Couple of important notes as you get started: The course syllabus located here: https://fall2020.data606.net I will post all course materials there. Blackboard will be used primarily for submitting assignments. Join the Slack channel by clicking here.\n  "
 },
 {
 	"uri": "/assignments/daacs/",
@@ -189,32 +189,11 @@
 	"content": " These are supplemental materials. Click to download.\n stat_extra_interaction_effects.pdf stat_extra_nonlinear_relationships.pdf Textbooks  lsr-0.6.pdf os4.pdf ProbStatBook.pdf Supplemental  os2_extra_inference_guide.pdf os2_prob_tables.pdf os4_tablet.pdf    "
 },
 {
-	"uri": "/post/2020-01-16-welcome-to-data606/",
+	"uri": "/post/2020-08-16-welcome-to-data606/",
 	"title": "Welcome to DATA606!",
 	"tags": ["Annoucement"],
 	"description": "",
 	"content": " Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. I am an Assistant Professor in the Data Science and Information Systems department at CUNY SPS. Couple of important notes as you get started:\n The course syllabus located here: https://fall2020.data606.net I will post all course materials there. Blackboard will be used primarily for submitting assignments. Join the Slack channel by clicking here. This will be our primary mode of communication. For private communications, you can either send private Slack messages or email me at jason.bryer@sps.cuny.edu. Introduce yourself in the Getting Acquainted forum on Blackboard. Once you go through the syllabus, try starting Lab 1 as soon as you can. This will require you to install R and RStudio and will help get you get acquainted with R. The best way to reach me is by Slack or email at jason.bryer@sps.cuny.edu. If you would prefer to talk on the phone or setup a Zoom session, it is best to suggest some times by email first. Our meetups will be on Wednesdays from 8:30pm to 9:30pm. I am looking forward to getting to know everyone and a fantastic semester! Good luck!  "
-},
-{
-	"uri": "/post/2020-03-03-colors/",
-	"title": "Colors",
-	"tags": ["colors", "plots"],
-	"description": "",
-	"content": " Upon grading the labs I noticed there is interest in adding color to the plots. I understand and appreciate the desire to make your figures more aesthetically pleasing. I have used colors to make the figures fit the overall style of whatever publication they are going to be used in. However, my general advice is to only use color when it adds value. For example, coloring bars or points based upon a quantitative variable is often very helpful. I generally ask myself this when adding color: \"Does the addition of color enhance the interpretation of my data or is it distracting?\nIf you are to use color, choosing a color palette that uses color blind safe colors is important. Here is a article I found that provides a good introduction and principles: https://venngage.com/blog/color-blind-friendly-palette/\nAdditionally, there are palettes designed for different purposes (qualitative for quantitative variables). I have found [this] website a really useful resource for picking pallets. I also use Color Brewer very useful for picking colors. Many of the pallets are built into ggplot2 with the XXX_color_brewer function.\nSome important references for data visualization more broadly (i.e. not limited to use of colors):\n Edward Tufte’s Visual Display of Quantitative Information William Cleveland’s Visualizing Data and The Elements of Graphing Data Leland Wilkinson’s The Grammar of Graphics and Hadley Wickham’s ggplot2: Elegant Graphics for Data Analysis  "
-},
-{
-	"uri": "/post/2020-01-29-random_numbers_and_seeds/",
-	"title": "Random Numbers and Seeds in R",
-	"tags": ["random numbers"],
-	"description": "",
-	"content": " To explore how R generates randome numbers, we will use the rnorm function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the mean and sd parameters). With n = 1 we will get two random numbers.\nrnorm(n = 1) ## [1] -0.4967214 rnorm(n = 1) ## [1] 0.3529901 Each time you run the command you will get a different number. The set.seed function will sets a seed to the random number generator so that each subsequent run will produce the same number.\nset.seed(2112); rnorm(n = 1) ## [1] 0.9243372 set.seed(2112); rnorm(n = 1) ## [1] 0.9243372 Setting a different seed results in a different number.\nset.seed(2113); rnorm(n = 1) ## [1] 0.5499032 What are seeds?\nComputers are actually bad at random events. However, there are good algorithms that mimic random processes. These algorithms work by starting with some initial value, a seed, and executing a complex algorithm that approximates randomozation. The seed is often set to the current time in miliseconds. To visualize the ramdom process, we will use the sample function to randomly select a number between 1 and 100. We will consider the ouput for the first 1,000 seeds.\nrandom_numbers \u0026lt;- integer(1000) for(i in seq_len(length(random_numbers))) { set.seed(i) random_numbers[i] \u0026lt;- sample(1:100, size = 1) } library(ggplot2) ggplot(data.frame(x = 1:100, y = random_numbers), aes(x = x, y = y)) + geom_point() + xlab(\u0026#39;Seed\u0026#39;) + ylab(\u0026#39;Random Number\u0026#39;) "
-},
-{
-	"uri": "/post/2020-01-20-getting-started-with-r/",
-	"title": "Getting Started with R",
-	"tags": ["R Markdown", "working directories"],
-	"description": "",
-	"content": " To get started with the labs, you will need to install R and other supporting applications. Links to download all the software is on the Software page at http://data606.net/software which is available on the Course Overview menu. Once you are in RStudio, you will need to install a number of R packages using the following two commands:\ninstall.packages(c(\u0026#39;openintro\u0026#39;,\u0026#39;OIdata\u0026#39;,\u0026#39;devtools\u0026#39;,\u0026#39;tidyverse\u0026#39;, \u0026#39;ggplot2\u0026#39;, \u0026#39;psych\u0026#39;,\u0026#39;reshape2\u0026#39;,\u0026#39;knitr\u0026#39;,\u0026#39;markdown\u0026#39;,\u0026#39;shiny\u0026#39;,\u0026#39;R.rsp\u0026#39;, \u0026#39;fivethirtyeight\u0026#39;)) devtools::install_github(\u0026quot;jbryer/DATA606\u0026quot;) Note that this course used to be listed as IS 606, hence the different package name. The library command will load the package and the startLab function will:\nCreate a folder called Lab1 in the current working directory. Open the the RMarkdown file (note that the name should have your login name).  library(DATA606) startLab(\u0026#39;Lab1\u0026#39;) Note the Lab1 directory has been created.\nRStudio Files Panel\n If you click Lab0 that will take you into that folder where you will see the RMardkown file (.Rmd extension) along with all the supporting files. Under the More menu there is an option to Set As Working Directory, you will want to do this before working in the RMarkdown file.\nSetting Working Directory\n The console pane will always tell you what your current working directory is. Clicking the arrow icon will open that folder in the Files tab on the right. R will look for files and directories that do not have absolute paths (i.e. starting with C: on windows or / on Linux and Macs) relative to the working directory.\nWorking Directory\n "
 },
 {
 	"uri": "/",
@@ -252,20 +231,6 @@
 	"content": ""
 },
 {
-	"uri": "/tags/colors/",
-	"title": "Colors",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/plots/",
-	"title": "Plots",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "/categories/r/",
 	"title": "R",
 	"tags": [],
@@ -273,29 +238,8 @@
 	"content": ""
 },
 {
-	"uri": "/tags/r-markdown/",
-	"title": "R Markdown",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/random-numbers/",
-	"title": "Random Numbers",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "/tags/",
 	"title": "Tags",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/working-directories/",
-	"title": "Working Directories",
 	"tags": [],
 	"description": "",
 	"content": ""
