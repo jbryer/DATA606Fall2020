@@ -26,7 +26,7 @@ The proposal can be more informal using bullet points where necessary and includ
 
 [Example data project proposal](http://htmlpreview.github.io/?https://github.com/jbryer/DATA606Fall2020/blob/master/Project/Example_proposal.html) ([Source Rmarkdown file](https://raw.githubusercontent.com/jbryer/DATA606Fall2020/master/Project/Example_proposal.Rmd))
 
-
+<!-- 
 ## Final Project Format
 
 The final report should be presented in more formal format. Consider your audience to be non data analysts. Fellow data analysts (i.e. students) will be able to access your R Markdown file for details on the analysis. Submit a Zip file with your R Markdown file, the HTML output, and any supplementary files (e.g. data, figures, etc.). You must address the five following sections:
@@ -50,7 +50,7 @@ The final report should be presented in more formal format. Consider your audien
 	* Brief description of methodology that reflects your conceptual understanding  
 
 5. **Conclusion**: Write a brief summary of your findings without repeating your statements from earlier. Also include a discussion of what you have learned about your research question and the data you collected. You may also want to include ideas for possible future research.
-
+-->
 
 ## Example Data Sources
 
