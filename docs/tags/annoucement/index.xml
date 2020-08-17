@@ -6,7 +6,7 @@
     <description>Recent content in Annoucement on DATA606 - Fall 2020</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/annoucement/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,11 @@
     <item>
       <title>Welcome to DATA606!</title>
       <link>/post/2020-01-16-welcome-to-data606/</link>
-      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2020-01-16-welcome-to-data606/</guid>
-      <description>Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. In addition to teaching this course, I am Principal Investigator of a Department of Education grant to develop a Diagnostic Assessment and Achievement of College Skills (see www.DAACS.net for more information) and a Research Data Associate at Cornell University. Couple of important notes as you get started:
- The course syllabus located here: https://fall2020.</description>
+      <description>Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. I am an Assistant Professor in the Data Science and Information Systems department at CUNY SPS. Couple of important notes as you get started:
+ The course syllabus located here: https://fall2020.data606.net I will post all course materials there. Blackboard will be used primarily for submitting assignments. Join the Slack channel by clicking here.</description>
     </item>
     
   </channel>

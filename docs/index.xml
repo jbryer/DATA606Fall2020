@@ -21,14 +21,12 @@
     </item>
     
     <item>
-      <title>Presentation</title>
-      <link>/assignments/presentation/</link>
+      <title>DAACS</title>
+      <link>/assignments/daacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/assignments/presentation/</guid>
-      <description>You are responsible for presenting one practice homework problem during the semester. Please sign up as-soon-as possible as there are limited slots per week. Try to keep each presentation to five minutes or less. Sign-up on this Google Spreadsheet: https://docs.google.com/spreadsheets/d/1ZS-my1__uA6VvJpu8cyS5nsUxrjRPF-vS3_t5xN9Bgw/edit?usp=sharing
-Choose a problem from the following list:
- Chapter 1 - Introduction to Data  Practice: Any odd numbered question.  Chapter 2 - Summarizing Data  Practice: Any odd numbered question.</description>
+      <guid>/assignments/daacs/</guid>
+      <description>The Diagnostic Assessment and Achievement of College Skills (DAACS) is a formative assessment designed to provide you with information about key college skills. DAACS includes assessments in self-regulated learning, mathematics, reading, and writing. YOU ARE ONLY REQUIRED TO COMPLETE THE SELF-REGULATED LEARNING ASSESSMENT. This should take about 10 minutes to complete the assessment and there is no passing or failing. Once you are done, I encourage you to review the resources recommended to you.</description>
     </item>
     
     <item>
@@ -65,6 +63,17 @@ Phone Number: +1 646 876 9923 US (New York)
 Find your local number: https://cornell.zoom.us/u/adW1fDoKSs
 Presentation Signup Sheet
   Date  StartTime  Topic  Resources      Wed, Aug 26, 2020  8:30 pm  Intro to Course / Intro to Data     Wed, Sep 02, 2020  8:30 pm  Summarizing Data     Wed, Sep 09, 2020  8:30 pm  Probability     Wed, Sep 16, 2020  8:30 pm  Distributions Part I     Wed, Sep 23, 2020  8:30 pm  Distributions Part II     Wed, Sep 30, 2020  8:30 pm  Foundation for Inference     Wed, Oct 07, 2020  8:30 pm  Inference for Categorical Data     Wed, Oct 14, 2020  8:30 pm  Inference for Numerical Data     Wed, Oct 21, 2020  8:30 pm  Linear Regression     Wed, Oct 28, 2020  8:30 pm  Linear Regression     Wed, Nov 04, 2020  8:00 pm  TBD     Wed, Nov 11, 2020  8:30 pm  Multiple Regression     Wed, Nov 18, 2020  8:30 pm  Logistic Regression     Wed, Nov 25, 2020   NO CLASS - Thanksgiving     Wed, Dec 02, 2020  8:30 pm  Intro to Bayesian Analysis     Wed, Dec 09, 2020  8:30pm  Wrap-Up      </description>
+    </item>
+    
+    <item>
+      <title>Presentation</title>
+      <link>/assignments/presentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/presentation/</guid>
+      <description>You are responsible for presenting one practice homework problem during the semester. Please sign up as-soon-as possible as there are limited slots per week. Try to keep each presentation to five minutes or less. Sign-up on this Google Spreadsheet: https://docs.google.com/spreadsheets/d/1ZS-my1__uA6VvJpu8cyS5nsUxrjRPF-vS3_t5xN9Bgw/edit?usp=sharing
+Choose a problem from the following list:
+ Chapter 1 - Introduction to Data  Practice: Any odd numbered question.  Chapter 2 - Summarizing Data  Practice: Any odd numbered question.</description>
     </item>
     
     <item>
@@ -231,6 +240,16 @@ Creating Equations with Daum Equation Editor Occasionally you will need to type 
     </item>
     
     <item>
+      <title>Welcome to DATA606!</title>
+      <link>/post/2020-01-16-welcome-to-data606/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-01-16-welcome-to-data606/</guid>
+      <description>Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. I am an Assistant Professor in the Data Science and Information Systems department at CUNY SPS. Couple of important notes as you get started:
+ The course syllabus located here: https://fall2020.data606.net I will post all course materials there. Blackboard will be used primarily for submitting assignments. Join the Slack channel by clicking here.</description>
+    </item>
+    
+    <item>
       <title>Colors</title>
       <link>/post/2020-03-03-colors/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
@@ -246,7 +265,7 @@ Creating Equations with Daum Equation Editor Occasionally you will need to type 
       
       <guid>/post/2020-01-29-random_numbers_and_seeds/</guid>
       <description>To explore how R generates randome numbers, we will use the rnorm function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the mean and sd parameters). With n = 1 we will get two random numbers.
-rnorm(n = 1) ## [1] 1.091666 rnorm(n = 1) ## [1] -1.530402 Each time you run the command you will get a different number.</description>
+rnorm(n = 1) ## [1] 0.5041101 rnorm(n = 1) ## [1] -0.1941745 Each time you run the command you will get a different number.</description>
     </item>
     
     <item>

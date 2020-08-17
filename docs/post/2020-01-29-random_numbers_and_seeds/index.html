@@ -91,6 +91,13 @@ code.has-jax {
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/2020-01-16-welcome-to-data606/" class="dd-item">
+        <div>
+          <a href="/post/2020-01-16-welcome-to-data606/">
+            Welcome to DATA606!
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/2020-03-03-colors/" class="dd-item">
         <div>
           <a href="/post/2020-03-03-colors/">
@@ -178,6 +185,13 @@ code.has-jax {
       <a href="/assignments/">Assignments</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/assignments/daacs/" class="dd-item">
+        <div>
+          <a href="/assignments/daacs/">
+            DAACS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/assignments/presentation/" class="dd-item">
         <div>
           <a href="/assignments/presentation/">
@@ -309,6 +323,7 @@ code.has-jax {
           
     <option value="/post/" >
    Announcements</option> 
+      <option value="/post/2020-01-16-welcome-to-data606/" >- Welcome to DATA606!</option>
       <option value="/post/2020-03-03-colors/" >- Colors</option>
       <option value="/post/2020-01-29-random_numbers_and_seeds/"  selected>- Random Numbers and Seeds in R</option>
       <option value="/post/2020-01-20-getting-started-with-r/" >- Getting Started with R</option>
@@ -358,9 +373,9 @@ code.has-jax {
 
 <p>To explore how R generates randome numbers, we will use the <code>rnorm</code> function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the <code>mean</code> and <code>sd</code> parameters). With <code>n = 1</code> we will get two random numbers.</p>
 <pre class="r"><code>rnorm(n = 1)</code></pre>
-<pre><code>## [1] 1.091666</code></pre>
+<pre><code>## [1] 0.5041101</code></pre>
 <pre class="r"><code>rnorm(n = 1)</code></pre>
-<pre><code>## [1] -1.530402</code></pre>
+<pre><code>## [1] -0.1941745</code></pre>
 <p>Each time you run the command you will get a different number. The <code>set.seed</code> function will sets a seed to the random number generator so that each subsequent run will produce the same number.</p>
 <pre class="r"><code>set.seed(2112); rnorm(n = 1)</code></pre>
 <pre><code>## [1] 0.9243372</code></pre>

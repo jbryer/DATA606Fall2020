@@ -1,0 +1,33 @@
+---
+title: DATA 606 Data Project Proposal
+author: 
+---
+
+
+```{r echo=FALSE}
+# load data
+
+```
+
+
+### Part 1 - Introduction
+
+
+### Part 2 - Data
+
+
+### Part 3 - Exploratory data analysis
+
+
+### Part 4 - Inference
+
+
+### Part 5 - Conclusion
+
+
+### References
+
+
+### Appendix (optional)
+
+Remove this section if you don't have an appendix
