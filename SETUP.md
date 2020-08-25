@@ -104,14 +104,14 @@ See this page for more information: https://fall2020.data606.net/assignments/pro
 
 #### Announcements
 
-Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. In addition to teaching this course, I am an Executive Director at Excelsior College where I am currently working on a Department of Education grant to develop a Diagnostic Assessment and Achievement of College Skills (see www.DAACS.net for more information). Couple of important notes as you get started:
+Welcome to DATA606! My name is Dr. Jason Bryer and I will be your instructor for this semester. I am an Assistant Professor in the Data Science and Information Systems department at CUNY SPS. Couple of important notes as you get started:
 
-* The course syllabus is on Github here: https://fall2020.data606.net I will post all course materials there. Blackboard will be used primarily for submitting assignments.
-* Join the Slack channel by clicking this link: https://join.slack.com/t/data606fall2019/shared_invite/enQtNzE2NTc5NTMwMjExLTI5MGU3ZTNmZjcyZTNkNDhiOTZiNjY3YmI0N2NjOGNhZDM2ZWUxZTE0ZTdiNTNlN2JkMmFlMmQyNTdjYTEyYzY This will be our primary mode of communication. For private communications, you can email me at jason.bryer@gmail.com.
+* The course syllabus located here: https://fall2020.data606.net I will post all course materials there. Blackboard will be used primarily for submitting assignments.
+* [Join the Slack channel by clicking here](https://join.slack.com/t/data606fall2020/shared_invite/zt-gwto1eyo-r8tQGf_0V77AW4ey6rZKyA). This will be our primary mode of communication. For private communications, you can either send private Slack messages or email me at [jason.bryer@sps.cuny.edu](mailto:jason.bryer@sps.cuny.edu).
 * Introduce yourself in the Getting Acquainted forum on Blackboard.
 * Once you go through the syllabus, try starting Lab 1 as soon as you can. This will require you to install R and RStudio and will help get you get acquainted with R.
-* The best way to reach me is by email at jason.bryer@gmail.com. If you would prefer to talk on the phone or setup a GoToMeeting session, it is best to suggest some times by email first.
-* Our meetups will be on Wednesdays from 8pm to 9pm.
+* The best way to reach me is by Slack or email at [jason.bryer@sps.cuny.edu](mailto:jason.bryer@sps.cuny.edu). If you would prefer to talk on the phone or setup a Zoom session, it is best to suggest some times by email first.
+* Our meetups will be on Wednesdays from 8:30pm to 9:30pm.
 * I am looking forward to getting to know everyone and a fantastic semester! Good luck!
 
 
