@@ -71,7 +71,7 @@ end_day <- lubridate::ceiling_date(max(meetups$day), "month") - 1
 
 *Note: Schedule is subject to change. Last updated `r lastModified`.*
 
-```{r createICS, echo=FALSE, results='hide'}
+```{r createICS, echo=FALSE, results='hide', warning=FALSE,error=FALSE,message=FALSE}
 config <- read.config('../../config.toml')
 outDir <- config$publishDir
 meetups$starttime <- parse_date_time(paste0(as.character(meetups$Date), ' ', meetups$StartTime),
