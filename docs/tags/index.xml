@@ -21,11 +21,38 @@
     </item>
     
     <item>
+      <title>Colors</title>
+      <link>/tags/colors/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/colors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plots</title>
+      <link>/tags/plots/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/plots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random Numbers</title>
+      <link>/tags/random-numbers/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/random-numbers/</guid>
       <description></description>
     </item>
     
