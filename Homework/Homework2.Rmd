@@ -90,7 +90,7 @@ executives earn much higher salaries than the all other employees.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width="50%", fig.height=3}
 library(openintro)
-data(heartTr)
+data("heart_transplant")
 # mosaic plot -------------------------------------------------------
 par(mar = c(0, 0, 0, 0), las = 1, mgp = c(2.7, 0.9, 0))
 mosaicplot(transplant ~ survived, data = heartTr, 
