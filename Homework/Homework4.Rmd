@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 (d) $|Z| > 2$
 
 ```{r, echo=FALSE}
-# use the DATA606::normalPlot function
+# use the DATA606::normalPlot function to create a plot or the pnorm function for the actual values.
 ```
 
 

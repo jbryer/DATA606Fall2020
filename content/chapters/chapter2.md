@@ -41,7 +41,7 @@ MathJax.Hub.Config({
 
 * [OpenIntro Statistics slides](https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp2.pdf)
 * [ggplot2](http://ggplot2.org/) - `ggplot2` is an R package by Wickham that implements the [grammer of graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448) (Wilkinson, 2005) in R. I will frequently make use of the graphing framework throughout the course and is worth learning.
-* [Visualizing Likert Data](http://jason.bryer.org/likert/) - An R package for visualizing [Likert scale](https://en.wikipedia.org/wiki/Likert_scale) data built on the `ggplot2` framework.
+* [Visualizing Likert Data](https://github.com/jbryer/likert) - An R package for visualizing [Likert scale](https://en.wikipedia.org/wiki/Likert_scale) data built on the `ggplot2` framework.
 * [Quick-R base graphics](http://www.statmethods.net/graphs/index.html) - Covers many of the visualizations using R's base graphics.
 
 
