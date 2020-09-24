@@ -15,7 +15,7 @@ Occasionally you will need to type equations in homework and labs. R Markdown su
 
 ![Daum Equation Editor Screenshot](/figures/DaumScreen.png)
 
-Once done, copy and paste the LaTeX code at teh bottom into your R Markdown file between two dollar signs (i.e. $), and the quation will be rendered by the web browser.
+Once done, copy and paste the LaTeX code at the bottom into your R Markdown file between two dollar signs (i.e. $), and the quation will be rendered by the web browser.
 
 $$ f\left( x|\mu ,\sigma  \right) =\frac { 1 }{ \sigma \sqrt { 2\pi  }  } { e }^{ -\frac { { \left( x-\mu  \right)  }^{ 2 } }{ { 2\sigma  }^{ 2 } }  } $$
 
