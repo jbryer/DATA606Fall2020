@@ -88,7 +88,7 @@ n       & 26            & 26 \\
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=3, fig.height=3}
 library(openintro)
-fuel_eff <- read.csv("https://github.com/jbryer/DATA606Fall2019/raw/master/course_data/fuel_eff.csv")
+fuel_eff <- read.csv("https://github.com/jbryer/DATA606Fall2019/raw/master/course_data/fuel_eff.csv", stringsAsFactors = TRUE)
 man_rows <- which(fuel_eff$transmission == "M")
 aut_rows <- which(fuel_eff$transmission == "A")
 set.seed(3583)
