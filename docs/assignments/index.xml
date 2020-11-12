@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assignments on DATA606 - Fall 2020</title>
     <link>/assignments/</link>
     <description>Recent content in Assignments on DATA606 - Fall 2020</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/assignments/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/assignments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DAACS</title>
       <link>/assignments/daacs/</link>
@@ -27,7 +23,7 @@
       <guid>/assignments/presentation/</guid>
       <description>You are responsible for presenting one practice homework problem during the semester. Please sign up as-soon-as possible as there are limited slots per week. Try to keep each presentation to five minutes or less. Sign-up on this Google Spreadsheet: https://docs.google.com/spreadsheets/d/14OFGJZFkiI6JM_wn8bl-_BsKlbLybdgR5IDVrsk5HfE/edit?usp=sharing
 Choose a problem from the following list:
- Chapter 1 - Introduction to Data  Practice: Any odd numbered question.  Chapter 2 - Summarizing Data  Practice: Any odd numbered question.</description>
+ Chapter 1 - Introduction to Data  Practice: Any odd numbered question.   Chapter 2 - Summarizing Data  Practice: Any odd numbered question.</description>
     </item>
     
     <item>
@@ -45,8 +41,7 @@ Choose a problem from the following list:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/assignments/labs/</guid>
-      <description>These mini projects will have you explore statistical topics using R. You can use the startLab function in the DATA606 package to get started, or copy the templates from the links below. Please submit a PDF (preferred) or HTML file along with your Rmarkdown file. Be sure to answer all questions in lab, not just the on your own section. Labs should be submitted on Blackboard.
-Introduction to R and RStudio (Template) Introduction to Data (Template) Probability (Template) Distributions of Random Variables (Template) Foundations for Statistical Inference Sampling Distributions (Template) Confidence Levels (Template)  Inference for Categorical Data (Template) Inference for Numerical Data (Template) Introduction to Linear Regression (Template) Multiple Linear Regerssion (Template)  </description>
+      <description>These mini projects will have you explore statistical topics using R. You can use the startLab function in the DATA606 package to get started, or copy the templates from the links below. Please submit a PDF (preferred) or HTML file along with your Rmarkdown file. Be sure to answer all questions in lab, not just the on your own section. Labs should be submitted on Blackboard.</description>
     </item>
     
     <item>

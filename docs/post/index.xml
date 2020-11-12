@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Announcements on DATA606 - Fall 2020</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Announcements on DATA606 - Fall 2020</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Colors</title>
       <link>/post/2020-09-01-colors/</link>
@@ -27,7 +23,7 @@
       
       <guid>/post/2020-08-31-random_numbers_and_seeds/</guid>
       <description>To explore how R generates randome numbers, we will use the rnorm function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the mean and sd parameters). With n = 1 we will get two random numbers.
-rnorm(n = 1) ## [1] -0.9618821 rnorm(n = 1) ## [1] 1.077637 Each time you run the command you will get a different number.</description>
+rnorm(n = 1) ## [1] 0.1568719 rnorm(n = 1) ## [1] 0.594343 Each time you run the command you will get a different number.</description>
     </item>
     
     <item>

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.49.2" />
+<meta name="generator" content="Hugo 0.78.1" />
 <title>Chapter 8 :: DATA606 - Fall 2020</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -380,57 +380,36 @@ code.has-jax {
     
     
     
-    
-
-<!-- 
-See issue with underscores in MathJax equations here: https://gohugo.io/content-management/formats/#issues-with-markdown
-The solution, put backticks (`) around the LaTeX equation
--->
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
+    <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="introduction-to-linear-regression">Introduction to Linear Regression</h2>
-
 <h3 id="learning-outcomes">Learning Outcomes</h3>
-
 <ul>
 <li>Define the explanatory variable as the independent variable (predictor), and the response variable as the dependent variable (predicted).</li>
 <li>Plot the explanatory variable ($x$) on the x-axis and the response variable ($y$) on the y-axis, and fit a linear regression model
 <code>$y = \beta_0 + \beta_1 x$</code>
 where $\beta_0$ is the intercept, and $\beta_1$ is the slope.
-
 <ul>
 <li>Note that the point estimates (estimated from observed data) for $\beta_0$ and $\beta_1$ are $b_0$ and $b_1$, respectively.</li>
-</ul></li>
+</ul>
+</li>
 <li>When describing the association between two numerical variables, evaluate
-
 <ul>
 <li>direction: positive ($x \uparrow, y \uparrow$), negative ($x \downarrow, y \uparrow$)</li>
 <li>form: linear or not</li>
 <li>strength: determined by the scatter around the underlying relationship</li>
-</ul></li>
+</ul>
+</li>
 <li>Define correlation as the \emph{linear} association between two numerical variables.
-
 <ul>
 <li>Note that a relationship that is nonlinear is simply called an association.</li>
-</ul></li>
+</ul>
+</li>
 <li>Note that correlation coefficient ($r$, also called Pearson&rsquo;s $r$) the following properties:
-
 <ul>
 <li>the magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables</li>
 <li>the sign of the correlation coefficient indicates the direction of association</li>
@@ -439,103 +418,102 @@ where $\beta_0$ is the intercept, and $\beta_1$ is the slope.
 <li>since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions)</li>
 <li>the correlation of X with Y is the same as of Y with X</li>
 <li>the correlation coefficient is sensitive to outliers</li>
-</ul></li>
+</ul>
+</li>
 <li>Recall that correlation does not imply causation.</li>
 <li>Define residual ($e$) as the difference between the observed ($y$) and predicted ($\hat{y}$) values of the response variable.
 <code>$e_i = y_i - \hat{y}_i$</code></li>
 <li>Define the least squares line as the line that minimizes the sum of the squared residuals, and list conditions necessary for fitting such line:
-
 <ol>
 <li>linearity</li>
 <li>nearly normal residuals</li>
 <li>constant variability</li>
-</ol></li>
+</ol>
+</li>
 <li>Define an indicator variable as a binary explanatory variable (with two levels).</li>
 <li>Calculate the estimate for the slope ($b_1$) as
 <code>$b_1 = R\frac{s_y}{s_x}$</code>,
 where $r$ is the correlation coefficient, $s_y$ is the standard deviation of the response variable, and $s_x$ is the standard deviation of the explanatory variable.</li>
 <li>Interpret the slope as
-
 <ul>
 <li>&ldquo;For each unit increase in $x$, we would expect $y$ to increase/decrease on average by $|b_1|$ units&rdquo; when $x$ is numerical.</li>
 <li>&ldquo;The average increase/decrease in the response variable when between the baseline level and the other level of the explanatory variable is $|b_1|$.&rdquo; when $x$ is categorical.</li>
 <li>Note that whether the response variable increases or decreases is determined by the sign of $b_1$.</li>
-</ul></li>
+</ul>
+</li>
 <li>Note that the least squares line always passes through the average of the response and explanatory variables ($\bar{x},\bar{y}$).</li>
 <li>Use the above property to calculate the estimate for the slope ($b_0$) as
 <code>$b_0 = \bar{y} - b_1 \bar{x}$</code>,
 where $b_1$ is the slope, $\bar{y}$ is the average of the response variable, and $\bar{x}$ is the average of explanatory variable.</li>
 <li>Interpret the intercept as
-
 <ul>
 <li>&ldquo;When $x = 0$, we would expect $y$ to equal, on average, $b_0$.&rdquo; when $x$ is numerical.</li>
 <li>&ldquo;The expected average value of the response variable for the reference level of the explanatory variable is $b_0$.&rdquo; when $x$ is categorical.</li>
-</ul></li>
+</ul>
+</li>
 <li>Predict the value of the response variable for a given value of the explanatory variable, $x^\star$, by plugging in $x^\star$ in the in the linear model:
 <code>$\hat{y} = b_0 + b_1 x^\star$</code>
-
 <ul>
 <li>Only predict for values of $x^\star$ that are in the range of the observed data.</li>
 <li>Do not extrapolate beyond the range of the data, unless you are confident that the linear pattern continues.</li>
-</ul></li>
+</ul>
+</li>
 <li>Define $R^2$ as the percentage of the variability in the response variable explained by the the explanatory variable.
-
 <ul>
-<li>For a good model, we would like this number to be as close to 100\% as possible.</li>
+<li>For a good model, we would like this number to be as close to 100% as possible.</li>
 <li>This value is calculated as the square of the correlation coefficient, and is between 0 and 1, inclusive.</li>
-</ul></li>
+</ul>
+</li>
 <li>Define a leverage point as a point that lies away from the center of the data in the horizontal direction.</li>
 <li>Define an influential point as a point that influences (changes) the slope of the regression line.
-
 <ul>
 <li>This is usually a leverage point that is away from the trajectory of the rest of the data.</li>
-</ul></li>
+</ul>
+</li>
 <li>Do not remove outliers from an analysis without good reason.</li>
 <li>Be cautious about using a categorical explanatory variable when one of the levels has very few observations, as these may act as influential points.</li>
 <li>Determine whether an explanatory variable is a significant predictor for the response variable using the $t$-test and the associated p-value in the regression output.</li>
 <li>Set the null hypothesis testing for the significance of the predictor as <code>$H_0: \beta_1 = 0$</code>, and recognize that the standard software output yields the p-value for the two-sided alternative hypothesis.
-
 <ul>
 <li>Note that $\beta_1 = 0$ means the regression line is horizontal, hence suggesting that there is no relationship between the explanatory and the response variables.</li>
-</ul></li>
+</ul>
+</li>
 <li>Calculate the T score for the hypothesis test as
 <code>$T_{df}=\frac { b_{ 1 }-{ null\quad value } }{ SE_{ b_{ 1 } } }$</code>
 with $df = n - 2$.
-
 <ul>
 <li>Note that the T score has $n - 2$ degrees of freedom since we lose one degree of freedom for each parameter we estimate, and in this case we estimate the intercept and the slope.</li>
-</ul></li>
+</ul>
+</li>
 <li>Note that a hypothesis test for the intercept is often irrelevant since it&rsquo;s usually out of the range of the data, and hence it is usually an extrapolation.</li>
 <li>Calculate a confidence interval for the slope as
 <code>$b_1 \pm t^\star_{df} SE_{b_1}$</code>
 where $df = n - 2$ and <code>$t^\star_{df}$</code> is the critical score associated with the given confidence level at the desired degrees of freedom.
-
 <ul>
 <li>Note that the standard error of the slope estimate <code>$SE_{b_1}$</code> can be found on the regression output.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="supplemental-readings">Supplemental Readings</h3>
-
 <ul>
-<li><p><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp8.pdf">OpenIntro Statistics slides</a></p></li>
-
-<li><p><a href="https://www.openintro.org/download.php?file=stat_extra_interaction_effects&amp;referrer=/stat/textbook.php">Interaction Terms</a></p></li>
-
-<li><p><a href="https://www.openintro.org/download.php?file=stat_extra_nonlinear_relationships&amp;referrer=/stat/textbook.php">Regerssion for non-linear terms</a></p></li>
-
-<li><p><a href="https://htmlpreview.github.io/?https://github.com/jbryer/DATA606Fall2019/blob/master/Pages/Linear_Regression_SAT.html">Linear regression with SAT scores</a> - This document outlines the implementation of linear regression step-by-step emphasizing visualizations.</p></li>
+<li>
+<p><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp8.pdf">OpenIntro Statistics slides</a></p>
+</li>
+<li>
+<p><a href="https://www.openintro.org/download.php?file=stat_extra_interaction_effects&amp;referrer=/stat/textbook.php">Interaction Terms</a></p>
+</li>
+<li>
+<p><a href="https://www.openintro.org/download.php?file=stat_extra_nonlinear_relationships&amp;referrer=/stat/textbook.php">Regerssion for non-linear terms</a></p>
+</li>
+<li>
+<p><a href="https://htmlpreview.github.io/?https://github.com/jbryer/DATA606Fall2019/blob/master/Pages/Linear_Regression_SAT.html">Linear regression with SAT scores</a> - This document outlines the implementation of linear regression step-by-step emphasizing visualizations.</p>
+</li>
 </ul>
-
 <h3 id="videos">Videos</h3>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mPvtZhdPBhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/z8DmwG2G4Qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jZEKAlo1E54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/depiT-hTaGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
     

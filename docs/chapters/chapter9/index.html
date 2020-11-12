@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.49.2" />
+<meta name="generator" content="Hugo 0.78.1" />
 <title>Chapter 9 :: DATA606 - Fall 2020</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -380,34 +380,14 @@ code.has-jax {
     
     
     
-    
-
-<!-- 
-See issue with underscores in MathJax equations here: https://gohugo.io/content-management/formats/#issues-with-markdown
-The solution, put backticks (`) around the LaTeX equation
--->
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
+    <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="multiple-and-logistic-regression">Multiple and Logistic Regression</h2>
-
 <h3 id="learning-outcomes">Learning Outcomes</h3>
-
 <ul>
 <li>Define the multiple linear regression model as
 <code>$$\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_k x_k$$</code>
@@ -418,20 +398,20 @@ where there are $k$ predictors (explanatory variables).</li>
 <li>Note that $R^2$ will increase with each explanatory variable added to the model, regardless of whether or not the added variables is a meaningful predictor of the response variable. Therefore we use adjusted $R^2$, which applies a penalty for the number of predictors included in the model, to better assess the strength of a multiple linear regression model:
 <code>$$R^2 = 1 - \frac{Var(e_i) / (n - k - 1)}{Var(y_i) / (n - 1)}$$</code>
 where <code>$Var(e_i)$</code> measures the variability of residuals (<code>$SS_{Err}$</code>), <code>$Var(y_i)$</code> measures the total variability in observed $y$ (<code>$SS_{Tot}$</code>), $n$ is the number of cases and $k$ is the number of predictors.
-
 <ul>
 <li>Note that adjusted $R^2$ will only increase if the added variable has a meaningful contribution to the amount of explained variability in $y$, i.e. if the gains from adding the variable exceeds the penalty.</li>
-</ul></li>
+</ul>
+</li>
 <li>Define model selection as identifying the best model for predicting a given response variable.</li>
 <li>Note that we usually prefer simpler (parsimonious) models over more complicated ones.</li>
 <li>Define the full model as the model with all explanatory variables included as predictors.</li>
 <li>Note that the p-values associated with each predictor are conditional on other variables being included in the model, so they can be used to assess if a given predictor is significant, given that all others are in the model.
-
 <ul>
 <li>These p-values are calculated based on a $t$ distribution with $n - k - 1$ degrees of freedom.</li>
 <li>The same degrees of freedom can be used to construct a confidence interval for the slope parameter of each predictor:
 <code>$$b_i \pm t^\star_{n - k - 1} SE_{b_i}$$</code></li>
-</ul></li>
+</ul>
+</li>
 <li>Stepwise model selection (backward or forward) can be done based based on adjusted $R^2$ (choose the model with higher adjusted $R^2$).</li>
 <li>The general idea behind backward-selection is to start with the full model and eliminate one variable at a time until the ideal model is reached.
 i. Start with the full model.
@@ -443,33 +423,25 @@ ii. Try all possible models adding one more explanatory variable at a time, and 
 iii. Repeat until maximum possible adjusted $R^2$ is reached.</li>
 <li>Adjusted $R^2$ method is more computationally intensive, but it is more reliable, since it doesn&rsquo;t depend on an arbitrary significant level.</li>
 <li>List the conditions for multiple linear regression as
-
 <ol>
 <li>linear relationship between each (numerical) explanatory variable and the response - checked using scatterplots of $y$ vs. each $x$, and residuals plots of $residuals$ vs. each $x$</li>
 <li>nearly normal residuals with mean 0 - checked using a normal probability plot and histogram of residuals</li>
 <li>constant variability of residuals - checked using residuals plots of $residuals$ vs. $\hat{y}$, and $residuals$ vs. each $x$</li>
 <li>independence of residuals (and hence observations) - checked using a scatterplot of $residuals$ vs. order of data collection (will reveal non-independence if data have time series structure)</li>
-</ol></li>
+</ol>
+</li>
 <li>Note that no model is perfect, but even imperfect models can be useful.</li>
 </ul>
-
 <h3 id="supplemental-readings">Supplemental Readings</h3>
-
 <ul>
 <li><a href="https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp9.pdf">OpenIntro Statistics slides</a></li>
 </ul>
-
 <h3 id="videos">Videos</h3>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sQpAuyfEYZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VB1qSwoF-l0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3KSUeYMKt5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uYC2eLVSpI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WflqTUOvdik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
     

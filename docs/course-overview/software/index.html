@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.49.2" />
+<meta name="generator" content="Hugo 0.78.1" />
 <title>Software :: DATA606 - Fall 2020</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -368,47 +368,28 @@ code.has-jax {
     
     
     
-    
-
-<h3 id="r-and-rstudio">R and RStudio</h3>
-
+    <h3 id="r-and-rstudio">R and RStudio</h3>
 <p>We will make use of <a href="http://r-project.org">R</a>, an open source statistics program and language. Be sure to <a href="http://cran.r-project.org/">install R</a> and <a href="http://rstudio.com">RStudio</a> on your own computers within the first few days of the class.</p>
-
 <ul>
 <li>R - <a href="http://cran.r-project.org/bin/windows/base/">Windows</a> or <a href="http://cran.r-project.org/bin/macosx/">Mac</a></li>
 <li>RStudio - <a href="http://www.rstudio.com/products/rstudio/download/">Download Windows or Mac version from here</a></li>
 </ul>
-
 <p>If using Windows, you also need to download <a href="http://cran.r-project.org/bin/windows/Rtools/">RTools</a> and <a href="https://www.activestate.com/products/activeperl/downloads/">ActivePerl</a>.</p>
-
 <h3 id="latex">LaTeX</h3>
-
 <p><a href="https://www.latex-project.org/">LaTeX</a> is a typesetting language for preparing documents. Documents are written in plain text files. Formatting the document is done using specific markup. If you have used HTML, the framework is similar however instead of using <code>&lt;TAG&gt;&lt;/TAG&gt;</code> syntax, LaTeX uses <code>\TAG{}</code> format. We will primarily use <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, and its extension <a href="https://rmarkdown.rstudio.com/">R Markdown</a> for preparing documents in this class. However, when preparing PDF documents, the Markdown will first be converted to LaTeX before creating the PDF file. As such, a LaTeX converter is necessary. There are LaTeX installers for <a href="http://miktex.org/">Windows (MiKTeX)</a> and <a href="http://www.tug.org/mactex/morepackages.html">Mac (BasicTeX)</a>. Alternatively, the <a href="https://yihui.name/tinytex/"><code>tinytex</code></a> R package provides an easier way of installing LaTeX directly from within R:</p>
-
 <pre><code>install.packages('tinytex')
 tinytex::install_tinytex()
-</code></pre>
-
-<h3 id="source-control">Source Control</h3>
-
+</code></pre><h3 id="source-control">Source Control</h3>
 <p>All course materials will be made available on <a href="https://github.com/jbryer/DATA606Fall2020/">Github</a> which provides an implementation of the <a href="https://git-scm.com/">git</a> open source version control system. RStudio supports git directly, but I recommend downloading <a href="https://www.sourcetreeapp.com/">Sourcetree</a>. This is a free desktop client that provides an easier interface for working with Github. You will also need to <a href="https://github.com/">create an account on Github</a>.</p>
-
 <p>For more information, Jenny Bryan&rsquo;s <a href="https://happygitwithr.com/"><em>Happy Git and Github for the useR</em></a> is a free online book covering the important features of source control for R users.</p>
-
 <h3 id="r-packages">R Packages</h3>
-
 <p>Once everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):</p>
-
 <pre><code>install.packages(c('openintro','OIdata','devtools','tidyverse', 'ggplot2',
                    'psych','reshape2','knitr','markdown','shiny','R.rsp',
                    'fivethirtyeight'))
 devtools::install_github(&quot;jbryer/DATA606&quot;)
-</code></pre>
-
-<h3 id="the-data606-r-package">The <code>DATA606</code> R Package</h3>
-
+</code></pre><h3 id="the-data606-r-package">The <code>DATA606</code> R Package</h3>
 <p>Many of the course resouces are available in the <code>DATA606</code> R package. Here are some command to get started:</p>
-
 <pre><code>library('DATA606')          # Load the package
 vignette(package='DATA606') # Lists vignettes in the DATA606 package
 vignette('os4')             # Loads a PDF of the OpenIntro Statistics book
@@ -418,7 +399,6 @@ viewLab('Lab1')             # Opens Lab1 in the default web browser
 startLab('Lab1')            # Starts Lab1 (copies to getwd()), opens the Rmd file
 shiny_demo()                # Lists available Shiny apps
 </code></pre>
-
 
     
     

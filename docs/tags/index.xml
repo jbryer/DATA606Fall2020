@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on DATA606 - Fall 2020</title>
@@ -6,22 +6,9 @@
     <description>Recent content in Tags on DATA606 - Fall 2020</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Annoucement</title>
-      <link>/tags/annoucement/</link>
-      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/annoucement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Colors</title>
+      <title>colors</title>
       <link>/tags/colors/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
@@ -30,11 +17,20 @@
     </item>
     
     <item>
-      <title>Plots</title>
+      <title>plots</title>
       <link>/tags/plots/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/plots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>random numbers</title>
+      <link>/tags/random-numbers/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/random-numbers/</guid>
       <description></description>
     </item>
     
@@ -48,20 +44,20 @@
     </item>
     
     <item>
-      <title>Random Numbers</title>
-      <link>/tags/random-numbers/</link>
-      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/random-numbers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Working Directories</title>
+      <title>working directories</title>
       <link>/tags/working-directories/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/working-directories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Annoucement</title>
+      <link>/tags/annoucement/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/annoucement/</guid>
       <description></description>
     </item>
     
