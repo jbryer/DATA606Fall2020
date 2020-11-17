@@ -118,7 +118,7 @@ Kruschke, J.K. (2014). *Doing Bayesian Data Analysis, Second Edition: A Tutorial
 
 Office Hours (cell phone or using Zoom): By appointment. You're encouraged to schedule an appointment, but you can try to call anytime.
 
-You are encouraged to ask us questions on the ["Github Issues"](https://github.com/jbryer/DATA606Fall2020/issues) feature on the course repository where other students will be able to benefit from your inquiries. If you wish to ask a question in private, you can email the instructor directly.
+You are encouraged to ask us questions on Slack. If you wish to ask a question in private, you can email me directly.
 
 For the most part, you can expect me to respond to questions by email within 24 to 48 hours. If you do not hear back from me within 48 hours of sending an email, please resend your message.
 

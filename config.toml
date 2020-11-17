@@ -22,6 +22,8 @@ ordersectionsby = "weight" # ordersectionsby = "title"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+[markup.goldmark.renderer]
+unsafe= true
 
 [[menu.shortcuts]]
 pre = "<h3>Links</h3>"

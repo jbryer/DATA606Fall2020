@@ -4,8 +4,6 @@ description = ""
 weight = 4
 +++
 
-
-
 These mini projects will have you explore statistical topics using R. You can use the `startLab` function in the `DATA606` package to get started, or copy the templates from the links below. **Please submit a PDF (preferred) or HTML file along with your Rmarkdown file.** Be sure to answer all questions in lab, not just the *on your own section.* Labs should be submitted on Blackboard.
 
 <ol start='1'>

@@ -380,12 +380,25 @@ code.has-jax {
     
     
     
-    <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+    <!-- 
+See issue with underscores in MathJax equations here: https://gohugo.io/content-management/formats/#issues-with-markdown
+The solution, put backticks (`) around the LaTeX equation
+-->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <h2 id="probability">Probability</h2>
 <h3 id="learning-outcomes">Learning Outcomes</h3>
 <ul>
@@ -418,11 +431,11 @@ code.has-jax {
 </ul>
 <h3 id="videos">Videos</h3>
 <p><a href="https://www.youtube.com/watch?list=PLkIselvEzpM5EgoOajhw83Ax_FktnlD6n&amp;v=rG-SLQ2uF8U">Probability Introduction</a></p>
-<!-- raw HTML omitted -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rG-SLQ2uF8U" frameborder="0" allowfullscreen></iframe>
 <p><a href="https://www.youtube.com/watch?v=vBX-KulgJ1o">Would You Take This Bet?</a></p>
-<!-- raw HTML omitted -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vBX-KulgJ1o" frameborder="0" allowfullscreen></iframe>
 <p><a href="https://www.youtube.com/watch?v=mhlc7peGlGg">The Monty Hall Problem</a></p>
-<!-- raw HTML omitted -->
+<iframe width="420" height="315" src="https://www.youtube.com/embed/mhlc7peGlGg" frameborder="0" allowfullscreen></iframe>
 
 
     
