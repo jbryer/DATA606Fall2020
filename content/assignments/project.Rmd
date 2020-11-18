@@ -1,8 +1,10 @@
-+++
-title = "Project"
-description = ""
-weight = 5
-+++
+---
+title: "Project"
+description: ""
+weight: 5
+editor_options: 
+  chunk_output_type: console
+---
 
 
 

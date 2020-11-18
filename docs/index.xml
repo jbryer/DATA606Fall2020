@@ -150,6 +150,15 @@ Learning R  R for Data Science. Book by Garrett Grolemund and Hadley Wickham Qui
     </item>
     
     <item>
+      <title>Project</title>
+      <link>/assignments/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/project/</guid>
+      <description>Download project proposal template Download project template  The purpose of the data project is for you to conduct a reproducible analysis with a data set of your choosing. There are two components to the project, the proposal, which will be graded on a pass/fail basis, and the final report. The outline for each of these are provided in the templates. When submitting the assignments, include the R Markdown file (change the name to include your last name, for example Bryer-Proposal.</description>
+    </item>
+    
+    <item>
       <title>Chapter 6</title>
       <link>/chapters/chapter6/</link>
       <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
@@ -240,7 +249,7 @@ Creating Equations with Daum Equation Editor Occasionally you will need to type 
       
       <guid>/post/2020-08-31-random_numbers_and_seeds/</guid>
       <description>To explore how R generates randome numbers, we will use the rnorm function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the mean and sd parameters). With n = 1 we will get two random numbers.
-rnorm(n = 1) ## [1] -0.7744793 rnorm(n = 1) ## [1] 2.422393 Each time you run the command you will get a different number.</description>
+rnorm(n = 1) ## [1] -0.09670073 rnorm(n = 1) ## [1] -0.4531037 Each time you run the command you will get a different number.</description>
     </item>
     
     <item>
