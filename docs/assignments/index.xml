@@ -46,15 +46,6 @@ Introduction to R and RStudio (Template) Introduction to Data (Template) Probabi
     </item>
     
     <item>
-      <title>Project</title>
-      <link>/assignments/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/assignments/project/</guid>
-      <description>Download project proposal template Download project template  The purpose of the data project is for you to conduct a reproducible analysis with a data set of your choosing. There are two components to the project, the proposal, which will be graded on a pass/fail basis, and the final report. The outline for each of these are provided in the templates. When submitting the assignments, include the R Markdown file (change the name to include your last name, for example Bryer-Proposal.</description>
-    </item>
-    
-    <item>
       <title>Final Exam</title>
       <link>/assignments/final/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
