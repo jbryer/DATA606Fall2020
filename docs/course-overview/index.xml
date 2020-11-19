@@ -49,9 +49,8 @@ Please note: Students who participate in this class with their camera on or use 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/course-overview/software/</guid>
-      <description>R and RStudio We will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.
- R - Windows or Mac RStudio - Download Windows or Mac version from here  If using Windows, you also need to download RTools and ActivePerl.
-LaTeX LaTeX is a typesetting language for preparing documents.</description>
+      <description>Computer Hardware This course will make extensive use of the R statistical language. You are expected to have a computer sufficient to run this the software listed below. The software will run on most platforms so a Mac or PC (running Windows or Linux) will work fine. I recommend having at least 16GBs of RAM.
+R and RStudio We will make use of R, an open source statistics program and language.</description>
     </item>
     
     <item>

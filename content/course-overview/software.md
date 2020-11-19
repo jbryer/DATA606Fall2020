@@ -4,6 +4,11 @@ description = ""
 weight = 4
 +++
 
+### Computer Hardware
+
+This course will make extensive use of the R statistical language. You are expected to have a computer sufficient to run this the software listed below. The software will run on most platforms so a Mac or PC (running Windows or Linux) will work fine. I recommend having at least 16GBs of RAM.
+
+
 ### R and RStudio
 
 We will make use of [R](http://r-project.org), an open source statistics program and language. Be sure to [install R](http://cran.r-project.org/) and [RStudio](http://rstudio.com) on your own computers within the first few days of the class.
