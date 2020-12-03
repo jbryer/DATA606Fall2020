@@ -31,7 +31,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/course-overview/schedule/</guid>
-      <description>  Note: Schedule is subject to change. Last updated November 18, 2020 09:47PM.
+      <description>   Note: Schedule is subject to change. Last updated December 03, 2020 08:26AM.
 Click here to import the course calendar into your calendar application
     Start End Topic    Wednesday, August 26, 2020 Sunday, August 30, 2020 Chapter 1 - Intro to Data  Monday, August 31, 2020 Sunday, September 06, 2020 Chapter 2 - Summarizing Data  Monday, September 07, 2020 Sunday, September 13, 2020 Chapter 3 - Probability  Monday, September 14, 2020 Sunday, September 27, 2020 Chapter 4 - Distributions  Monday, September 28, 2020 Sunday, October 04, 2020 Chapter 5 - Foundation for Inference  Monday, October 05, 2020 Sunday, October 11, 2020 Chapter 6 - Inference for Categorical Data  Monday, October 12, 2020 Sunday, October 18, 2020 Chapter 7 - Inference for Numerical Data  Monday, October 19, 2020 Sunday, November 01, 2020 Chapter 8 - Linear Regression  Monday, November 02, 2020 Sunday, November 29, 2020 Chapter 9 - Multiple and Logistic Regression  Monday, November 30, 2020 Sunday, December 06, 2020 Intro to Bayesian Analysis  Wednesday, December 09, 2020 Sunday, December 13, 2020 Final Exam    </description>
     </item>
@@ -228,7 +228,7 @@ Creating Equations with Daum Equation Editor Occasionally you will need to type 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/course-overview/materials/</guid>
-      <description>  These are supplemental materials. Click to download.
+      <description>   These are supplemental materials. Click to download.
  _gen  assets images  stat_extra_interaction_effects.pdf stat_extra_nonlinear_relationships.pdf stats_handout.pdf Textbooks  lsr-0.6.pdf os4.pdf ProbStatBook.pdf Supplemental  os2_extra_inference_guide.pdf os2_prob_tables.pdf os4_tablet.pdf    </description>
     </item>
     
@@ -248,7 +248,7 @@ Creating Equations with Daum Equation Editor Occasionally you will need to type 
       
       <guid>/post/2020-08-31-random_numbers_and_seeds/</guid>
       <description>To explore how R generates randome numbers, we will use the rnorm function. This function draws a random number from a normal distribution with a mean = 0 and standard deviation = 1 (though these can be changed with the mean and sd parameters). With n = 1 we will get two random numbers.
-rnorm(n = 1) ## [1] -0.7677172 rnorm(n = 1) ## [1] -1.161867 Each time you run the command you will get a different number.</description>
+rnorm(n = 1) ## [1] -0.4207432 rnorm(n = 1) ## [1] -1.363858 Each time you run the command you will get a different number.</description>
     </item>
     
     <item>
