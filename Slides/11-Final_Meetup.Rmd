@@ -49,6 +49,7 @@ par(mar=c(2.5,1,2,1))
 
 ## Presentations
 
+* Zachary Palmore [Rpubs](https://rpubs.com/palmorez/data606statsproblem) [Video](https://www.youtube.com/watch?v=-DJXGLmQ73c)
 * 9.3 Atina Karim [Rpubs](https://rpubs.com/Atinakarim/701566)
 * 8.25 John Mazon [Rpubs](https://rpubs.com/johnmazon90/702035) [Video](https://youtu.be/02tk27KwDWs)
 * Bill Stepniak [Rpubs](https://rpubs.com/stepniak/701892) [Video](https://youtu.be/uc0ugZh2WWA)
