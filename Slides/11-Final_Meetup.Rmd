@@ -1,0 +1,96 @@
+---
+title: "DATA606 - Final Meetup"
+author: Jason Bryer, Ph.D.
+date: December 9, 2020
+knit: (function(inputFile, encoding) { input.dir <- normalizePath(dirname(inputFile)); rmarkdown::render(input = inputFile, encoding = encoding, quiet=FALSE, output_file = paste0(input.dir,'/../docs/slides/', tools::file_path_sans_ext(basename(inputFile)), '.html')); })
+output:
+  ioslides_presentation:
+    self_contained: true
+    widescreen: true
+    smaller: true
+---
+	
+<div class="notes">
+Documentation on using ioslides is available here:
+http://rmarkdown.rstudio.com/ioslides_presentation_format.html
+Some slides are adopted (or copied) from OpenIntro: https://www.openintro.org/
+</div>
+
+```{r setup, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
+set.seed(2112)
+library(ggplot2)
+library(openintro)
+library(DATA606)
+library(reshape2)
+library(psych)
+library(reshape2)
+library(xtable)
+options(width=100)
+par(mar=c(2.5,1,2,1))
+```
+
+
+## Final Exam
+
+* Will be available at 9:30pm.
+
+* Due by end of day December 13th.
+
+* You may use your book and course materials.
+
+* I expect you to complete the exam on your own (i.e. do not discuss with classmates, colleagues, significant others, etc.)
+
+* There are two parts:
+	1. Part one multiple choice questions and short answer questions.
+	2. Part two has a small data set to analyze with R, then answer some interpretation questions.
+
+* Put your answers in the Rmarkdown file and submit the PDF file. **Please do not post your answers online!**
+
+
+## Presentations
+
+* 9.3 Atina Karim [Rpubs](https://rpubs.com/Atinakarim/701566)
+* 8.25 John Mazon [Rpubs](https://rpubs.com/johnmazon90/702035) [Video](https://youtu.be/02tk27KwDWs)
+* Bill Stepniak [Rpubs](https://rpubs.com/stepniak/701892) [Video](https://youtu.be/uc0ugZh2WWA)
+
+
+## My Work
+
+My statistical research interest is in propensity score methods. Propensity score analysis (PSA) is a quasi-experimental design used to estimate causality from observational studies. It is generally conducted in two phases:
+
+1. Estimate propensity scores (i.e. probability of being in the treatment) using the observed covariates.
+
+		a. Check balance
+		b. Re-estimate propensity scores
+
+2. Estimate effect sizes using typical group differences (e.g. t-tests)
+
+See my [Github repository](https://github.com/jbryer/psa) or [Intro to PSA slides](http://epsy887.bryer.org/slides/Intro_PSA.html). Also the PSA Shiny application:
+
+```{r, eval=FALSE}
+psa::psa_shiny()
+```
+
+Areas I have worked on:
+
+* Multilevel PSA (see [`multilevelPSA`](http://jason.bryer.org/multilevelPSA) R package)
+* Matching with non-binary treatments (see [`TriMatch`](http://jason.bryer.org/TriMatch) R package)
+* Bootstrapping PSA (see [`PSAboot`](http://jason.bryer.org/PSAboot) R package)
+
+
+
+## Thank You
+
+This has been a great semester. Please don't hesitate to reach out:
+
+* Email: jason.bryer@cuny.edu
+* Github: http://github.com/jbryer
+* Personal Website: http://bryer.org
+* [LinkedIn](https://www.linkedin.com/profile/view?id=AAMAAATGdnoBOWXg80yqna6fSkgnZdabZP7Ck9w&trk=hp-identity-name)
+* Twitter: [jbryer](https://twitter.com/jbryer)
+
+<br/><br/><br/>
+
+Over the break, the course website will be moved to [fall2020.data606.net](https://fall2020.data606.net).
+
+You can download all course materials on [Github](https://github.com/jbryer/DATA606Fall2020). Click the [clone or download](https://github.com/jbryer/DATA606Fall2020/archive/master.zip) link to download a zip file.

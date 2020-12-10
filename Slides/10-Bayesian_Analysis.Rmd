@@ -96,6 +96,10 @@ It all comes down to the chance of a true positive result divided by the chance 
 
 $$ P\left( A|B \right) =\frac { P\left( B|A \right) P\left( A \right)  }{ P\left( B \right)  }  $$
 
+## {.flexbox .vcenter}
+
+<img src='images/Bayes_Theorem_web.png' />
+
 ## How many fish are in the lake?
 
 * Catch them all, count them. Not practical (or even possible)!
